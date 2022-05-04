@@ -6,7 +6,7 @@ import Play from './Play'
 import Pokedex from './Pokedex'
 import NavBar from './NavBar'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <NavBar />

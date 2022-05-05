@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
-  width: "50px",
+  width: "75px",
   padding: "12px",
   margin: "0 6px 6px",
-  background: "blue",
+  background: "#b644fc",
   textDecoration: "none",
   color: "white",
 };
@@ -19,7 +19,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "#6e02b1",
         }}
       >
         Home
@@ -29,7 +29,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "#6e02b1",
         }}
       >
         Play
@@ -39,7 +39,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "darkblue",
+          background: "#6e02b1",
         }}
       >
         Pokedex

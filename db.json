@@ -14,6 +14,86 @@
       "id": 665,
       "name": "spewpa",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png"
+    },
+    {
+      "id": 102,
+      "name": "exeggcute",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png"
+    },
+    {
+      "id": 49,
+      "name": "venomoth",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png"
+    },
+    {
+      "id": 494,
+      "name": "victini",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png"
+    },
+    {
+      "id": 335,
+      "name": "zangoose",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png"
+    },
+    {
+      "id": 853,
+      "name": "grapploct",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png"
+    },
+    {
+      "id": 180,
+      "name": "flaaffy",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png"
+    },
+    {
+      "id": 724,
+      "name": "decidueye",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png"
+    },
+    {
+      "id": 382,
+      "name": "kyogre",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png"
+    },
+    {
+      "id": 403,
+      "name": "shinx",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png"
+    },
+    {
+      "id": 840,
+      "name": "applin",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png"
+    },
+    {
+      "id": 337,
+      "name": "lunatone",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png"
+    },
+    {
+      "id": 796,
+      "name": "xurkitree",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png"
+    },
+    {
+      "id": 689,
+      "name": "barbaracle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png"
+    },
+    {
+      "id": 759,
+      "name": "stufful",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png"
+    },
+    {
+      "id": 203,
+      "name": "girafarig",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png"
+    },
+    {
+      "id": 306,
+      "name": "aggron",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png"
     }
   ]
 }

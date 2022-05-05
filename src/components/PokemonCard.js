@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 const PokemonCard = ({ pokemon }) => {
 
     const { id, name, sprite } = pokemon

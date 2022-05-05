@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PokemonCard from './PokemonCard'
 
+
 const Pokedex = () => {
 
     const [pokedex, setPokedex] = useState([])
@@ -18,7 +19,7 @@ const Pokedex = () => {
     })
 
   return (
-    <div>
+    <div className="pokedex">
         {(pokedex.length === 0) ? <p>You haven't captured any Pokemon yet!</p> : displayPokedex}
     </div>
   )

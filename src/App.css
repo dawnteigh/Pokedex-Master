@@ -21,9 +21,18 @@
   margin-left: 25%;
   margin-right: 25%;
 }
+.pokedex {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 .buttonGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
+
+

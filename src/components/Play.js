@@ -9,10 +9,9 @@ const Play = ({ range }) => {
     sprite: "",
   });
   const [entry, setEntry] = useState("")
-  const dexNo = Math.floor(Math.random() * (max - min) + min)
 
-  
-  useEffect(() => {
+  const newPokemon = () => {
+    const dexNo = Math.floor(Math.random() * (max - min) + min)
     fetch(`https://pokeapi.co/api/v2/pokemon/${dexNo}`)
       .then(r => r.json())
       .then(data =>
@@ -28,6 +27,12 @@ const Play = ({ range }) => {
             const entry = data.flavor_text_entries.find(e => e.language.name === 'en')
             setEntry(entry.flavor_text)
         })
+  }
+
+  
+
+  useEffect(() => {
+    newPokemon()
   }, []);
 
   return (
@@ -35,7 +40,7 @@ const Play = ({ range }) => {
         <br/>
         {entry}
         <br/><br/>
-        <AnswerForm pokemon={pokemon} />
+        <AnswerForm pokemon={pokemon} newPokemon={newPokemon} />
     </div>
     )
 }

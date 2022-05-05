@@ -2,9 +2,9 @@ import React from 'react'
 import DexButton from './DexButton'
 import { dexData } from '../DexData'
 
-const Home = () => {
+const Home = ({ rangeChange }) => {
 
-    const renderButtons = dexData.map(obj => <DexButton key={obj.region} dexData={obj} />)
+    const renderButtons = dexData.map(obj => <DexButton key={obj.region} dexData={obj} rangeChange={rangeChange} />)
 
     return (
     <div className="home">

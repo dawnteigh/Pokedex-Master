@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DexButton = ({ dexData }) => {
+const DexButton = ({ dexData, rangeChange }) => {
 
 const { region, gen, range } = dexData
   return (
@@ -10,7 +10,7 @@ const { region, gen, range } = dexData
             <br/>
             {range.max - 1} Pokemon
         </p>
-        <button>{gen}</button>
+        <button onClick={(e) => rangeChange(range)} >{gen}</button>
     </div>
   )
 }

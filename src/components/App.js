@@ -14,6 +14,9 @@ const App = () => {
   })
 
   //callback for dex buttons rendered in Home
+  const handleClick = (obj) => {
+    setRange(obj)
+  }
 
   return (
     <div className="App">
@@ -26,7 +29,7 @@ const App = () => {
           <Pokedex />
         </Route>
         <Route exact path="/">
-          <Home />
+          <Home rangeChange={handleClick} />
         </Route>
       </Switch>
     </div>

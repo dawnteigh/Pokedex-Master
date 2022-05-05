@@ -1,5 +1,19 @@
 {
-    "pokemon": [
-        
-    ]
+  "pokemon": [
+    {
+      "id": 745,
+      "name": "lycanroc",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png"
+    },
+    {
+      "id": 435,
+      "name": "skuntank",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png"
+    },
+    {
+      "id": 665,
+      "name": "spewpa",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png"
+    }
+  ]
 }

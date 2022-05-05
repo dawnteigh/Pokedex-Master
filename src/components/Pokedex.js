@@ -19,7 +19,7 @@ const Pokedex = () => {
 
   return (
     <div>
-        {(pokedex.length === 0) ? <p>You haven't captured any Pokemon yet!</p> : {displayPokedex}}
+        {(pokedex.length === 0) ? <p>You haven't captured any Pokemon yet!</p> : displayPokedex}
     </div>
   )
 }

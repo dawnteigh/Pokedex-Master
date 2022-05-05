@@ -23,7 +23,7 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route exact path="/play">
-          <Play />
+          <Play range={range} />
         </Route>
         <Route exact path="/pokedex">
           <Pokedex />

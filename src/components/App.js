@@ -9,7 +9,7 @@ import NavBar from './NavBar'
 const App = () => {
 
   const [range, setRange] = useState({
-    min: 0,
+    min: 1,
     max: 899
   })
 

@@ -1,8 +1,17 @@
 import React from 'react'
 
-const DexButton = () => {
+const DexButton = ({ dexData }) => {
+
+const { region, gen, range } = dexData
   return (
-    <div>DexButton</div>
+    <div>
+        <p>
+            {region} Region
+            <br/>
+            {range.max - 1} Pokemon
+        </p>
+        <button>{gen}</button>
+    </div>
   )
 }
 

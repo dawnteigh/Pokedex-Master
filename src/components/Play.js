@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import AnswerForm from './AnswerForm'
 
 const Play = ({ range }) => {
   const { min, max } = range
@@ -29,7 +30,14 @@ const Play = ({ range }) => {
         })
   }, []);
 
-  return <div>{entry}</div>
+  return (
+    <div>
+        <br/>
+        {entry}
+        <br/><br/>
+        <AnswerForm pokemon={pokemon} />
+    </div>
+    )
 }
 
 export default Play

@@ -1,5 +1,5 @@
 import '../App.css';
-import React from 'react'
+import React, { useState } from 'react'
 import { Route, Switch } from "react-router-dom";
 import Home from './Home'
 import Play from './Play'
@@ -7,6 +7,14 @@ import Pokedex from './Pokedex'
 import NavBar from './NavBar'
 
 const App = () => {
+
+  const [range, setRange] = useState({
+    min: 0,
+    max: 899
+  })
+
+  //callback for dex buttons rendered in Home
+
   return (
     <div className="App">
       <NavBar />

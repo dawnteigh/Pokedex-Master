@@ -94,6 +94,76 @@
       "id": 306,
       "name": "aggron",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png"
+    },
+    {
+      "id": 595,
+      "name": "joltik",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png"
+    },
+    {
+      "id": 876,
+      "name": "indeedee",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png"
+    },
+    {
+      "id": 282,
+      "name": "gardevoir",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png"
+    },
+    {
+      "id": 249,
+      "name": "lugia",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png"
+    },
+    {
+      "id": 88,
+      "name": "grimer",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png"
+    },
+    {
+      "id": 362,
+      "name": "glalie",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png"
+    },
+    {
+      "id": 145,
+      "name": "zapdos",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png"
+    },
+    {
+      "id": 812,
+      "name": "rillaboom",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png"
+    },
+    {
+      "id": 309,
+      "name": "electrike",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png"
+    },
+    {
+      "id": 885,
+      "name": "dreepy",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png"
+    },
+    {
+      "id": 517,
+      "name": "munna",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png"
+    },
+    {
+      "id": 719,
+      "name": "diancie",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png"
+    },
+    {
+      "id": 313,
+      "name": "volbeat",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png"
+    },
+    {
+      "id": 523,
+      "name": "zebstrika",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png"
     }
   ]
 }

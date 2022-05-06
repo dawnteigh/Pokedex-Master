@@ -35,10 +35,12 @@ const Play = ({ range }) => {
     newPokemon()
   }, []);
 
+  const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____")
+
   return (
     <div>
         <br/>
-        {entry}
+        {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} />
     </div>

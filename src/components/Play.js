@@ -9,9 +9,11 @@ const Play = ({ range }) => {
     sprite: "",
   });
   const [entry, setEntry] = useState("")
+  const [caught, setCaught] = useState([])
 
   const newPokemon = () => {
-    const dexNo = Math.floor(Math.random() * (max - min) + min)
+    let dexNo = Math.floor(Math.random() * (max - min) + min)
+    if (!caught.includes(dexNo)) {
     fetch(`https://pokeapi.co/api/v2/pokemon/${dexNo}`)
       .then(r => r.json())
       .then(data =>
@@ -27,6 +29,13 @@ const Play = ({ range }) => {
             const entry = data.flavor_text_entries.find(e => e.language.name === 'en')
             setEntry(entry.flavor_text)
         })
+      } else {
+        dexNo = Math.floor(Math.random() * (max - min) + min)
+      }
+  }
+
+  const handleCaught = (id) => {
+    setCaught([...caught, id])
   }
 
   
@@ -42,7 +51,7 @@ const Play = ({ range }) => {
         <br/>
         {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
         <br/><br/>
-        <AnswerForm pokemon={pokemon} newPokemon={newPokemon} />
+        <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
     </div>
     )
 }

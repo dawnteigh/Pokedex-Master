@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
-const AnswerForm = ({ pokemon, newPokemon }) => {
+
+const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
     const { id, name, sprite } = pokemon
     const [answer, setAnswer] = useState("")
     const configObj = {
@@ -20,7 +21,10 @@ const AnswerForm = ({ pokemon, newPokemon }) => {
         if (answer.toLowerCase() === name.toLowerCase()) {
             fetch("http://localhost:6001/pokemon", configObj)
             .then(r => r.json())
-            .then(data => console.log(`Successfully added ${data.name} to your Pokedex!`))
+            .then(data => {
+                console.log(`Successfully added ${data.name} to your Pokedex!`)
+                handleCaught(data.id)
+            })
         } else {
             console.log("Oh no, the Pokemon got away!")
         }

@@ -9,7 +9,7 @@ const PokemonCard = ({ pokemon }) => {
     <div>
         #{id}
         <br/>
-        <img src={sprite} />
+        <img src={sprite} alt={name} />
         <br/>
         {name.charAt(0).toUpperCase() + name.slice(1)}
     </div>

@@ -40,3 +40,4 @@ export const dexData = [
     range: { min: 1, max: 899 },
   }
 ];
+

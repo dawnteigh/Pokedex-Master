@@ -38,13 +38,23 @@ const Play = ({ range }) => {
     setCaught([...caught, id])
   }
 
+  const caughtArray = []
+
   
 
   useEffect(() => {
+    fetch('http://localhost:6001/pokemon')
+    .then(r => r.json())
+    .then(data => {
+      data.forEach(p => caughtArray.push(p.id))
+    })
+    .then(() => setCaught(caughtArray))
     newPokemon()
   }, []);
 
-  const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____")
+  
+  const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
+
 
   return (
     <div>

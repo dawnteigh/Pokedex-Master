@@ -30,7 +30,7 @@ const Play = ({ range }) => {
             setEntry(entry.flavor_text)
         })
       } else {
-        dexNo = Math.floor(Math.random() * (max - min) + min)
+        newPokemon()
       }
   }
 
@@ -40,16 +40,16 @@ const Play = ({ range }) => {
 
   const caughtArray = []
 
-  
-
   useEffect(() => {
     fetch('http://localhost:6001/pokemon')
     .then(r => r.json())
     .then(data => {
       data.forEach(p => caughtArray.push(p.id))
     })
-    .then(() => setCaught(caughtArray))
+    .then(() => {
+    setCaught(caughtArray)
     newPokemon()
+    })
   }, []);
 
   

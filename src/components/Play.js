@@ -7,9 +7,11 @@ const Play = ({ range }) => {
     id: "",
     name: "",
     sprite: "",
+    types: [{"type": {}}]
   });
   const [entry, setEntry] = useState("")
   const [caught, setCaught] = useState([])
+  const [showHints, setShowHints] = useState(false)
 
   const newPokemon = () => {
     let dexNo = Math.floor(Math.random() * (max - min) + min)
@@ -20,7 +22,8 @@ const Play = ({ range }) => {
         setPokemon({
           id: data.id,
           name: data.species.name,
-          sprite: data.sprites.front_default
+          sprite: data.sprites.front_default,
+          types: data.types
         })
       )
     fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
@@ -55,6 +58,7 @@ const Play = ({ range }) => {
 
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
   const dexCompletion = caught.filter(num => num < max)
+  const toggleHints = () => setShowHints(!showHints)
 
   return (
     <div>
@@ -63,6 +67,13 @@ const Play = ({ range }) => {
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
         {dexCompletion.length}/{max - 1} Pokemon captured
+        <br/><br/>
+        <button onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
+        <div style={{display: !showHints ? "none" : "block"}}>
+        This Pokemon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
+        <br/>
+        Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
+        </div>
     </div>
     )
 }

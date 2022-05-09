@@ -779,6 +779,134 @@
       "id": 799,
       "name": "guzzlord",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png"
+    },
+    {
+      "id": 343,
+      "name": "baltoy",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png"
+    },
+    {
+      "id": 792,
+      "name": "lunala",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png"
+    },
+    {
+      "id": 556,
+      "name": "maractus",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png"
+    },
+    {
+      "id": 600,
+      "name": "klang",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png"
+    },
+    {
+      "id": 297,
+      "name": "hariyama",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
+      "type": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 363,
+      "name": "spheal",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 385,
+      "name": "jirachi",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png"
+    },
+    {
+      "id": 788,
+      "name": "tapu-fini",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png"
+    },
+    {
+      "id": 778,
+      "name": "mimikyu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "ghost",
+            "url": "https://pokeapi.co/api/v2/type/8/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 388,
+      "name": "grotle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "grass",
+            "url": "https://pokeapi.co/api/v2/type/12/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 359,
+      "name": "absol",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "dark",
+            "url": "https://pokeapi.co/api/v2/type/17/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 160,
+      "name": "feraligatr",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        }
+      ]
     }
   ]
 }

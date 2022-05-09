@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 
 const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
-    const { id, name, sprite } = pokemon
+    const { id, name, sprite, types } = pokemon
     const [answer, setAnswer] = useState("")
     const configObj = {
         method: "POST",
@@ -12,7 +12,8 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
         body: JSON.stringify({
             id: id,
             name: name,
-            sprite: sprite
+            sprite: sprite,
+            types: types
         }),
     }
 

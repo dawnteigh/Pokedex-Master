@@ -6,7 +6,7 @@ const PokemonCard = ({ pokemon }) => {
     const { id, name, sprite } = pokemon
 
   return (
-    <div>
+    <div className="pkmcard">
         #{id}
         <br/>
         <img src={sprite} alt={name} />

@@ -24,7 +24,6 @@
 .pokedex {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  gap: 10px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -35,4 +34,7 @@
   gap: 10px;
 }
 
-
+.pkmcard {
+  border: 1px solid black;
+  padding: 5px
+}

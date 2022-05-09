@@ -26,8 +26,9 @@ const Play = ({ range }) => {
     fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
         .then(r => r.json())
         .then(data => {
-            const entry = data.flavor_text_entries.find(e => e.language.name === 'en')
-            setEntry(entry.flavor_text)
+            const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
+            const randomEntry = entries[Math.floor(Math.random() * entries.length)]
+            setEntry(randomEntry.flavor_text)
         })
       } else {
         newPokemon()

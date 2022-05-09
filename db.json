@@ -229,6 +229,46 @@
       "id": 30,
       "name": "nidorina",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png"
+    },
+    {
+      "id": 120,
+      "name": "staryu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
+    },
+    {
+      "id": 87,
+      "name": "dewgong",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png"
+    },
+    {
+      "id": 97,
+      "name": "hypno",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png"
+    },
+    {
+      "id": 86,
+      "name": "seel",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
+    },
+    {
+      "id": 5,
+      "name": "charmeleon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
+    },
+    {
+      "id": 25,
+      "name": "pikachu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+    {
+      "id": 142,
+      "name": "aerodactyl",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png"
+    },
+    {
+      "id": 112,
+      "name": "rhydon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
     }
   ]
 }

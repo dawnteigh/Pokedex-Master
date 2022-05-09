@@ -52,9 +52,8 @@ const Play = ({ range }) => {
     })
   }, []);
 
-  
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
-
+  const dexCompletion = caught.filter(num => num < max)
 
   return (
     <div>
@@ -62,6 +61,7 @@ const Play = ({ range }) => {
         {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
+        {dexCompletion.length}/{max - 1} Pokemon captured
     </div>
     )
 }

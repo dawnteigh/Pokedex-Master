@@ -21,6 +21,13 @@
   margin-left: 25%;
   margin-right: 25%;
 }
+
+.play {
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
 .pokedex {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -37,4 +44,9 @@
 .pkmcard {
   border: 1px solid black;
   padding: 5px
+}
+
+.enlarge {
+  width: 40%;
+  height: auto;
 }

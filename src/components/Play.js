@@ -61,8 +61,16 @@ const Play = ({ range }) => {
   const toggleHints = () => setShowHints(!showHints)
 
   return (
-    <div>
-        <br/>
+    <div className="play">
+        <p>
+          Read the Pokedex entry below and guess the Pokemon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
+        </p>
+        <img
+        src="https://archives.bulbagarden.net/media/upload/1/14/Ten_Question_Marks_III.png"
+        alt="A wild mystery Pokemon appeared!"
+        className="enlarge"
+         />
+        <br/><br/>
         {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />

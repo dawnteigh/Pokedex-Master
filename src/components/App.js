@@ -1,5 +1,5 @@
 import '../App.css';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Route, Switch } from "react-router-dom";
 import Home from './Home'
 import Play from './Play'
@@ -8,10 +8,22 @@ import NavBar from './NavBar'
 
 const App = () => {
 
+  const [caught, setCaught] = useState([])
   const [range, setRange] = useState({
     min: 1,
     max: 899
   })
+
+  const caughtArray = []
+
+  useEffect(() => {
+    fetch('http://localhost:6001/pokemon')
+    .then(r => r.json())
+    .then(data => {
+      data.forEach(p => caughtArray.push(p.id))
+    })
+    .then(() => setCaught(caughtArray))
+  }, [])
 
   //callback for dex buttons rendered in Home
   const handleClick = (obj) => {
@@ -23,10 +35,10 @@ const App = () => {
       <NavBar />
       <Switch>
         <Route exact path="/play">
-          <Play range={range} />
+          <Play range={range} caught={caught} setCaught={setCaught} />
         </Route>
         <Route exact path="/pokedex">
-          <Pokedex />
+          <Pokedex caught={caught} />
         </Route>
         <Route exact path="/">
           <Home rangeChange={handleClick} />

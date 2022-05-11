@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import PokemonCard from './PokemonCard'
+import { dexData } from '../DexData'
+import DexCompletion from './DexCompletion'
 
 
-const Pokedex = () => {
+const Pokedex = ({ caught }) => {
 
     const [pokedex, setPokedex] = useState([])
     const [sort, setSort] = useState("order")
@@ -30,6 +32,12 @@ const Pokedex = () => {
     const displayPokedex = pokedex.map(p => {
         return (
             <PokemonCard key={p.id} pokemon={p} />
+        )
+    })
+
+    const completion = dexData.map(r => {
+        return (
+            <DexCompletion key={r.region} dex={r} caught={caught} />
         )
     })
 
@@ -90,8 +98,11 @@ const Pokedex = () => {
             </label>
         </form>
         {(pokedex.length === 0) ? 
-        <p>You haven't caught any Pokemon yet!</p> : 
-        <div className="pokedexGrid">{displayPokedex}</div>}
+        <p>You haven't caught any Pokémon yet!</p> : 
+        <div className="pokedexGrid">
+            {completion}
+            {displayPokedex}
+        </div>}
     </div>
   )
 }

@@ -33,7 +33,7 @@ function NavBar() {
         className="navButton"
         activeStyle={active}
       >
-        Pokedex
+        Pokédex
       </NavLink>
     </div>
   );

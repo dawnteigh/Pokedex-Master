@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AnswerForm from './AnswerForm'
 
-const Play = ({ range }) => {
+const Play = ({ range, caught, setCaught }) => {
   const { min, max } = range
   const [pokemon, setPokemon] = useState({
     id: "",
@@ -10,7 +10,6 @@ const Play = ({ range }) => {
     types: [{"type": {}}]
   });
   const [entry, setEntry] = useState("")
-  const [caught, setCaught] = useState([])
   const [showHints, setShowHints] = useState(false)
 
   const newPokemon = () => {
@@ -42,18 +41,8 @@ const Play = ({ range }) => {
     setCaught([...caught, id])
   }
 
-  const caughtArray = []
-
   useEffect(() => {
-    fetch('http://localhost:6001/pokemon')
-    .then(r => r.json())
-    .then(data => {
-      data.forEach(p => caughtArray.push(p.id))
-    })
-    .then(() => {
-    setCaught(caughtArray)
     newPokemon()
-    })
   }, []);
 
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
@@ -63,7 +52,7 @@ const Play = ({ range }) => {
   return (
     <div className="play">
         <p>
-          Read the Pokedex entry below and guess the Pokemon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
+          Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
         </p>
         <br/>
         <img
@@ -75,12 +64,12 @@ const Play = ({ range }) => {
         {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
-        {dexCompletion.length}/{max - 1} Pokemon captured
+        {dexCompletion.length}/{max - 1} Pokémon captured
         <br/><br/>
         <button onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
         <br/><br/>
         <div style={{display: !showHints ? "none" : "block"}}>
-        This Pokemon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
+        This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
         <br/>
         Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
         </div>

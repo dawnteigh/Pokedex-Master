@@ -89,6 +89,7 @@ button:active {
 .pokedexGrid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
   margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
@@ -102,7 +103,8 @@ button:active {
 
 .pkmcard {
   border: 1px solid black;
-  padding: 5px
+  border-radius: 25%;
+  padding: 2px
 }
 
 .enlarge {

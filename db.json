@@ -1355,6 +1355,62 @@
           }
         }
       ]
+    },
+    {
+      "id": 40,
+      "name": "wigglytuff",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 80,
+      "name": "slowbro",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "psychic",
+            "url": "https://pokeapi.co/api/v2/type/14/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 244,
+      "name": "entei",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fire",
+            "url": "https://pokeapi.co/api/v2/type/10/"
+          }
+        }
+      ]
     }
   ]
 }

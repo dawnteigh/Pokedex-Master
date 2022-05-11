@@ -10,11 +10,23 @@
   box-shadow: #ee07e2 0 0 2px 2px;
 }
 
+.navButton {
+  display: inline-block;
+  width: 75px;
+  padding: 12px;
+  margin: 0 6px 6px;
+  background: #b644fc;
+  text-decoration: none;
+  color: white;
+  border-radius: 0% 0% 100% 100%;
+  box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
+}
+
 button {
   background-color: #c47df0;
   border-radius: 100px;
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
-  color: #580191;
+  color: white;
   cursor: pointer;
   display: inline-block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,7 +38,7 @@ button {
 }
 
 button:hover {
-  color: rgb(238, 7, 226);
+  color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
   transform: scale(1.05);
 }
@@ -49,8 +61,35 @@ button:active {
 }
 
 .pokedex {
+  margin-top: 2%;
+}
+
+.pokedex input {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+.pokedex label {
+    display: inline-block;
+    background-color: #b644fc;
+    color: white;
+    font-family: sans-serif, Arial;
+    font-size: 16px;
+    box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
+    border-radius: 4px;
+    padding: 5px
+}
+
+.pokedex label:hover {
+    background-color:#ee07e2;
+    box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
+}
+
+.pokedexGrid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
+  margin-top: 2%;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -71,14 +110,3 @@ button:active {
   height: auto;
 }
 
-.navButton {
-  display: inline-block;
-  width: 75px;
-  padding: 12px;
-  margin: 0 6px 6px;
-  background: #b644fc;
-  text-decoration: none;
-  color: white;
-  border-radius: 0% 0% 100% 100%;
-  box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
-}

@@ -11,7 +11,7 @@ const DexButton = ({ dexData, rangeChange }) => {
             <br/>
             {range.max - 1} Pokémon
         </p>
-        <button onClick={(e) => rangeChange(range)} >{gen}</button>
+        <button className="button" onClick={(e) => rangeChange(range)} >{gen}</button>
     </div>
   )
 }

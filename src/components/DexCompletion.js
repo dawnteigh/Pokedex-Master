@@ -8,7 +8,7 @@ const DexCompletion = ({ dex, caught }) => {
 
     return (
     <div className="dexCard">
-        <h4>{region}</h4>
+        <h4 className="region">{region}</h4>
         {total.length}/{number}
         <br/>
         {percentage}%

@@ -66,7 +66,7 @@ const Play = ({ range, caught, setCaught }) => {
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
         {dexCompletion.length}/{max - 1} Pokémon captured
         <br/><br/>
-        <button onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
+        <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
         <br/><br/>
         <div style={{display: !showHints ? "none" : "block"}}>
         This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.

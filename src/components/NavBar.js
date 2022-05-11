@@ -14,7 +14,7 @@ function NavBar() {
       <NavLink
         to="/"
         exact
-        className="navButton"
+        className="navTab"
         activeStyle={active}
       >
         Home
@@ -22,7 +22,7 @@ function NavBar() {
       <NavLink
         to="/play"
         exact
-        className="navButton"
+        className="navTab"
         activeStyle={active}
       >
         Play
@@ -30,7 +30,7 @@ function NavBar() {
       <NavLink
         to="/pokedex"
         exact
-        className="navButton"
+        className="navTab"
         activeStyle={active}
       >
         Pokédex

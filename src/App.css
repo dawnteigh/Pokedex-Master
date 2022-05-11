@@ -1,8 +1,9 @@
 body {
   overflow: overlay;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-h4 {
+.region {
   margin: 0;
   font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
@@ -20,9 +21,9 @@ h4 {
   box-shadow: #ee07e2 0 0 2px 2px;
 }
 
-.navButton {
+.navTab {
   display: inline-block;
-  width: 75px;
+  width: 100px;
   padding: 12px;
   margin: 0 6px 6px;
   background: #b644fc;
@@ -32,7 +33,7 @@ h4 {
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
 }
 
-button {
+.button {
   background-color: #c47df0;
   border-radius: 100px;
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
@@ -47,13 +48,13 @@ button {
   font-size: 16px;
 }
 
-button:hover {
+.button:hover {
   color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
   transform: scale(1.05);
 }
 
-button:active {
+.button:active {
   color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
   transform: translateY(5px)
@@ -72,6 +73,7 @@ button:active {
 
 .pokedex {
   margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .pokedex input {
@@ -119,9 +121,10 @@ button:active {
   gap: 10px;
 }
 
-.pkmcard {
-  border: 1px solid black;
-  border-radius: 25%;
+.pkmCard {
+  border: #b644fc outset 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 2px
 }
 

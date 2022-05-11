@@ -7,6 +7,7 @@ boxShadow: "rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 
 function NavBar() {
   return (
     <div>
+      <h1 className="header">Pokedex Master</h1>
       <NavLink
         to="/"
         exact

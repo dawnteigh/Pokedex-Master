@@ -2,19 +2,15 @@
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+  background-color: #b644fc;
+  margin: 0;
+  padding: 2%;
+  border-bottom: #ee07e2 solid 10px;
+  border-radius: 0 0 100% 100%;
+  box-shadow: #ee07e2 0 0 1px 1px;
 }
 
-
-/* CSS */
 button {
   background-color: #c47df0;
   border-radius: 100px;

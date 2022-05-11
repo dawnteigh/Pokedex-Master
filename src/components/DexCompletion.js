@@ -4,12 +4,14 @@ const DexCompletion = ({ dex, caught }) => {
 
     const { region, number, dexRange } = dex
     const total = caught.filter(num => num >= dexRange.first && num <= dexRange.last)
-    console.log(caught)
+    const percentage = Math.floor((100 * total.length) / number)
+
     return (
-    <div>
-        {region}
-        <br/>
+    <div className="dexCard">
+        <h4>{region}</h4>
         {total.length}/{number}
+        <br/>
+        {percentage}%
     </div>
     )
 }

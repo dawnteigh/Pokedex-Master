@@ -63,8 +63,11 @@ const Pokedex = ({ caught }) => {
 
   return (
     <div className="pokedex">
-        Sort By:
-        <br/>
+        <h3>Regional Dex Completion Stats</h3>
+        <div className="compGrid">
+        {completion}
+        </div>
+        <br/><br/>
         <form>
             <label style={(sort === "order" ? checkedStyle : null)} >
                 <input
@@ -100,7 +103,6 @@ const Pokedex = ({ caught }) => {
         {(pokedex.length === 0) ? 
         <p>You haven't caught any Pokémon yet!</p> : 
         <div className="pokedexGrid">
-            {completion}
             {displayPokedex}
         </div>}
     </div>

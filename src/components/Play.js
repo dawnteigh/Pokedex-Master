@@ -78,6 +78,7 @@ const Play = ({ range }) => {
         {dexCompletion.length}/{max - 1} Pokemon captured
         <br/><br/>
         <button onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
+        <br/><br/>
         <div style={{display: !showHints ? "none" : "block"}}>
         This Pokemon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
         <br/>

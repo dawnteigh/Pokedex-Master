@@ -5,10 +5,9 @@
 .header {
   background-color: #b644fc;
   margin: 0;
-  padding: 2%;
   border-bottom: #ee07e2 solid 10px;
   border-radius: 0 0 100% 100%;
-  box-shadow: #ee07e2 0 0 1px 1px;
+  box-shadow: #ee07e2 0 0 2px 2px;
 }
 
 button {
@@ -44,7 +43,7 @@ button:active {
 }
 
 .play {
-  margin-top: 5%;
+  margin-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
 }
@@ -68,7 +67,7 @@ button:active {
 }
 
 .enlarge {
-  width: 40%;
+  width: 35%;
   height: auto;
 }
 

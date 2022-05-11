@@ -9,6 +9,7 @@ const linkStyles = {
   background: "#b644fc",
   textDecoration: "none",
   color: "white",
+  borderRadius: "0% 0% 100% 100%"
 };
 
 function NavBar() {
@@ -19,7 +20,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "#6e02b1",
+          background: "#ee07e2",
         }}
       >
         Home
@@ -29,7 +30,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "#6e02b1",
+          background: "#ee07e2",
         }}
       >
         Play
@@ -39,7 +40,7 @@ function NavBar() {
         exact
         style={linkStyles}
         activeStyle={{
-          background: "#6e02b1",
+          background: "#ee07e2",
         }}
       >
         Pokedex

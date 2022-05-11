@@ -2,7 +2,8 @@ import React from 'react'
 
 const DexButton = ({ dexData, rangeChange }) => {
 
-const { region, gen, range } = dexData
+  const { region, gen, range } = dexData
+  
   return (
     <div>
         <p>

@@ -25,6 +25,7 @@ const Play = ({ range, caught, setCaught }) => {
           types: data.types
         })
       )
+      .catch(() => alert('Failed to fetch Pokémon. Refresh to try again.'))
     fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
         .then(r => r.json())
         .then(data => {
@@ -32,6 +33,7 @@ const Play = ({ range, caught, setCaught }) => {
             const randomEntry = entries[Math.floor(Math.random() * entries.length)]
             setEntry(randomEntry.flavor_text)
         })
+        .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
       } else {
         newPokemon()
       }
@@ -69,9 +71,9 @@ const Play = ({ range, caught, setCaught }) => {
         <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
         <br/><br/>
         <div style={{display: !showHints ? "none" : "block"}}>
-        This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
-        <br/>
-        Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
+          This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
+          <br/>
+          Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
         </div>
     </div>
     )

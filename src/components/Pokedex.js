@@ -13,6 +13,7 @@ const Pokedex = ({ caught }) => {
         fetch("http://localhost:6001/pokemon")
         .then(r => r.json())
         .then(data => setPokedex(data))
+        .catch(() => alert('Failed to fetch Pokédex info. Make sure JSON Server is running.'))
     }, [])
 
     const numDex = pokedex.slice().sort((a, b) => a.id - b.id)
@@ -46,6 +47,7 @@ const Pokedex = ({ caught }) => {
             fetch("http://localhost:6001/pokemon")
             .then(r => r.json())
             .then(data => setPokedex(data))
+            .catch(() => alert('Failed to fetch Pokédex info. Make sure JSON Server is running.'))
         }
         else if (e.target.id === "alpha") {
             setPokedex(alphaDex)

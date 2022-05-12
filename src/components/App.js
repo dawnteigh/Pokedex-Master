@@ -24,6 +24,7 @@ const App = () => {
       data.forEach(p => caughtArray.push(p.id))
     })
     .then(() => setCaught(caughtArray))
+    .catch(() => alert('Failed to fetch local Pokédex info. Make sure JSON Server is running.'))
   }, [])
 
   //callback for dex buttons rendered in Home

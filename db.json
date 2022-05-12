@@ -1712,6 +1712,48 @@
           }
         }
       ]
+    },
+    {
+      "id": 691,
+      "name": "dragalge",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "dragon",
+            "url": "https://pokeapi.co/api/v2/type/16/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 308,
+      "name": "medicham",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "psychic",
+            "url": "https://pokeapi.co/api/v2/type/14/"
+          }
+        }
+      ]
     }
   ]
 }

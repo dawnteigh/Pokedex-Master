@@ -61,7 +61,7 @@ const Play = ({ range, caught, setCaught }) => {
         className="enlarge"
          />
         <br/><br/>
-        {(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}
+        <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
         <br/><br/>
         <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
         {dexCompletion.length}/{max - 1} Pokémon captured

@@ -29,7 +29,7 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
             .then(r => r.json())
             .then(data => {
                 console.log(`Successfully added ${data.name} to your Pokédex!`)
-                setMessage(`Successfully added ${data.name} to your Pokédex!`)
+                setMessage(`Successfully added ${data.name.charAt(0).toUpperCase() + data.name.slice(1)} to your Pokédex!`)
                 setShow(true)
                 handleCaught(data.id)
             })
@@ -52,17 +52,16 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
               className="rounded me-2"
               alt=""
             />
-            <strong className="me-auto">Pokedex Master</strong>
+            <strong className="me-auto">Pokédex Master</strong>
             <small>just now</small>
           </Toast.Header>
           <Toast.Body>{message}</Toast.Body>
         </Toast>
         </ToastContainer>
         <form onSubmit={handleSubmit} >
-            <input type="text" placeholder="Enter Pokemon name here!" onChange={(e) => setAnswer(e.target.value)}/>
+            <input type="text" size="25" placeholder="Enter Pokémon name here!" onChange={(e) => setAnswer(e.target.value)}/>
             <input type="submit" value="Go!" />
         </form>
-        <br/>
       </div>
   )
 }

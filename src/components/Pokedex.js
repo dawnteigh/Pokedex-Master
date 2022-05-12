@@ -63,7 +63,7 @@ const Pokedex = ({ caught }) => {
 
   return (
     <div className="pokedex">
-        <h3>Regional Dex Completion Stats</h3>
+        <h4>Dex Completion By Region</h4>
         <div className="compGrid">
         {completion}
         </div>

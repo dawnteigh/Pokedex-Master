@@ -6,7 +6,7 @@ Pokédex Master is a single page application that challenges users to 'catch' Po
 ## Requirements
 You will need to have [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [JSON Server](https://www.npmjs.com/package/json-server) installed to use this application.<br>
 <i>In your CLI (Command Line Interface), enter the following commands:</i>
-```console
+```terminal
 ~$ npm install -g npm
 ~$ npm install -g json-server
 ```
@@ -17,19 +17,19 @@ In this application's GitHub repo, click the fork button to create a copy for yo
 Head into your CLI and navigate to the directory where Pokédex Master will live. Enter the following, pasting in the text you copied:<br><br>
 <img src="public/Animation.gif" alt="git clone git@github.com:your_username/Pokedex-Master.git" height="auto" width="400" /><br><br>
 Once it's done, navigate into the new directory and you're ready to begin using Pokédex Master!
-```console
+```terminal
 ~$ cd pokedex-master
 ```
 
 
 ## Usage
 To get started, make sure you are in the <b>pokedex-master</b> directory and type this in your terminal:
-```console
+```terminal
 ~/pokedex-master$ npm run server
 ```
 This starts up a mock back-end server. Think of it as a PC box that you'll be sending your captured Pokémon to.<br>
 Next, you will need to open a <i>second</i> terminal. Navigate to the correct directory again, this time entering:
-```console
+```terminal
 ~/pokedex-master$ npm install && npm start
 ```
 A browser window will open, but don't panic. It's the game! If you entered the commands out of order, don't worry; just refresh the page after both servers are running and everything should work properly.<br>
@@ -42,7 +42,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## Acknowledgements
+- Pokémon and All Respective Names are Trademark & © of Nintendo 1996-2022
 - Pokemon data comes from the great [PokéAPI](https://pokeapi.co/).
+- Image on the 'Play' page is from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
 - Mock back end possible thanks to [JSON Server](https://www.npmjs.com/package/json-server).
 - Header graphic created with [Canva](https://www.canva.com/).
 - Toast messages from [React Bootstrap](https://react-bootstrap.github.io/).

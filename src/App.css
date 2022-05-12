@@ -1,6 +1,16 @@
 body {
   overflow: overlay;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .App {

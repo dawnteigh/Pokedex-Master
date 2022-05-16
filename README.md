@@ -4,7 +4,8 @@ In the world of Pokémon, typically you have catch a Pokémon to read its Pokéd
 Pokédex Master is a single page application that challenges users to 'catch' Pokémon <i>after</i> reading their Pokédex entries. You are given a random Pokédex entry for a random Pokémon, and your goal is to guess what it is. Each correct guess adds a new Pokémon to your local Pokédex, and the pool of potential 'wild Pokémon' gets smaller until you've caught 'em all! Spelling counts (<i>sorry!</i>), so you may have to find yourself a list of names on the internet to check your answers against when you're unsure. You can change the size of the wild Pokémon pool that you are playing with by Generation via the Home page, so no worries if you don't know all of the Pokémon. Good luck, have fun, and please don't hesitate to report any issues or bugs (not the Pokémon) that you encounter!
 
 ## Requirements
-You will need to have [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [JSON Server](https://www.npmjs.com/package/json-server) installed to use this application.<br>
+You need to be connected to the internet to use Pokédex Master.
+You will need to have [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [JSON Server](https://www.npmjs.com/package/json-server) installed.<br>
 <i>In your CLI (Command Line Interface), enter the following commands:</i>
 ```terminal
 ~$ npm install -g npm

@@ -9,7 +9,7 @@ function NavBar() {
   return (
     <div>
       <div className="header">
-        <img src={PokedexMaster} alt="Pokedex Master" />
+        <img src={PokedexMaster} alt="Pokedex Master" className="headerImg" />
       </div>
       <NavLink
         to="/"

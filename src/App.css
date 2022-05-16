@@ -6,28 +6,36 @@ body {
 }
 
 footer {
-  position:absolute;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   text-align: center;
+  font-size: 12px;
 }
 
 .App {
   text-align: center;
+  font-size: 12px;
 }
 
 .header {
   background-color: #b644fc;
   margin: 0;
-  border-bottom: #ee07e2 solid 10px;
+  border-bottom: #ee07e2 solid 8px;
   border-radius: 0 0 100% 100%;
   box-shadow: #ee07e2 0 0 2px 2px;
 }
 
+.headerImg {
+  height: auto;
+  width: 35%;
+}
+
 .navTab {
   display: inline-block;
-  width: 100px;
+  font-size: 12px;
+  width: 80px;
   padding: 12px;
   margin: 0 6px 6px;
   background: #b644fc;
@@ -54,7 +62,7 @@ footer {
   text-align: center;
   transition: all 250ms;
   border: 0;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .button:hover {
@@ -75,7 +83,7 @@ footer {
 }
 
 .homePara {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .buttonGrid {
@@ -98,7 +106,7 @@ footer {
   margin-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .enlarge {
@@ -122,7 +130,7 @@ footer {
     background-color: #b644fc;
     color: white;
     font-family: sans-serif, Arial;
-    font-size: 16px;
+    font-size: 12px;
     box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
     border-radius: 4px;
     padding: 5px

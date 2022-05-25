@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { ToastContainer } from 'react-bootstrap'
 import Toast from 'react-bootstrap/Toast'
 
-
 const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
+
     const { id, name, sprite, types } = pokemon
+
     const [answer, setAnswer] = useState("")
     const [show, setShow] = useState(false)
     const [message, setMessage] = useState("")
@@ -33,6 +34,7 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
                 setShow(true)
                 handleCaught(data.id)
             })
+            .catch(() => alert("Something went wrong. Is your JSON Server running?"))
         } else {
             console.log('Oh no, the Pokémon got away!')
             setMessage('Oh no, the Pokémon got away!')
@@ -45,18 +47,18 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
   return (
       <div>
         <ToastContainer position="middle-center" >
-        <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
-          <Toast.Header>
-            <img
-              src="holder.js/20x20?text=%20"
-              className="rounded me-2"
-              alt=""
-            />
-            <strong className="me-auto">Pokédex Master</strong>
-            <small>just now</small>
-          </Toast.Header>
-          <Toast.Body>{message}</Toast.Body>
-        </Toast>
+          <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
+            <Toast.Header>
+              <img
+                src="holder.js/20x20?text=%20"
+                className="rounded me-2"
+                alt=""
+              />
+              <strong className="me-auto">Pokédex Master</strong>
+              <small>just now</small>
+            </Toast.Header>
+            <Toast.Body>{message}</Toast.Body>
+          </Toast>
         </ToastContainer>
         <form onSubmit={handleSubmit} >
             <input type="text" size="25" placeholder="Enter Pokémon name here!" onChange={(e) => setAnswer(e.target.value)}/>

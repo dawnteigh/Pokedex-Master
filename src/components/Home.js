@@ -15,7 +15,7 @@ const Home = ({ rangeChange }) => {
         <br/>
         <p><i>Click the button that best represents the breadth of your Pokémon knowledge:</i></p>
         <div className="buttonGrid">
-        {renderButtons}
+            {renderButtons}
         </div>
     </div>
   )

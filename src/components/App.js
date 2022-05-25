@@ -1,7 +1,7 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route, Switch, useHistory } from "react-router-dom";
 import Home from './Home'
 import Play from './Play'
 import Pokedex from './Pokedex'
@@ -14,6 +14,8 @@ const App = () => {
     min: 1,
     max: 899
   })
+
+  const history = useHistory();
 
   const caughtArray = []
 
@@ -30,18 +32,17 @@ const App = () => {
   //callback for dex buttons rendered in Home
   const handleClick = (obj) => {
     setRange(obj)
+    history.push('/play')
   }
 
   return (
     <div className="App">
-      <Router>
         <NavBar />
         <Switch>
           <Route exact path="/play" render={ (props)=> <Play { ...props } range={range} caught={caught} setCaught={setCaught} /> } />  
           <Route exact path="/pokedex" render={ (props) => <Pokedex { ...props } caught={caught} />} />
           <Route exact path="/" render={ (props) => <Home { ...props } rangeChange={handleClick} /> } />
         </Switch>
-      </Router>
     </div>
   );
 }

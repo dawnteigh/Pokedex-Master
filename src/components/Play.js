@@ -2,7 +2,9 @@ import React, { useState, useEffect } from "react";
 import AnswerForm from './AnswerForm'
 
 const Play = ({ range, caught, setCaught }) => {
+
   const { min, max } = range
+
   const [pokemon, setPokemon] = useState({
     id: "",
     name: "",
@@ -53,28 +55,28 @@ const Play = ({ range, caught, setCaught }) => {
 
   return (
     <div className="play">
-        <p>
-          Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
-        </p>
+      <p>
+        Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
+      </p>
+      <br/>
+      <img
+      src="https://archives.bulbagarden.net/media/upload/1/14/Ten_Question_Marks_III.png"
+      alt="A wild mystery Pokemon appeared!"
+      className="enlarge"
+      />
+      <br/><br/>
+      <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
+      <br/><br/>
+      <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
+      {dexCompletion.length}/{max - 1} Pokémon captured
+      <br/><br/>
+      <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
+      <br/><br/>
+      <div style={{display: !showHints ? "none" : "block"}}>
+        This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
         <br/>
-        <img
-        src="https://archives.bulbagarden.net/media/upload/1/14/Ten_Question_Marks_III.png"
-        alt="A wild mystery Pokemon appeared!"
-        className="enlarge"
-         />
-        <br/><br/>
-        <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
-        <br/><br/>
-        <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
-        {dexCompletion.length}/{max - 1} Pokémon captured
-        <br/><br/>
-        <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
-        <br/><br/>
-        <div style={{display: !showHints ? "none" : "block"}}>
-          This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
-          <br/>
-          Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
-        </div>
+        Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
+      </div>
     </div>
     )
 }

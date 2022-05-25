@@ -1,7 +1,7 @@
 import '../App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState, useEffect } from 'react'
-import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from './Home'
 import Play from './Play'
 import Pokedex from './Pokedex'
@@ -34,18 +34,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar />
-      <Switch>
-        <Route exact path="/play">
-          <Play range={range} caught={caught} setCaught={setCaught} />
-        </Route>
-        <Route exact path="/pokedex">
-          <Pokedex caught={caught} />
-        </Route>
-        <Route exact path="/">
-          <Home rangeChange={handleClick} />
-        </Route>
-      </Switch>
+      <Router>
+        <NavBar />
+        <Switch>
+          <Route exact path="/play" render={ (props)=> <Play { ...props } range={range} caught={caught} setCaught={setCaught} /> } />  
+          <Route exact path="/pokedex" render={ (props) => <Pokedex { ...props } caught={caught} />} />
+          <Route exact path="/" render={ (props) => <Home { ...props } rangeChange={handleClick} /> } />
+        </Switch>
+      </Router>
     </div>
   );
 }

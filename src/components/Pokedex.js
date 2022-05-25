@@ -8,6 +8,7 @@ const Pokedex = ({ caught }) => {
 
     const [pokedex, setPokedex] = useState([])
     const [sort, setSort] = useState("order")
+    const [filter, setFilter] = useState("")
 
     useEffect(() => {
         fetch("http://localhost:6001/pokemon")
@@ -30,7 +31,8 @@ const Pokedex = ({ caught }) => {
         return 0;
     });
 
-    const displayPokedex = pokedex.map(p => {
+    const filterPokedex = pokedex.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()))
+    const displayPokedex = filterPokedex.map(p => {
         return (
             <PokemonCard key={p.id} pokemon={p} />
         )
@@ -102,6 +104,9 @@ const Pokedex = ({ caught }) => {
                 Dex Number
             </label>
         </form>
+        <br/>
+        <input onChange={(e) => setFilter(e.target.value)} type="text" size="45" placeholder="Search Pokémon" />
+        {(filterPokedex.length === 0 && pokedex.length > 0) ? <p>You haven't caught any Pokémon that match your query!</p> : null}
         {(pokedex.length === 0) ? 
         <p>You haven't caught any Pokémon yet!</p> : 
         <div className="pokedexGrid">

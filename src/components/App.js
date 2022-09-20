@@ -39,7 +39,7 @@ const App = () => {
     <div className="App">
         <NavBar />
         <Switch>
-          <Route exact path="/play" render={ (props)=> <Play { ...props } range={range} caught={caught} setCaught={setCaught} /> } />  
+          <Route exact path="/play" render={ (props) => <Play { ...props } range={range} caught={caught} setCaught={setCaught} /> } />  
           <Route exact path="/pokedex" render={ (props) => <Pokedex { ...props } caught={caught} />} />
           <Route exact path="/" render={ (props) => <Home { ...props } rangeChange={handleClick} /> } />
         </Switch>

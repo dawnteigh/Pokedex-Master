@@ -8,7 +8,10 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
 
     const [answer, setAnswer] = useState("")
     const [show, setShow] = useState(false)
-    const [message, setMessage] = useState("")
+    const [newPkmn, setNewPkmn] = useState({
+      message: "",
+      img: ""
+    })
     
     const configObj = {
         method: "POST",
@@ -30,14 +33,20 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
             .then(r => r.json())
             .then(data => {
                 console.log(`Successfully added ${data.name} to your Pokédex!`)
-                setMessage(`Successfully added ${data.name.charAt(0).toUpperCase() + data.name.slice(1)} to your Pokédex!`)
+                setNewPkmn({
+                  message: `Successfully added ${data.name.charAt(0).toUpperCase() + data.name.slice(1)} to your Pokédex!`,
+                  img: data.sprite
+                })
                 setShow(true)
                 handleCaught(data.id)
             })
             .catch(() => alert("Something went wrong. Is your JSON Server running?"))
         } else {
             console.log('Oh no, the Pokémon got away!')
-            setMessage('Oh no, the Pokémon got away!')
+            setNewPkmn({
+              message: 'Oh no, the Pokémon got away!',
+              img: ""
+            })
             setShow(true)
         }
         e.target.reset()
@@ -57,7 +66,11 @@ const AnswerForm = ({ pokemon, newPokemon, handleCaught }) => {
               <strong className="me-auto">Pokédex Master</strong>
               <small>just now</small>
             </Toast.Header>
-            <Toast.Body>{message}</Toast.Body>
+            <Toast.Body>
+              <img src={newPkmn.img} alt="" />
+              <br/>
+              {newPkmn.message}
+            </Toast.Body>
           </Toast>
         </ToastContainer>
         <form onSubmit={handleSubmit} >

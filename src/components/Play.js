@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnswerForm from './AnswerForm'
+import encounter from '../questionmark.png'
 
 const Play = ({ range, caught, setCaught }) => {
 
@@ -60,7 +61,7 @@ const Play = ({ range, caught, setCaught }) => {
       </p>
       <br/>
       <img
-      src="https://archives.bulbagarden.net/media/upload/1/14/Ten_Question_Marks_III.png"
+      src={encounter}
       alt="A wild mystery Pokemon appeared!"
       className="enlarge"
       />

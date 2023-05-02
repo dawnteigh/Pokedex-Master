@@ -54,6 +54,20 @@ export const dexData = [
     range: { min: 1, max: 899 },
     number: 89,
     dexRange: { first: 810, last: 898 }
+  },
+  {
+    region: "Hisui",
+    gen: "Gen VIII+",
+    range: { min: 1, max: 906 },
+    number: 7,
+    dexRange: { first: 899, last: 905 }
+  },
+  {
+    region: "Paldea",
+    gen: "Gen IX",
+    range: { min: 1, max: 1011 },
+    number: 105,
+    dexRange: { first: 906, last: 1010 }
   }
 ];
 

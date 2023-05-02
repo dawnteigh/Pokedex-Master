@@ -67,11 +67,10 @@ const Pokedex = ({ caught }) => {
 
   return (
     <div className="pokedex">
-        <h4>Dex Completion By Region</h4>
         <div className="compGrid">
             {completion}
         </div>
-        <br/><br/>
+        <br/>
         <form>
             <label style={(sort === "order" ? checkedStyle : null)} >
                 <input

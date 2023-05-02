@@ -32,9 +32,14 @@ const Play = ({ range, caught, setCaught }) => {
     fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
         .then(r => r.json())
         .then(data => {
+          if (!data.flavor_text_entries[0]) {
+            setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
+          }
+          else {
             const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
             const randomEntry = entries[Math.floor(Math.random() * entries.length)]
             setEntry(randomEntry.flavor_text)
+          }
         })
         .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
       } else {

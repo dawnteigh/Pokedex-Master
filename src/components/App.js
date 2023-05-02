@@ -12,7 +12,7 @@ const App = () => {
   const [caught, setCaught] = useState([])
   const [range, setRange] = useState({
     min: 1,
-    max: 899
+    max: 1011
   })
 
   const history = useHistory();

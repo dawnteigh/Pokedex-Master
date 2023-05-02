@@ -1,75 +1,54 @@
 {
   "pokemon": [
     {
-      "id": 393,
-      "name": "piplup",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+      "id": 371,
+      "name": "bagon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
+            "name": "dragon",
+            "url": "https://pokeapi.co/api/v2/type/16/"
           }
         }
       ]
     },
     {
-      "id": 631,
-      "name": "heatmor",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+      "id": 784,
+      "name": "kommo-o",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 382,
-      "name": "kyogre",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 146,
-      "name": "moltres",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
+            "name": "dragon",
+            "url": "https://pokeapi.co/api/v2/type/16/"
           }
         },
         {
           "slot": 2,
           "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
           }
         }
       ]
     },
     {
-      "id": 98,
-      "name": "krabby",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+      "id": 689,
+      "name": "barbaracle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png",
       "types": [
         {
           "slot": 1,
+          "type": {
+            "name": "rock",
+            "url": "https://pokeapi.co/api/v2/type/6/"
+          }
+        },
+        {
+          "slot": 2,
           "type": {
             "name": "water",
             "url": "https://pokeapi.co/api/v2/type/11/"
@@ -78,40 +57,33 @@
       ]
     },
     {
-      "id": 279,
-      "name": "pelipper",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+      "id": 901,
+      "name": "ursaluna",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
+            "name": "ground",
+            "url": "https://pokeapi.co/api/v2/type/5/"
           }
         },
         {
           "slot": 2,
           "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
           }
         }
       ]
     },
     {
-      "id": 46,
-      "name": "paras",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+      "id": 182,
+      "name": "bellossom",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
       "types": [
         {
           "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
           "type": {
             "name": "grass",
             "url": "https://pokeapi.co/api/v2/type/12/"
@@ -120,57 +92,92 @@
       ]
     },
     {
-      "id": 326,
-      "name": "grumpig",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png",
+      "id": 580,
+      "name": "ducklett",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
           }
         }
       ]
     },
     {
-      "id": 33,
-      "name": "nidorino",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+      "id": 352,
+      "name": "kecleon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
           }
         }
       ]
     },
     {
-      "id": 360,
-      "name": "wynaut",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png",
+      "id": 357,
+      "name": "tropius",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
+            "name": "grass",
+            "url": "https://pokeapi.co/api/v2/type/12/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
           }
         }
       ]
     },
     {
-      "id": 307,
-      "name": "meditite",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png",
+      "id": 797,
+      "name": "celesteela",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
+            "name": "steel",
+            "url": "https://pokeapi.co/api/v2/type/9/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 648,
+      "name": "meloetta",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
           }
         },
         {
@@ -183,23 +190,9 @@
       ]
     },
     {
-      "id": 265,
-      "name": "wurmple",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 60,
-      "name": "poliwag",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+      "id": 120,
+      "name": "staryu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
       "types": [
         {
           "slot": 1,
@@ -211,23 +204,121 @@
       ]
     },
     {
-      "id": 237,
-      "name": "hitmontop",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+      "id": 138,
+      "name": "omanyte",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
+            "name": "rock",
+            "url": "https://pokeapi.co/api/v2/type/6/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
           }
         }
       ]
     },
     {
-      "id": 259,
-      "name": "marshtomp",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png",
+      "id": 213,
+      "name": "shuckle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "bug",
+            "url": "https://pokeapi.co/api/v2/type/7/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "rock",
+            "url": "https://pokeapi.co/api/v2/type/6/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 510,
+      "name": "liepard",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "dark",
+            "url": "https://pokeapi.co/api/v2/type/17/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 659,
+      "name": "bunnelby",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 887,
+      "name": "dragapult",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "dragon",
+            "url": "https://pokeapi.co/api/v2/type/16/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ghost",
+            "url": "https://pokeapi.co/api/v2/type/8/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 238,
+      "name": "smoochum",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "psychic",
+            "url": "https://pokeapi.co/api/v2/type/14/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 195,
+      "name": "quagsire",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
       "types": [
         {
           "slot": 1,
@@ -246,71 +337,50 @@
       ]
     },
     {
-      "id": 172,
-      "name": "pichu",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+      "id": 212,
+      "name": "scizor",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 23,
-      "name": "ekans",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 169,
-      "name": "crobat",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
+            "name": "bug",
+            "url": "https://pokeapi.co/api/v2/type/7/"
           }
         },
         {
           "slot": 2,
           "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
+            "name": "steel",
+            "url": "https://pokeapi.co/api/v2/type/9/"
           }
         }
       ]
     },
     {
-      "id": 3,
-      "name": "venusaur",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "id": 764,
+      "name": "comfey",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
+            "name": "fairy",
+            "url": "https://pokeapi.co/api/v2/type/18/"
           }
-        },
+        }
+      ]
+    },
+    {
+      "id": 726,
+      "name": "torracat",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
+      "types": [
         {
-          "slot": 2,
+          "slot": 1,
           "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
+            "name": "fire",
+            "url": "https://pokeapi.co/api/v2/type/10/"
           }
         }
       ]
@@ -337,1226 +407,15 @@
       ]
     },
     {
-      "id": 13,
-      "name": "weedle",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 338,
-      "name": "solrock",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 227,
-      "name": "skarmory",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "steel",
-            "url": "https://pokeapi.co/api/v2/type/9/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 690,
-      "name": "skrelp",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "name": "charmeleon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 71,
-      "name": "victreebel",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 821,
-      "name": "rookidee",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 865,
-      "name": "sirfetchd",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 371,
-      "name": "bagon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 109,
-      "name": "koffing",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 54,
-      "name": "psyduck",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 149,
-      "name": "dragonite",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 521,
-      "name": "unfezant",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
+      "id": 819,
+      "name": "skwovet",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png",
       "types": [
         {
           "slot": 1,
           "type": {
             "name": "normal",
             "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 548,
-      "name": "petilil",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 535,
-      "name": "tympole",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 758,
-      "name": "salazzle",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 197,
-      "name": "umbreon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 363,
-      "name": "spheal",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 220,
-      "name": "swinub",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 892,
-      "name": "urshifu",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 512,
-      "name": "simisage",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 588,
-      "name": "karrablast",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 407,
-      "name": "roserade",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 181,
-      "name": "ampharos",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 566,
-      "name": "archen",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 41,
-      "name": "zubat",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 523,
-      "name": "zebstrika",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 748,
-      "name": "toxapex",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 503,
-      "name": "samurott",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 461,
-      "name": "weavile",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 206,
-      "name": "dunsparce",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 413,
-      "name": "wormadam",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 354,
-      "name": "banette",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 199,
-      "name": "slowking",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 351,
-      "name": "castform",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 171,
-      "name": "lanturn",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 615,
-      "name": "cryogonal",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 785,
-      "name": "tapu-koko",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 720,
-      "name": "hoopa",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 586,
-      "name": "sawsbuck",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 872,
-      "name": "snom",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 251,
-      "name": "celebi",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 174,
-      "name": "igglybuff",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 621,
-      "name": "druddigon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 752,
-      "name": "araquanid",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 223,
-      "name": "remoraid",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 492,
-      "name": "shaymin",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 332,
-      "name": "cacturne",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 825,
-      "name": "dottler",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 56,
-      "name": "mankey",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 706,
-      "name": "goodra",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 236,
-      "name": "tyrogue",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 818,
-      "name": "inteleon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 552,
-      "name": "krokorok",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 114,
-      "name": "tangela",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 218,
-      "name": "slugma",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 555,
-      "name": "darmanitan",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 430,
-      "name": "honchkrow",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 427,
-      "name": "buneary",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 613,
-      "name": "cubchoo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 834,
-      "name": "drednaw",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 812,
-      "name": "rillaboom",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 175,
-      "name": "togepi",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 298,
-      "name": "azurill",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 694,
-      "name": "helioptile",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 637,
-      "name": "volcarona",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 848,
-      "name": "toxel",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 747,
-      "name": "mareanie",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 1,
-      "name": "bulbasaur",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
           }
         }
       ]
@@ -1571,6 +430,125 @@
           "type": {
             "name": "bug",
             "url": "https://pokeapi.co/api/v2/type/7/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 679,
+      "name": "honedge",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "steel",
+            "url": "https://pokeapi.co/api/v2/type/9/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ghost",
+            "url": "https://pokeapi.co/api/v2/type/8/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 696,
+      "name": "tyrunt",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "rock",
+            "url": "https://pokeapi.co/api/v2/type/6/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "dragon",
+            "url": "https://pokeapi.co/api/v2/type/16/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 626,
+      "name": "bouffalant",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 847,
+      "name": "barraskewda",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 107,
+      "name": "hitmonchan",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 853,
+      "name": "grapploct",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 590,
+      "name": "foongus",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "grass",
+            "url": "https://pokeapi.co/api/v2/type/12/"
           }
         },
         {
@@ -1604,9 +582,9 @@
       ]
     },
     {
-      "id": 295,
-      "name": "exploud",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png",
+      "id": 108,
+      "name": "lickitung",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
       "types": [
         {
           "slot": 1,
@@ -1618,44 +596,30 @@
       ]
     },
     {
-      "id": 804,
-      "name": "naganadel",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png",
+      "id": 1004,
+      "name": "chi-yu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
+            "name": "dark",
+            "url": "https://pokeapi.co/api/v2/type/17/"
           }
         },
         {
           "slot": 2,
           "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
+            "name": "fire",
+            "url": "https://pokeapi.co/api/v2/type/10/"
           }
         }
       ]
     },
     {
-      "id": 895,
-      "name": "regidrago",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 267,
-      "name": "beautifly",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png",
+      "id": 545,
+      "name": "scolipede",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png",
       "types": [
         {
           "slot": 1,
@@ -1667,44 +631,30 @@
         {
           "slot": 2,
           "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
           }
         }
       ]
     },
     {
-      "id": 367,
-      "name": "huntail",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png",
+      "id": 974,
+      "name": "cetoddle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
           }
         }
       ]
     },
     {
-      "id": 90,
-      "name": "shellder",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 482,
-      "name": "azelf",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
+      "id": 579,
+      "name": "reuniclus",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
       "types": [
         {
           "slot": 1,
@@ -1716,205 +666,9 @@
       ]
     },
     {
-      "id": 263,
-      "name": "zigzagoon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 496,
-      "name": "servine",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 666,
-      "name": "vivillon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 478,
-      "name": "froslass",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 272,
-      "name": "ludicolo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 384,
-      "name": "rayquaza",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 852,
-      "name": "clobbopus",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "name": "charmander",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 203,
-      "name": "girafarig",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 458,
-      "name": "mantyke",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 810,
-      "name": "grookey",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 328,
-      "name": "trapinch",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png",
+      "id": 843,
+      "name": "silicobra",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png",
       "types": [
         {
           "slot": 1,
@@ -1926,828 +680,9 @@
       ]
     },
     {
-      "id": 257,
-      "name": "blaziken",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 459,
-      "name": "snover",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 245,
-      "name": "suicune",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 434,
-      "name": "stunky",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 676,
-      "name": "furfrou",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 335,
-      "name": "zangoose",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 596,
-      "name": "galvantula",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 682,
-      "name": "spritzee",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 377,
-      "name": "regirock",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 129,
-      "name": "magikarp",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 370,
-      "name": "luvdisc",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 168,
-      "name": "ariados",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 293,
-      "name": "whismur",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 104,
-      "name": "cubone",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 100,
-      "name": "voltorb",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 841,
-      "name": "flapple",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 563,
-      "name": "cofagrigus",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 275,
-      "name": "shiftry",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 669,
-      "name": "flabebe",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 188,
-      "name": "skiploom",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 70,
-      "name": "weepinbell",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 42,
-      "name": "golbat",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 839,
-      "name": "coalossal",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 486,
-      "name": "regigigas",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 772,
-      "name": "type-null",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 632,
-      "name": "durant",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "steel",
-            "url": "https://pokeapi.co/api/v2/type/9/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 833,
-      "name": "chewtle",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 472,
-      "name": "gliscor",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 368,
-      "name": "gorebyss",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 47,
-      "name": "parasect",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 294,
-      "name": "loudred",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 440,
-      "name": "happiny",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 467,
-      "name": "magmortar",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 560,
-      "name": "scrafty",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 361,
-      "name": "snorunt",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 573,
-      "name": "cinccino",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 362,
-      "name": "glalie",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 844,
-      "name": "sandaconda",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 219,
-      "name": "magcargo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 888,
-      "name": "zacian",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 57,
-      "name": "primeape",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 731,
-      "name": "pikipek",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 215,
-      "name": "sneasel",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 150,
-      "name": "mewtwo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "name": "metapod",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 451,
-      "name": "skorupi",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 542,
-      "name": "leavanny",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 557,
-      "name": "dwebble",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 702,
-      "name": "dedenne",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
+      "id": 941,
+      "name": "kilowattrel",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
       "types": [
         {
           "slot": 1,
@@ -2759,251 +694,6 @@
         {
           "slot": 2,
           "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 465,
-      "name": "tangrowth",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 209,
-      "name": "snubbull",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 861,
-      "name": "grimmsnarl",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 597,
-      "name": "ferroseed",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "steel",
-            "url": "https://pokeapi.co/api/v2/type/9/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 539,
-      "name": "sawk",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 801,
-      "name": "magearna",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "steel",
-            "url": "https://pokeapi.co/api/v2/type/9/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 151,
-      "name": "mew",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 435,
-      "name": "skuntank",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 500,
-      "name": "emboar",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 455,
-      "name": "carnivine",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 673,
-      "name": "gogoat",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 829,
-      "name": "gossifleur",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 845,
-      "name": "cramorant",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 630,
-      "name": "mandibuzz",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
             "name": "flying",
             "url": "https://pokeapi.co/api/v2/type/3/"
           }
@@ -3011,30 +701,9 @@
       ]
     },
     {
-      "id": 741,
-      "name": "oricorio",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 558,
-      "name": "crustle",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png",
+      "id": 637,
+      "name": "volcarona",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
       "types": [
         {
           "slot": 1,
@@ -3046,328 +715,6 @@
         {
           "slot": 2,
           "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 732,
-      "name": "trumbeak",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 479,
-      "name": "rotom",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 73,
-      "name": "tentacruel",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 26,
-      "name": "raichu",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "electric",
-            "url": "https://pokeapi.co/api/v2/type/13/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 88,
-      "name": "grimer",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 537,
-      "name": "seismitoad",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 132,
-      "name": "ditto",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 131,
-      "name": "lapras",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "ice",
-            "url": "https://pokeapi.co/api/v2/type/15/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 773,
-      "name": "silvally",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 429,
-      "name": "mismagius",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 611,
-      "name": "fraxure",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 93,
-      "name": "haunter",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 359,
-      "name": "absol",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 793,
-      "name": "nihilego",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 882,
-      "name": "dracovish",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 464,
-      "name": "rhyperior",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "rock",
-            "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 319,
-      "name": "sharpedo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 78,
-      "name": "rapidash",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
             "name": "fire",
             "url": "https://pokeapi.co/api/v2/type/10/"
           }
@@ -3375,337 +722,15 @@
       ]
     },
     {
-      "id": 425,
-      "name": "drifloon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 571,
-      "name": "zoroark",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 551,
-      "name": "sandile",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ground",
-            "url": "https://pokeapi.co/api/v2/type/5/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 641,
-      "name": "tornadus",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 538,
-      "name": "throh",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 183,
-      "name": "marill",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 776,
-      "name": "turtonator",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 143,
-      "name": "snorlax",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "normal",
-            "url": "https://pokeapi.co/api/v2/type/1/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 533,
-      "name": "gurdurr",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fighting",
-            "url": "https://pokeapi.co/api/v2/type/2/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 167,
-      "name": "spinarak",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "poison",
-            "url": "https://pokeapi.co/api/v2/type/4/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 767,
-      "name": "wimpod",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 261,
-      "name": "poochyena",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 416,
-      "name": "vespiquen",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "flying",
-            "url": "https://pokeapi.co/api/v2/type/3/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 196,
-      "name": "espeon",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 683,
-      "name": "aromatisse",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 790,
-      "name": "cosmoem",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 855,
-      "name": "polteageist",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "ghost",
-            "url": "https://pokeapi.co/api/v2/type/8/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 525,
-      "name": "boldore",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
+      "id": 185,
+      "name": "sudowoodo",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
       "types": [
         {
           "slot": 1,
           "type": {
             "name": "rock",
             "url": "https://pokeapi.co/api/v2/type/6/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 842,
-      "name": "appletun",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dragon",
-            "url": "https://pokeapi.co/api/v2/type/16/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 509,
-      "name": "purrloin",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
           }
         }
       ]
@@ -3732,120 +757,22 @@
       ]
     },
     {
-      "id": 121,
-      "name": "starmie",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+      "id": 21,
+      "name": "spearow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
       "types": [
         {
           "slot": 1,
           "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
           }
         },
         {
           "slot": 2,
           "type": {
-            "name": "psychic",
-            "url": "https://pokeapi.co/api/v2/type/14/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 707,
-      "name": "klefki",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "steel",
-            "url": "https://pokeapi.co/api/v2/type/9/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "fairy",
-            "url": "https://pokeapi.co/api/v2/type/18/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 658,
-      "name": "greninja",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 653,
-      "name": "fennekin",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "fire",
-            "url": "https://pokeapi.co/api/v2/type/10/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 570,
-      "name": "zorua",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 617,
-      "name": "accelgor",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "bug",
-            "url": "https://pokeapi.co/api/v2/type/7/"
-          }
-        }
-      ]
-    },
-    {
-      "id": 120,
-      "name": "staryu",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "water",
-            "url": "https://pokeapi.co/api/v2/type/11/"
+            "name": "flying",
+            "url": "https://pokeapi.co/api/v2/type/3/"
           }
         }
       ]

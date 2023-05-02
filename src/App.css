@@ -58,7 +58,7 @@ footer {
   cursor: pointer;
   display: inline-block;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 7px 20px;
+  padding: 7px 15px;
   text-align: center;
   transition: all 250ms;
   border: 0;
@@ -87,11 +87,14 @@ footer {
 }
 
 .buttonGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin-left: 15%;
-  margin-right: 15%;
-  gap: 8%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding: 2em;
+  text-align: center;
+  justify-content: center;
+  gap: 5%;
 }
 
 .dbCard {
@@ -100,6 +103,8 @@ footer {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 2px;
   padding-bottom: 4px;
+  width: 15%;
+  margin-bottom: 5%;
 }
 
 .play {
@@ -147,10 +152,11 @@ input {
 
 .compGrid {
   display: grid;
-  margin-left: 40%;
-  margin-right: 40%;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
+  margin-top: 2%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 .pokedexGrid {

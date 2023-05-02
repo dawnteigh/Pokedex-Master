@@ -776,6 +776,125 @@
           }
         }
       ]
+    },
+    {
+      "id": 124,
+      "name": "jynx",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "psychic",
+            "url": "https://pokeapi.co/api/v2/type/14/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 881,
+      "name": "arctozolt",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "electric",
+            "url": "https://pokeapi.co/api/v2/type/13/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "venusaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "grass",
+            "url": "https://pokeapi.co/api/v2/type/12/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 980,
+      "name": "clodsire",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "poison",
+            "url": "https://pokeapi.co/api/v2/type/4/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ground",
+            "url": "https://pokeapi.co/api/v2/type/5/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 192,
+      "name": "sunflora",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "grass",
+            "url": "https://pokeapi.co/api/v2/type/12/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 1000,
+      "name": "gholdengo",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "steel",
+            "url": "https://pokeapi.co/api/v2/type/9/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ghost",
+            "url": "https://pokeapi.co/api/v2/type/8/"
+          }
+        }
+      ]
     }
   ]
 }

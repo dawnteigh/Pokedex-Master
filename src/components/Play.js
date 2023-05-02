@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import AnswerForm from './AnswerForm'
+import { PaldeaEntries } from "../PaldeaEntries";
 import encounter from '../questionmark.png'
 
 const Play = ({ range, caught, setCaught }) => {
@@ -29,19 +30,26 @@ const Play = ({ range, caught, setCaught }) => {
         })
       )
       .catch(() => alert('Failed to fetch Pokémon. Refresh to try again.'))
-    fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
-        .then(r => r.json())
-        .then(data => {
-          if (!data.flavor_text_entries[0]) {
-            setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
-          }
-          else {
-            const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
-            const randomEntry = entries[Math.floor(Math.random() * entries.length)]
-            setEntry(randomEntry.flavor_text)
-          }
-        })
-        .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
+    if (dexNo > 905) {
+      const pkmn = PaldeaEntries.find(p => p.number === dexNo)
+      const entry = pkmn.entries[Math.floor(Math.random() * pkmn.entries.length)]
+      setEntry(entry)
+    }
+    else {
+      fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
+          .then(r => r.json())
+          .then(data => {
+            if (!data.flavor_text_entries[0]) {
+              setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
+            }
+            else {
+              const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
+              const randomEntry = entries[Math.floor(Math.random() * entries.length)]
+              setEntry(randomEntry.flavor_text)
+            }
+          })
+          .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
+        }
       } else {
         newPokemon()
       }

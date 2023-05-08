@@ -108,7 +108,6 @@ footer {
 }
 
 .play {
-  margin-top: 2%;
   margin-left: 15%;
   margin-right: 15%;
   font-size: 14px;
@@ -124,7 +123,7 @@ footer {
   margin-bottom: 2%;
 }
 
-.pokedex input[type="radio"] {
+input[type="radio"] {
   opacity: 0;
   position: fixed;
   width: 0;
@@ -134,7 +133,7 @@ input {
   text-align: center;
 }
 
-.pokedex label {
+label {
     display: inline-block;
     background-color: #b644fc;
     color: white;
@@ -145,7 +144,7 @@ input {
     padding: 5px
 }
 
-.pokedex label:hover {
+label:hover {
     background-color:#ee07e2;
     box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
 }

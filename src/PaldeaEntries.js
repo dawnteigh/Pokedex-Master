@@ -9,11 +9,11 @@ export const PaldeaEntries = [
   },
     {
       number: 908, 
-      entries: ["	This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.", "	With skillful misdirection, it rigs foes with pollen- packed flower bombs. Meowscarada sets off the bombs before its foes realize what's going on."]
+      entries: ["This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.", "With skillful misdirection, it rigs foes with pollen- packed flower bombs. Meowscarada sets off the bombs before its foes realize what's going on."]
     },
     {
       number: 909, 
-      entries: ["It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.", "	Its flame sac is small, so energy is always leaking out. This energy is released from the dent atop Fuecoco's head and flickers to and fro."]
+      entries: ["It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.", "Its flame sac is small, so energy is always leaking out. This energy is released from the dent atop Fuecoco's head and flickers to and fro."]
     },
     {
       number: 910, 
@@ -21,7 +21,7 @@ export const PaldeaEntries = [
     },
     {
       number: 911, 
-      entries: ["	The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul.", "	Skeledirge's gentle singing soothes the souls of all that hear it. It burns its enemies to a crisp with flames of over 5,400 degrees Fahrenheit."]
+      entries: ["The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul.", "Skeledirge's gentle singing soothes the souls of all that hear it. It burns its enemies to a crisp with flames of over 5,400 degrees Fahrenheit."]
     },
     {
       number: 912, 
@@ -45,7 +45,7 @@ export const PaldeaEntries = [
     },
     {
       number: 917, 
-      entries: ["	The ball of threads wrapped around its body is elastic enough to deflect the scythes of Scyther, this Pokémon’s natural enemy.", "The thread it secretes from its rear is as strong as wire. The secret behind the thread's strength is the topic of ongoing research."]
+      entries: ["The ball of threads wrapped around its body is elastic enough to deflect the scythes of Scyther, this Pokémon’s natural enemy.", "The thread it secretes from its rear is as strong as wire. The secret behind the thread's strength is the topic of ongoing research."]
     },
     {
       number: 918, 
@@ -101,7 +101,7 @@ export const PaldeaEntries = [
     },
     {
       number: 931, 
-      entries: ["Though these Squawkabilly are the fewest in   number, they have no trouble living in towns since they blend in with the white buildings.", "This Pokémon dislikes being alone. It has a strong sense of community and survives by cooperating with allies.", "The yellow Squawkabilly are especially fierce. They've even been known to drive other bird Pokémon out of town.", "These Squawkabilly are hotheaded, and their fighting style is vicious. They’ll leap within reach of their foes to engage in close combat.", "	Blue-feathered Squawkabilly view their green- feathered counterparts as rivals, since the latter make up the largest, most powerful groups.", "The largest of their flocks can contain more than 50 individuals. They fly around towns and forests, searching for food and making a racket.", "Green-feathered flocks hold the most sway. When they're out searching for food in the mornings and evenings, it gets very noisy.", "These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory."]
+      entries: ["Though these Squawkabilly are the fewest in   number, they have no trouble living in towns since they blend in with the white buildings.", "This Pokémon dislikes being alone. It has a strong sense of community and survives by cooperating with allies.", "The yellow Squawkabilly are especially fierce. They've even been known to drive other bird Pokémon out of town.", "These Squawkabilly are hotheaded, and their fighting style is vicious. They’ll leap within reach of their foes to engage in close combat.", "Blue-feathered Squawkabilly view their green- feathered counterparts as rivals, since the latter make up the largest, most powerful groups.", "The largest of their flocks can contain more than 50 individuals. They fly around towns and forests, searching for food and making a racket.", "Green-feathered flocks hold the most sway. When they're out searching for food in the mornings and evenings, it gets very noisy.", "These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory."]
     },
     {
       number: 932, 
@@ -109,7 +109,7 @@ export const PaldeaEntries = [
     },
     {
       number: 933, 
-      entries: ["This Pokémon dry cures its prey by spraying salt over them. The curing process steals away the water in the prey’s body.", "	It compresses rock salt inside its body and shoots out hardened salt pellets with enough force to perforate an iron sheet."]
+      entries: ["This Pokémon dry cures its prey by spraying salt over them. The curing process steals away the water in the prey’s body.", "It compresses rock salt inside its body and shoots out hardened salt pellets with enough force to perforate an iron sheet."]
     },
     {
       number: 934, 
@@ -133,15 +133,15 @@ export const PaldeaEntries = [
     },
     {
       number: 939, 
-      entries: ["When this Pokémon expands and contracts its wobbly body, the belly-button dynamo in its stomach produces a huge amount of electricity.", "	What appear to be eyeballs are actually organs for discharging the electricity generated by Bellibolt's belly-button dynamo."]
+      entries: ["When this Pokémon expands and contracts its wobbly body, the belly-button dynamo in its stomach produces a huge amount of electricity.", "What appear to be eyeballs are actually organs for discharging the electricity generated by Bellibolt's belly-button dynamo."]
     },
     {
       number: 940, 
-      entries: ["	When its wings catch the wind, the bones within produce electricity. This Pokémon dives into the ocean, catching prey by electrocuting them.", "These Pokémon make their nests on coastal cliffs. The nests have a strange, crackling texture, and they're a popular delicacy."]
+      entries: ["When its wings catch the wind, the bones within produce electricity. This Pokémon dives into the ocean, catching prey by electrocuting them.", "These Pokémon make their nests on coastal cliffs. The nests have a strange, crackling texture, and they're a popular delicacy."]
     },
     {
       number: 941, 
-      entries: ["	Kilowattrel inflates its throat sac to amplify its electricity. By riding the wind, this Pokémon can fly over 430 miles in a day.", "It uses its throat sac to store electricity generated by its wings. There's hardly any oil in its feathers, so it is a poor swimmer."]
+      entries: ["Kilowattrel inflates its throat sac to amplify its electricity. By riding the wind, this Pokémon can fly over 430 miles in a day.", "It uses its throat sac to store electricity generated by its wings. There's hardly any oil in its feathers, so it is a poor swimmer."]
     },
     {
       number: 942, 
@@ -153,7 +153,7 @@ export const PaldeaEntries = [
     },
     {
       number: 944, 
-      entries: ["	Though usually a mellow Pokémon, it will sink its sharp, poison-soaked front teeth into any that anger it, causing paralysis in the object of its ire.", "	To keep enemies away from its territory, it paints markings around its nest using a poisonous liquid that has an acrid odor."]
+      entries: ["Though usually a mellow Pokémon, it will sink its sharp, poison-soaked front teeth into any that anger it, causing paralysis in the object of its ire.", "To keep enemies away from its territory, it paints markings around its nest using a poisonous liquid that has an acrid odor."]
     },
     {
       number: 945, 
@@ -173,11 +173,11 @@ export const PaldeaEntries = [
     },
     {
       number: 949, 
-      entries: ["These Pokémon gather into groups and form colonies deep within forests. They absolutely hate it when strangers approach.", "	It coils its 10 tentacles around prey and sucks out their nutrients, causing the prey pain. The folds along the rim of its head are a popular delicacy."]
+      entries: ["These Pokémon gather into groups and form colonies deep within forests. They absolutely hate it when strangers approach.", "It coils its 10 tentacles around prey and sucks out their nutrients, causing the prey pain. The folds along the rim of its head are a popular delicacy."]
     },
     {
       number: 950, 
-      entries: ["	Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head.", "This Pokémon lives on sheer cliffs. It sidesteps opponents' attacks, then lunges for their weak spots with its claws."]
+      entries: ["Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head.", "This Pokémon lives on sheer cliffs. It sidesteps opponents' attacks, then lunges for their weak spots with its claws."]
     },
     {
       number: 951, 
@@ -221,7 +221,7 @@ export const PaldeaEntries = [
     },
     {
       number: 961, 
-      entries: ["It has a vicious temperament, contrary to what its appearance may suggest. It wraps its long bodies around prey, then drags the prey into its den.", "	A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio."]
+      entries: ["It has a vicious temperament, contrary to what its appearance may suggest. It wraps its long bodies around prey, then drags the prey into its den.", "A variety of fish Pokémon, Wugtrio was once considered to be a regional form of Dugtrio."]
     },
     {
       number: 962, 
@@ -265,7 +265,7 @@ export const PaldeaEntries = [
     },
     {
       number: 972, 
-      entries: ["	Houndstone spends most of its time sleeping in graveyards. Among all the dog Pokémon, this one is most loyal to its master.", "A lovingly mourned Pokémon was reborn as Houndstone. It doesn't like anyone touching the protuberance atop its head."]
+      entries: ["Houndstone spends most of its time sleeping in graveyards. Among all the dog Pokémon, this one is most loyal to its master.", "A lovingly mourned Pokémon was reborn as Houndstone. It doesn't like anyone touching the protuberance atop its head."]
     },
     {
       number: 973, 
@@ -305,7 +305,7 @@ export const PaldeaEntries = [
     },
     {
       number: 982, 
-      entries: ["This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground. The nest can reach lengths of over six miles.", "It drives enemies out of its nest by sucking in enough air to fill its long, narrow lungs, then releasing the air in an intense blast.", "The gentle Dudunsparce will put Pokémon that wander into its nest onto its back and carry them to the entrance.", "	A recent study uncovered that the   number of segments a Dudunsparce's body has is determined by the Pokémon's genes."]
+      entries: ["This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground. The nest can reach lengths of over six miles.", "It drives enemies out of its nest by sucking in enough air to fill its long, narrow lungs, then releasing the air in an intense blast.", "The gentle Dudunsparce will put Pokémon that wander into its nest onto its back and carry them to the entrance.", "A recent study uncovered that the   number of segments a Dudunsparce's body has is determined by the Pokémon's genes."]
     },
     {
       number: 983, 
@@ -381,7 +381,7 @@ export const PaldeaEntries = [
     },
     {
       number: 1001, 
-      entries: ["	The grudge of a person punished for writing the king’s evil deeds upon wooden tablets has clad itself in dead leaves to become a Pokémon.", "It drains the life-force from vegetation, causing nearby forests to instantly wither and fields to turn barren."]
+      entries: ["The grudge of a person punished for writing the king’s evil deeds upon wooden tablets has clad itself in dead leaves to become a Pokémon.", "It drains the life-force from vegetation, causing nearby forests to instantly wither and fields to turn barren."]
     },
     {
       number: 1002, 

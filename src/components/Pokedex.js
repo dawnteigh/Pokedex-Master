@@ -1,21 +1,14 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useContext } from 'react'
+import { PokeContext } from '../context/PokeContext'
 import PokemonCard from './PokemonCard'
 import { dexData } from '../DexData'
 import DexCompletion from './DexCompletion'
 
 
-const Pokedex = ({ caught }) => {
-
-    const [pokedex, setPokedex] = useState([])
+const Pokedex = () => {
+    const { pokedex, caught, setPokedex, checkedStyle } = useContext(PokeContext)
     const [sort, setSort] = useState("order")
     const [filter, setFilter] = useState("")
-
-    useEffect(() => {
-        fetch("http://localhost:6001/pokemon")
-        .then(r => r.json())
-        .then(data => setPokedex(data))
-        .catch(() => alert('Failed to fetch Pokédex info. Make sure JSON Server is running.'))
-    }, [])
 
     const numDex = pokedex.slice().sort((a, b) => a.id - b.id)
     const alphaDex = pokedex.slice().sort((a, b) => {
@@ -59,11 +52,6 @@ const Pokedex = ({ caught }) => {
         }
         setSort(e.target.id)
     }
-
-    const checkedStyle = {
-        background: "#ee07e2",
-        boxShadow: "rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px"
-        }
 
   return (
     <div className="pokedex">

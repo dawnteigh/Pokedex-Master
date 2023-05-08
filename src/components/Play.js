@@ -1,78 +1,45 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useContext } from "react";
+import { PokeContext } from "../context/PokeContext";
 import AnswerForm from './AnswerForm'
-import { PaldeaEntries } from "../PaldeaEntries";
 import encounter from '../questionmark.png'
 
-const Play = ({ range, caught, setCaught }) => {
+const Play = () => {
 
-  const { min, max } = range
+  const { caught, setCaught, pokemon, entry, range, mode, setMode, checkedStyle } = useContext(PokeContext)
 
-  const [pokemon, setPokemon] = useState({
-    id: "",
-    name: "",
-    sprite: "",
-    types: [{"type": {}}]
-  });
-  const [entry, setEntry] = useState("")
   const [showHints, setShowHints] = useState(false)
-
-  const newPokemon = () => {
-    let dexNo = Math.floor(Math.random() * (max - min) + min)
-    if (!caught.includes(dexNo)) {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${dexNo}`)
-      .then(r => r.json())
-      .then(data =>
-        setPokemon({
-          id: data.id,
-          name: data.species.name,
-          sprite: data.sprites.front_default,
-          types: data.types
-        })
-      )
-      .catch(() => alert('Failed to fetch Pokémon. Refresh to try again.'))
-    if (dexNo > 905) {
-      const pkmn = PaldeaEntries.find(p => p.number === dexNo)
-      const entry = pkmn.entries[Math.floor(Math.random() * pkmn.entries.length)]
-      setEntry(entry)
-    }
-    else {
-      fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
-          .then(r => r.json())
-          .then(data => {
-            if (!data.flavor_text_entries[0]) {
-              setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
-            }
-            else {
-              const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
-              const randomEntry = entries[Math.floor(Math.random() * entries.length)]
-              setEntry(randomEntry.flavor_text)
-            }
-          })
-          .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
-        }
-      } else {
-        newPokemon()
-      }
-  }
 
   const handleCaught = (id) => {
     setCaught([...caught, id])
   }
 
-  useEffect(() => {
-    newPokemon()
-  }, []);
-
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
-  const dexCompletion = caught.filter(num => num < max)
+  const dexCompletion = caught.filter(num => num < range.max)
   const toggleHints = () => setShowHints(!showHints)
 
   return (
     <div className="play">
       <p>
-        Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively.
+        Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively. You can also select a mode below; 'Easy' will show what the Pokémon was on an incorrect guess, 'Hard' will not.
       </p>
-      <br/>
+      <form>
+        <label style={(mode === "easy" ? checkedStyle : null)} >
+            <input
+            type="radio"
+            checked={mode === "easy"}
+            onChange={() => setMode("easy")}
+            />
+            Easy Mode
+        </label>
+        <label style={(mode === "hard" ? checkedStyle : null)} >
+            <input
+            type="radio"
+            checked={mode === "hard"}
+            onChange={() => setMode("hard")}
+            />
+            Hard Mode
+        </label>
+      </form>
       <img
       src={encounter}
       alt="A wild mystery Pokemon appeared!"
@@ -81,8 +48,8 @@ const Play = ({ range, caught, setCaught }) => {
       <br/><br/>
       <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
       <br/><br/>
-      <AnswerForm pokemon={pokemon} newPokemon={newPokemon} handleCaught={handleCaught} />
-      {dexCompletion.length}/{max - 1} Pokémon captured
+      <AnswerForm handleCaught={handleCaught} />
+      {dexCompletion.length}/{range.max - 1} Pokémon captured
       <br/><br/>
       <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
       <br/><br/>

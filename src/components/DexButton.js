@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { PokeContext } from '../context/PokeContext'
 
-const DexButton = ({ dexData, rangeChange }) => {
+const DexButton = ({ dexData }) => {
 
   const { region, gen, range } = dexData
-
+  const { rangeChange } = useContext(PokeContext)
   return (
     <div className="dbCard">
       <p style={{ margin: 0 }}>

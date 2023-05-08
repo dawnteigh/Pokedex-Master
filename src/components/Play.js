@@ -5,12 +5,13 @@ import encounter from '../questionmark.png'
 
 const Play = () => {
 
-  const { caught, setCaught, pokemon, entry, range, mode, setMode, checkedStyle } = useContext(PokeContext)
+  const { caught, setCaught, pokemon, entry, range, mode, setMode, checkedStyle, pokedex, setPokedex } = useContext(PokeContext)
 
   const [showHints, setShowHints] = useState(false)
 
   const handleCaught = (id) => {
     setCaught([...caught, id])
+    setPokedex([...pokedex, pokemon])
   }
 
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");

@@ -70,7 +70,6 @@ function PokeProvider({ children }) {
   
   const rangeChange = (obj) => {
     setRange(obj)
-    newPokemon()
     history.push('/play')
   }
 
@@ -84,7 +83,7 @@ function PokeProvider({ children }) {
     .catch(() => alert('Failed to fetch local Pokédex info. Make sure JSON Server is running.'))
   }, [])
 
-  useEffect(() => newPokemon(), [caught])
+  useEffect(() => newPokemon(), [caught, range])
 
   return (
   <PokeContext.Provider

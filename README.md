@@ -44,7 +44,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## Acknowledgements
-- Pokémon and All Respective Names are Trademark & © of Nintendo 1996-2022
+- Pokémon and All Respective Names are Trademark & © of Nintendo 1996-2023
 - Pokemon data comes from the great [PokéAPI](https://pokeapi.co/).
 - Image on the 'Play' page is from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
 - Mock back end possible thanks to [JSON Server](https://www.npmjs.com/package/json-server).

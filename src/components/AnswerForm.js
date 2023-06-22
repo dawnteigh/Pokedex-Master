@@ -56,7 +56,7 @@ const AnswerForm = ({ handleCaught }) => {
   }
 
 return (
-    <div>
+    <div className="answer">
       <ToastContainer position="middle-center" >
         <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
           <Toast.Header>

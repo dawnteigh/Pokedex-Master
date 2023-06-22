@@ -113,6 +113,23 @@ footer {
   font-size: 14px;
 }
 
+.play p {
+  margin-bottom: 0;
+}
+
+.play img {
+  margin-bottom: 5px;
+}
+
+.play .button {
+  margin: 5px;
+}
+
+.answer input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .enlarge {
   width: 35%;
   height: auto;

@@ -111,6 +111,48 @@
           }
         }
       ]
+    },
+    {
+      "id": 131,
+      "name": "lapras",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "water",
+            "url": "https://pokeapi.co/api/v2/type/11/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "ice",
+            "url": "https://pokeapi.co/api/v2/type/15/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "name": "aggron",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "steel",
+            "url": "https://pokeapi.co/api/v2/type/9/"
+          }
+        },
+        {
+          "slot": 2,
+          "type": {
+            "name": "rock",
+            "url": "https://pokeapi.co/api/v2/type/6/"
+          }
+        }
+      ]
     }
   ]
 }

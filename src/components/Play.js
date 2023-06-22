@@ -46,14 +46,14 @@ const Play = () => {
       alt="A wild mystery Pokemon appeared!"
       className="enlarge"
       />
-      <br/><br/>
+      <br/>
       <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
-      <br/><br/>
+      <br/>
       <AnswerForm handleCaught={handleCaught} />
       {dexCompletion.length}/{range.max - 1} Pokémon captured
-      <br/><br/>
+      <br/>
       <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
-      <br/><br/>
+      <br/>
       <div style={{display: !showHints ? "none" : "block"}}>
         This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
         <br/>

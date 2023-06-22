@@ -21,7 +21,7 @@ const Play = () => {
   return (
     <div className="play">
       <p>
-        Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively. You can also select a mode below; 'Easy' will show what the Pokémon was on an incorrect guess, 'Hard' will not.
+        Read the Pokédex entry below and guess the Pokémon being described to capture it. Answers are not case-sensitive, however special symbols will need to be omitted and spaces replaced with '-'. For example, "Mr. Mime" should be input as "Mr-Mime". Another special case is Nidoran♂ and Nidoran♀, which should be input as "Nidoran-m" and "Nidoran-f", respectively. You can also select a mode below; 'Easy' shows you an image of the escaping Pokémon after an incorrect guess, 'Hard' does not.
       </p>
       <form>
         <label style={(mode === "easy" ? checkedStyle : null)} >

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
 import AnswerForm from './AnswerForm'
+import Congrats from './Congrats'
 import encounter from '../questionmark.png'
 
 const Play = () => {
@@ -17,6 +18,10 @@ const Play = () => {
   const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
   const dexCompletion = caught.filter(num => num < range.max)
   const toggleHints = () => setShowHints(!showHints)
+
+  if (dexCompletion.length === range.max - 1) {
+    return <Congrats />
+  }
 
   return (
     <div className="play">

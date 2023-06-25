@@ -85,8 +85,9 @@ function PokeProvider({ children }) {
 
   useEffect(() => {
     const dexCompletion = caught.filter(num => num < range.max)
-    if (dexCompletion.length !== range.max - 1)
-    newPokemon()
+    if (dexCompletion.length !== range.max - 1) {
+      newPokemon()
+    }
   }, [caught, range])
 
   return (

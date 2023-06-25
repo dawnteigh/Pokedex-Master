@@ -125,6 +125,29 @@ footer {
   margin: 5px;
 }
 
+.congrats {
+  margin: auto;
+  margin-top: 1%;
+  padding: 1%;
+  width: 40%;
+  height: fit-content;
+  border: #ee07e2 outset 2px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.congrats a {
+  color: #b644fc;
+}
+
+.congrats img {
+  border: #b644fc outset 2px;
+  border-radius: 5px;
+  max-width: 100%;
+  max-height: auto;
+}
+
 .answer input {
   margin-top: 5px;
   margin-bottom: 5px;

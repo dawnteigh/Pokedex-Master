@@ -83,7 +83,11 @@ function PokeProvider({ children }) {
     .catch(() => alert('Failed to fetch local Pokédex info. Make sure JSON Server is running.'))
   }, [])
 
-  useEffect(() => newPokemon(), [caught, range])
+  useEffect(() => {
+    const dexCompletion = caught.filter(num => num < range.max)
+    if (dexCompletion.length !== range.max - 1)
+    newPokemon()
+  }, [caught, range])
 
   return (
   <PokeContext.Provider

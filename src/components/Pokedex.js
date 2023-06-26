@@ -27,29 +27,37 @@ const Pokedex = () => {
 
 	const filterPokedex = sortedDex.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()))
 	const displayPokedex = filterPokedex.map(p => {
-			return (
-					<PokemonCard key={p.id} pokemon={p} />
-			)
+		return (
+			<PokemonCard key={p.id} pokemon={p} />
+		)
 	})
 
 	const completion = dexData.map(r => {
-			return (
-					<DexCompletion key={r.region} dex={r} caught={caught} />
-			)
+		return (
+			<DexCompletion key={r.region} dex={r} caught={caught} />
+		)
 	})
 
 	const handleSort = (e) => {
-			if (e.target.id === "order") {
-				setSortedDex(pokedex)
-			}
-			else if (e.target.id === "alpha") {
-				setSortedDex(alphaDex)
-			}
-			else if (e.target.id === "num") {
-				setSortedDex(numDex)
-			}
-			setSort(e.target.id)
+		if (e.target.id === "order") {
+			setSortedDex(pokedex)
+		}
+    else if (e.target.id === "alpha") {
+      setSortedDex(alphaDex)
+    }
+    else if (e.target.id === "num") {
+      setSortedDex(numDex)
+    }
+    setSort(e.target.id)
 	}
+
+	// const handleDelete = () => {
+	// 	caught.map(id => {
+	// 		fetch(`http://localhost:6001/pokemon/${id}`, {
+	// 		method: 'DELETE'
+	// 		})
+	// 	})
+	// }
 
 return (
 	<div className="pokedex">
@@ -95,9 +103,10 @@ return (
 		{(pokedex.length === 0) ? 
 		<p>You haven't caught any Pokémon yet!</p> : 
 		<div className="pokedexGrid">
+			{/* <button className='button' onClick={(e) => handleDelete()}>Clear Pokédex</button> */}
 			{displayPokedex}
 		</div>}
 	</div>
-  )
+)
 }
  export default Pokedex;

@@ -55,32 +55,32 @@ const AnswerForm = ({ handleCaught }) => {
     e.target.reset()
   }
 
-return (
-  <div className="answer">
-    <ToastContainer position="middle-center" >
-      <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
-        <Toast.Header>
-          <img
-            src="holder.js/20x20?text=%20"
-            className="rounded me-2"
-            alt=""
-          />
-          <strong className="me-auto">Pokédex Master</strong>
-          <small>just now</small>
-        </Toast.Header>
-        <Toast.Body>
-          <img src={newPkmn.img} alt="" />
-          <br/>
-          {newPkmn.message}
-        </Toast.Body>
-      </Toast>
-    </ToastContainer>
-    <form onSubmit={handleSubmit} >
-      <input type="text" size="25" placeholder="Enter Pokémon name here!" onChange={(e) => setAnswer(e.target.value)}/>
-      <input type="submit" value="Go!" />
-    </form>
-  </div>
-)
+  return (
+    <div className="answer">
+      <ToastContainer position="middle-center" >
+        <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
+          <Toast.Header>
+            <img
+              src="holder.js/20x20?text=%20"
+              className="rounded me-2"
+              alt=""
+            />
+            <strong className="me-auto">Pokédex Master</strong>
+            <small>just now</small>
+          </Toast.Header>
+          <Toast.Body>
+            <img src={newPkmn.img} alt="" />
+            <br/>
+            {newPkmn.message}
+          </Toast.Body>
+        </Toast>
+      </ToastContainer>
+      <form onSubmit={handleSubmit} >
+        <input type="text" size="25" placeholder="Enter Pokémon name here!" onChange={(e) => setAnswer(e.target.value)}/>
+        <input type="submit" value="Go!" />
+      </form>
+    </div>
+  )
 }
 
 export default AnswerForm

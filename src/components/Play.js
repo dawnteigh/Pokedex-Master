@@ -31,25 +31,25 @@ const Play = () => {
       <form>
         <label style={(mode === "easy" ? checkedStyle : null)} >
             <input
-            type="radio"
-            checked={mode === "easy"}
-            onChange={() => setMode("easy")}
+              type="radio"
+              checked={mode === "easy"}
+              onChange={() => setMode("easy")}
             />
             Easy Mode
         </label>
         <label style={(mode === "hard" ? checkedStyle : null)} >
             <input
-            type="radio"
-            checked={mode === "hard"}
-            onChange={() => setMode("hard")}
+              type="radio"
+              checked={mode === "hard"}
+              onChange={() => setMode("hard")}
             />
             Hard Mode
         </label>
       </form>
       <img
-      src={encounter}
-      alt="A wild mystery Pokemon appeared!"
-      className="enlarge"
+        src={encounter}
+        alt="A wild mystery Pokemon appeared!"
+        className="enlarge"
       />
       <br/>
       <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
@@ -65,7 +65,7 @@ const Play = () => {
         Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
       </div>
     </div>
-    )
+  )
 }
 
 export default Play

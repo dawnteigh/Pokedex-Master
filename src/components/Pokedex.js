@@ -59,54 +59,54 @@ const Pokedex = () => {
 	// 	})
 	// }
 
-return (
-	<div className="pokedex">
-		<div className="compGrid">
-			{completion}
-		</div>
-		<br/>
-		<form>
-			<label style={(sort === "num" ? checkedStyle : null)} >
-				<input
-				type="radio"
-				id="num"
-				name="sort"
-				checked={sort === "num"}
-				onChange={handleSort}
-				/>
-				Dex Number
-			</label>
-			<label style={(sort === "alpha" ? checkedStyle : null)} >
-				<input
-				type="radio"
-				id="alpha"
-				name="sort"
-				checked={sort === "alpha"}
-				onChange={handleSort}
-				/> 
-				Alphabetical
-			</label>
-			<label style={(sort === "order" ? checkedStyle : null)} >
-				<input
-				type="radio"
-				id="order"
-				name="sort"
-				checked={sort === "order"}
-				onChange={handleSort}
-				/>
-				Order Caught
-			</label>
-		</form>
-		<br/>
-		<input onChange={(e) => setFilter(e.target.value)} type="text" size="45" placeholder="Search Pokémon" />
-		{(filterPokedex.length === 0 && pokedex.length > 0) ? <p>You haven't caught any Pokémon that match your query!</p> : null}
-		{(pokedex.length === 0) ? 
-		<p>You haven't caught any Pokémon yet!</p> : 
-		<div className="pokedexGrid">
-			{/* <button className='button' onClick={(e) => handleDelete()}>Clear Pokédex</button> */}
-			{displayPokedex}
-		</div>}
-	</div>
-)
+  return (
+    <div className="pokedex">
+      <div className="compGrid">
+        {completion}
+      </div>
+      <br/>
+      <form>
+        <label style={(sort === "num" ? checkedStyle : null)} >
+          <input
+          type="radio"
+          id="num"
+          name="sort"
+          checked={sort === "num"}
+          onChange={handleSort}
+          />
+          Dex Number
+        </label>
+        <label style={(sort === "alpha" ? checkedStyle : null)} >
+          <input
+          type="radio"
+          id="alpha"
+          name="sort"
+          checked={sort === "alpha"}
+          onChange={handleSort}
+          /> 
+          Alphabetical
+        </label>
+        <label style={(sort === "order" ? checkedStyle : null)} >
+          <input
+          type="radio"
+          id="order"
+          name="sort"
+          checked={sort === "order"}
+          onChange={handleSort}
+          />
+          Order Caught
+        </label>
+      </form>
+      <br/>
+      <input onChange={(e) => setFilter(e.target.value)} type="text" size="45" placeholder="Search Pokémon" />
+      {(filterPokedex.length === 0 && pokedex.length > 0) ? <p>You haven't caught any Pokémon that match your query!</p> : null}
+      {(pokedex.length === 0) ? 
+      <p>You haven't caught any Pokémon yet!</p> : 
+      <div className="pokedexGrid">
+        {/* <button className='button' onClick={(e) => handleDelete()}>Clear Pokédex</button> */}
+        {displayPokedex}
+      </div>}
+    </div>
+  )
 }
  export default Pokedex;

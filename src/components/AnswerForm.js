@@ -3,7 +3,7 @@ import { PokeContext } from '../context/PokeContext'
 import { ToastContainer } from 'react-bootstrap'
 import Toast from 'react-bootstrap/Toast'
 
-const AnswerForm = ({ handleCaught }) => {
+const AnswerForm = ({ handleCaught, pokeFormat }) => {
 
   const { pokemon, mode, newPokemon } = useContext(PokeContext)
   const { id, name, sprite, types } = pokemon
@@ -30,7 +30,7 @@ const AnswerForm = ({ handleCaught }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if (answer.toLowerCase() === name.toLowerCase()) {
+    if (pokeFormat(answer).toLowerCase() === name.toLowerCase()) {
       fetch("http://localhost:6001/pokemon", configObj)
       .then(r => r.json())
       .then(data => {

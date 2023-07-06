@@ -15,7 +15,28 @@ const Play = () => {
     setPokedex([...pokedex, pokemon])
   }
 
-  const safeEntry = entry.toLowerCase().replaceAll(pokemon.name.toLowerCase(), "_____");
+  const pokeFormat = (pok) => pok.split(" ").join("-").replace(/[.:’'\n]/g, "").replace('♂', '-m').replace('♀', '-f').replaceAll('é', 'e')
+ 
+  const cleanEntry = (entry) => {
+    if (pokeFormat(entry).toLowerCase().includes(pokemon.name.toLowerCase())) {
+      const blankedEntry = entry.split(" ").map(str => {
+        if (pokemon.name.toLowerCase().split('-').includes(pokeFormat(str).toLowerCase())) {
+          return "_____"
+        }
+        else if ((str.split("’").length > 1) && (pokeFormat(str.toLowerCase().split("’")[0]) === pokemon.name.toLowerCase())) {
+         return "_____'s"
+        }
+        else {
+          return str
+        }
+      })
+      return blankedEntry.join(" ")
+    }
+    else {
+      return entry
+    }
+  }
+
   const dexCompletion = caught.filter(num => num < range.max)
   const toggleHints = () => setShowHints(!showHints)
 
@@ -52,9 +73,9 @@ const Play = () => {
         className="enlarge"
       />
       <br/>
-      <b>{(entry.toLowerCase().includes(pokemon.name.toLowerCase())) ? safeEntry.charAt(0).toUpperCase() + safeEntry.slice(1) : entry}</b>
+      <b>{cleanEntry(entry)}</b>
       <br/>
-      <AnswerForm handleCaught={handleCaught} />
+      <AnswerForm handleCaught={handleCaught} pokeFormat={pokeFormat} />
       {dexCompletion.length}/{range.max - 1} Pokémon captured
       <br/>
       <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>

@@ -20,23 +20,24 @@ Head into your CLI and navigate to the directory where Pokédex Master will live
 <img src="public/Animation.gif" alt="git clone git@github.com:your_username/Pokedex-Master.git" height="auto" width="400" /><br><br>
 Once it's done, navigate into the new directory and you're ready to begin using Pokédex Master!
 ```terminal
-~$ cd pokedex-master
+~$ cd Pokedex-Master
 ```
 
 
 ## Usage
-To get started, make sure you are in the <b>pokedex-master</b> directory and type this in your terminal:
+To get started, make sure you are in the <b>Pokedex-Master</b> directory and type this in your terminal:
 ```terminal
-~/pokedex-master$ npm run server
+~/Pokedex-Master$ npm run server
 ```
 This starts up a mock back-end server. Think of it as a PC box that you'll be sending your captured Pokémon to.<br>
 Next, you will need to open a <i>second</i> terminal. Navigate to the correct directory again, this time entering:
 ```terminal
-~/pokedex-master$ npm install && npm start
+~/Pokedex-Master$ npm install && npm start
 ```
 A browser window will open, but don't panic. It's the game! If you entered the commands out of order, don't worry; just refresh the page after both servers are running and everything should work properly.<br>
 After that, it's pretty straightforward. Head into the browser window at http://localhost:3000/ and follow the in-app instructions. Enjoy!<br><br>
-![pokedex-master](public/pkdxmstr.gif)
+<i>* Pictured below is an older version; the latest version features Pokédex searching, modes, less strict answer formats, and all Pokémon through Gen 9!</i>
+![Pokedex-Master](public/pkdxmstr.gif)
 
 
 ## Contributing

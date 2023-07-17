@@ -1,27 +1,6 @@
 {
   "pokemon": [
     {
-      "id": 332,
-      "name": "cacturne",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
-      "types": [
-        {
-          "slot": 1,
-          "type": {
-            "name": "grass",
-            "url": "https://pokeapi.co/api/v2/type/12/"
-          }
-        },
-        {
-          "slot": 2,
-          "type": {
-            "name": "dark",
-            "url": "https://pokeapi.co/api/v2/type/17/"
-          }
-        }
-      ]
-    },
-    {
       "id": 184,
       "name": "azumarill",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
@@ -1172,6 +1151,62 @@
           "type": {
             "name": "psychic",
             "url": "https://pokeapi.co/api/v2/type/14/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 429,
+      "name": "mismagius",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "ghost",
+            "url": "https://pokeapi.co/api/v2/type/8/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 924,
+      "name": "tandemaus",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 263,
+      "name": "zigzagoon",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "normal",
+            "url": "https://pokeapi.co/api/v2/type/1/"
+          }
+        }
+      ]
+    },
+    {
+      "id": 106,
+      "name": "hitmonlee",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+      "types": [
+        {
+          "slot": 1,
+          "type": {
+            "name": "fighting",
+            "url": "https://pokeapi.co/api/v2/type/2/"
           }
         }
       ]

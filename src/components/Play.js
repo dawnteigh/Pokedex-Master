@@ -15,11 +15,11 @@ const Play = () => {
     setPokedex([...pokedex, pokemon])
   }
 
-  const pokeFormat = (pok) => pok.split(" ").join("-").replaceAll(/[.:’'\n]/g, "").replace('♂', '-m').replace('♀', '-f').replaceAll('é', 'e')
+  const pokeFormat = (pok) => pok.split(" ").join("-").replaceAll(/[.:’']/g, "").replaceAll('\n', '-').replace('♂', '-m').replace('♀', '-f').replaceAll('é', 'e')
  
   const cleanEntry = (entry) => {
     if (pokeFormat(entry).toLowerCase().includes(pokemon.name.toLowerCase())) {
-      const blankedEntry = entry.split(" ").map(str => {
+      const blankedEntry = entry.replaceAll('\n', ' ').split(" ").map(str => {
         if (pokemon.name.toLowerCase().split('-').includes(pokeFormat(str).toLowerCase())) {
           return "_____"
         }

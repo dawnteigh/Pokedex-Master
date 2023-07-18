@@ -9,6 +9,7 @@ const Pokedex = () => {
 	const { pokedex, caught, checkedStyle } = useContext(PokeContext)
 	const [sort, setSort] = useState("num")
 	const [filter, setFilter] = useState("")
+  const [sortedDex, setSortedDex] = useState([])
 
 	const numDex = pokedex.slice().sort((a, b) => a.id - b.id)
 	const alphaDex = pokedex.slice().sort((a, b) => {
@@ -21,7 +22,7 @@ const Pokedex = () => {
 		}
 			return 0;
 	});
-	const [sortedDex, setSortedDex] = useState([])
+  const recentDex = pokedex.toReversed()
 
 	useEffect(() => setSortedDex(numDex), [pokedex])
 
@@ -39,8 +40,8 @@ const Pokedex = () => {
 	})
 
 	const handleSort = (e) => {
-		if (e.target.id === "order") {
-			setSortedDex(pokedex)
+		if (e.target.id === "recent") {
+			setSortedDex(recentDex)
 		}
     else if (e.target.id === "alpha") {
       setSortedDex(alphaDex)
@@ -86,15 +87,15 @@ const Pokedex = () => {
           /> 
           Alphabetical
         </label>
-        <label style={(sort === "order" ? checkedStyle : null)} >
+        <label style={(sort === "recent" ? checkedStyle : null)} >
           <input
           type="radio"
-          id="order"
+          id="recent"
           name="sort"
-          checked={sort === "order"}
+          checked={sort === "recent"}
           onChange={handleSort}
           />
-          Order Caught
+          Most Recent
         </label>
       </form>
       <br/>

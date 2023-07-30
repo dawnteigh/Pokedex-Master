@@ -81,7 +81,7 @@ const Play = () => {
       <button className="button" onClick={toggleHints} >{!showHints ? "Show Hints" : "Hide Hints"}</button>
       <br/>
       <div style={{display: !showHints ? "none" : "block"}}>
-        This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0].type.name + "/" + pokemon.types[1].type.name : pokemon.types[0].type.name} type.
+        This Pokémon is {(pokemon.types.length > 1) ? pokemon.types[0] + "/" + pokemon.types[1] : pokemon.types[0]} type.
         <br/>
         Its name starts with '{pokemon.name.charAt(0).toUpperCase()}'.
       </div>

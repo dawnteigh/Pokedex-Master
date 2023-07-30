@@ -38,7 +38,7 @@ function PokeProvider({ children }) {
             id: data.id,
             name: data.species.name,
             sprite: data.sprites.front_default,
-            types: data.types
+            types: data.types.map(t => t.type.name)
           })
         )
         .catch(() => alert('Failed to fetch Pokémon. Refresh to try again.'))

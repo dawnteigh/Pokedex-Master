@@ -2,6 +2,7 @@ body {
   overflow: overlay;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
+  padding-top: 14%;
   min-height: 100vh;
 }
 
@@ -17,6 +18,12 @@ footer {
 .App {
   text-align: center;
   font-size: 12px;
+}
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .header {

@@ -11,7 +11,7 @@ function NavBar() {
   }
   
   return (
-    <div>
+    <div className="navBar">
       <div className="header">
         <img src={PokedexMaster} alt="Pokedex Master" className="headerImg" />
       </div>

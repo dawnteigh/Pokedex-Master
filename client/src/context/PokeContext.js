@@ -11,7 +11,7 @@ function PokeProvider({ children }) {
     id: "",
     name: "",
     sprite: "",
-    types: [{"type": {}}]
+    types: []
   });
   const [entry, setEntry] = useState("")
   const [caught, setCaught] = useState([])

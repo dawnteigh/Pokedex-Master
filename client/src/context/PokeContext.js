@@ -8,7 +8,7 @@ function PokeProvider({ children }) {
 
   const [pokedex, setPokedex] = useState([])
   const [pokemon, setPokemon] = useState({
-    id: "",
+    number: "",
     name: "",
     sprite: "",
     types: []
@@ -35,7 +35,7 @@ function PokeProvider({ children }) {
         .then(r => r.json())
         .then(data =>
           setPokemon({
-            id: data.id,
+            number: data.id,
             name: data.species.name,
             sprite: data.sprites.front_default,
             types: data.types.map(t => t.type.name)
@@ -74,11 +74,11 @@ function PokeProvider({ children }) {
   }
 
   useEffect(() => {
-    fetch("http://localhost:6001/pokemon")
+    fetch("http://localhost:4000/api/pokemon")
     .then(r => r.json())
     .then(data => {
       setPokedex(data)
-      setCaught(data.map(d => d.id))
+      setCaught(data.map(d => d.number))
     })
     .catch(() => alert('Failed to fetch local Pokédex info. Make sure JSON Server is running.'))
   }, [])

@@ -11,7 +11,7 @@ const Pokedex = () => {
 	const [filter, setFilter] = useState("")
   const [sortedDex, setSortedDex] = useState([])
 
-	const numDex = pokedex.slice().sort((a, b) => a.id - b.id)
+	const numDex = pokedex.slice().sort((a, b) => a.number - b.number)
 	const alphaDex = pokedex.slice().sort((a, b) => {
 		let fa = a.name.toLowerCase(), fb = b.name.toLowerCase();
 		if (fa < fb) {
@@ -29,7 +29,7 @@ const Pokedex = () => {
 	const filterPokedex = sortedDex.filter(p => p.name.toLowerCase().includes(filter.toLowerCase()))
 	const displayPokedex = filterPokedex.map(p => {
 		return (
-			<PokemonCard key={p.id} pokemon={p} />
+			<PokemonCard key={p.number} pokemon={p} />
 		)
 	})
 

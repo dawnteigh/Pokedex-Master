@@ -6,7 +6,7 @@ import Toast from 'react-bootstrap/Toast'
 const AnswerForm = ({ handleCaught, pokeFormat }) => {
 
   const { pokemon, mode, newPokemon } = useContext(PokeContext)
-  const { id, name, sprite, types } = pokemon
+  const { number, name, sprite, types } = pokemon
 
   const [answer, setAnswer] = useState("")
   const [show, setShow] = useState(false)
@@ -21,7 +21,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      id: id,
+      number: number,
       name: name,
       sprite: sprite,
       types: types
@@ -31,7 +31,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (pokeFormat(answer).toLowerCase() === name.toLowerCase()) {
-      fetch("http://localhost:6001/pokemon", configObj)
+      fetch("http://localhost:4000/api/pokemon", configObj)
       .then(r => r.json())
       .then(data => {
         console.log(`Successfully added ${data.name} to your Pokédex!`)
@@ -40,7 +40,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
           img: data.sprite
         })
         setShow(true)
-        handleCaught(data.id)
+        handleCaught(data.number)
       })
       .catch(() => alert("Something went wrong. Is your JSON Server running?"))
     } else {

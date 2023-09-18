@@ -73,6 +73,16 @@ function PokeProvider({ children }) {
     history.push('/play')
   }
 
+  const clearDex = () => {
+    fetch('http://localhost:4000/api/delete', {
+    method: 'DELETE'
+    })
+    .then(() => {
+      setPokedex([])
+      setCaught([])
+    })
+  }
+
   useEffect(() => {
     fetch("http://localhost:4000/api/pokemon")
     .then(r => r.json())
@@ -107,7 +117,8 @@ function PokeProvider({ children }) {
     mode,
     setMode,
     newPokemon,
-    checkedStyle
+    checkedStyle,
+    clearDex
     }}>
     {children}
   </PokeContext.Provider>

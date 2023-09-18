@@ -232,3 +232,24 @@ label:hover {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.delete {
+  font-size: .75em;
+  padding: 4px 10px;
+  margin-top: 2px;
+}
+
+.left {
+  float: left;
+  margin-left: 15%;
+}
+
+.right {
+  float: right;
+  margin-right: 15%;
+}
+
+.msg-header {
+  background-color: #b644fc;
+  color: white;
+}
+

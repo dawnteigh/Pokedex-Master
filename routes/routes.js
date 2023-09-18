@@ -26,12 +26,18 @@ router.post('/pokemon', async (req, res) => {
         res.status(200).json(newPokemon)
     }
     catch(ex) {
-        res.status(400).json({message: ex.message})
+        res.status(400).json({ message: ex.message })
     }
 })
 // clear the pokedex
-router.delete('/delete', (req, res) => {
-    res.send('Delete API')
+router.delete('/delete', async (req, res) => {
+    try {
+        const result = await Pokemon.deleteMany();
+        res.json({ message: `${result.deletedCount} Pokemon were released.` })
+    }
+    catch(ex) {
+        res.status(500).json({ message: ex.message })
+    }
 })
 
 // ~*~ IF NEEDED ~*~

@@ -1,5 +1,5 @@
 const express = require('express');
-const Pokemon = require('../models/pokemon')
+const Pokemon = require('../models/Pokemon')
 
 const router = express.Router()
 // get a user's pokedex
@@ -8,8 +8,8 @@ router.get('/pokemon', async (req, res) => {
         const pokedex = await Pokemon.find()
         res.json(pokedex)
     }
-    catch(ex) {
-        res.status(500).json({message: ex.message})
+    catch (ex) {
+        res.status(500).json({ message: ex.message })
     }
 })
 // add a pokemon to the dex
@@ -25,7 +25,7 @@ router.post('/pokemon', async (req, res) => {
         const newPokemon = await pokemon.save();
         res.status(200).json(newPokemon)
     }
-    catch(ex) {
+    catch (ex) {
         res.status(400).json({ message: ex.message })
     }
 })
@@ -35,7 +35,7 @@ router.delete('/delete', async (req, res) => {
         const result = await Pokemon.deleteMany();
         res.json({ message: `${result.deletedCount} Pokemon were released.` })
     }
-    catch(ex) {
+    catch (ex) {
         res.status(500).json({ message: ex.message })
     }
 })
@@ -47,8 +47,8 @@ router.get('/getOne/:id', async (req, res) => {
         const pokemon = await Pokemon.findById(req.params.id)
         res.json(pokemon)
     }
-    catch(ex) {
-        res.status(500).json({message: ex.message})
+    catch (ex) {
+        res.status(500).json({ message: ex.message })
     }
 })
 

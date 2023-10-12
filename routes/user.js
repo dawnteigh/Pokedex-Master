@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const bcrypt = require("bcryptjs");
+const bcrypt = require("bcrypt");
 const User = require("../models/User"); // User model
 
 router.post('/register', async (req, res) => {
@@ -26,8 +26,11 @@ router.post('/register', async (req, res) => {
     newUser.password = hash
     const savedUserRes = await newUser.save()
 
-    if (savedUserRes)
-      return res.status(200).json({ msg: 'user is successfully saved' })
+    if (savedUserRes) {
+      const userSession = { username: newUser.username, pokedex: newUser.pokedex }
+      req.session.user = userSession
+      return res.status(200).json({ userSession })
+    }
   })
 })
 
@@ -45,12 +48,12 @@ router.post(`/login`, async (req, res) => {
 
   const matchPassword = await bcrypt.compare(password, user.password)
   if (matchPassword) {
-    const userSession = { username: user.username } // creating user session to keep user loggedin also on refresh
-    req.session.user = userSession // attach user session to session object from express-session
+    const userSession = { username: user.username, pokedex: user.pokedex }
+    req.session.user = userSession
 
     return res
       .status(200)
-      .json({ msg: 'You have logged in successfully', userSession }) // attach user session id to the response. It will be transfer in the cookies
+      .json({ msg: userSession })
   } else {
     return res.status(400).json({ msg: 'Invalid credential' })
   }
@@ -65,7 +68,7 @@ router.delete(`/logout`, async (req, res) => {
   })
 })
 
-router.get('/isAuth', async (req, res) => {
+router.get('/me', async (req, res) => {
   if (req.session.user) {
     return res.json(req.session.user)
   } else {

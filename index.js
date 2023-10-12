@@ -8,7 +8,7 @@ const MongoDBStore = require("connect-mongodb-session")(session);
 const cors = require('cors');
 
 const mongoString = process.env.DATABASE_URL
-const sessionSecret = pricess.env.SESSION_SECRET
+const sessionSecret = process.env.SESSION_SECRET
 mongoose.connect(mongoString)
 const database = mongoose.connection
 database.on('error', (error) => {

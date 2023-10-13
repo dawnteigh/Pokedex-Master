@@ -1,14 +1,8 @@
-const mongoose = require('mongoose'),
-  Schema = mongoose.Schema
+const mongoose = require('mongoose')
 
-const UserSchema = new Schema({
+const UserSchema = new mongoose.Schema({
   username: { type: String, required: true, index: { unique: true } },
-  password: { type: String, required: true },
-  pokedex: [{
-    type: Schema.Types.ObjectId,
-    ref: 'Pokemon'
-  }]
-
+  password: { type: String, required: true }
 })
 
 module.exports = mongoose.model('User', UserSchema);

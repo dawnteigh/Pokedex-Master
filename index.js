@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const userRouter = require('./routes/user')
-const pokemonRouter = require('./routes/pokemon')
+const pokedexRouter = require('./routes/pokedex')
 const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const cors = require('cors');
@@ -38,6 +38,6 @@ app.use(
     })
 );
 app.use('/api', userRouter);
-app.use('/api', pokemonRouter);
+app.use('/api', pokedexRouter);
 
 app.listen(4000, () => console.log(`Server started at ${4000}`));

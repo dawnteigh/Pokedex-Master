@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
-import { PaldeaEntries } from "../PaldeaEntries";
+import { PaldeaEntries } from "../data/PaldeaEntries";
 
 const PokeContext = React.createContext();
 
 function PokeProvider({ children }) {
+
+  const [user, setUser] = useState(false)
+  const [errors, setErrors] = useState(false)
+  const [saveFile, setSaveFile] = useState(false)
 
   const [pokedex, setPokedex] = useState([])
   const [pokemon, setPokemon] = useState({
@@ -13,21 +17,46 @@ function PokeProvider({ children }) {
     sprite: "",
     types: []
   });
+
   const [entry, setEntry] = useState("")
   const [caught, setCaught] = useState([])
   const [range, setRange] = useState({
     min: 1,
-    max: 1011
+    max: 1018
   })
   const [mode, setMode] = useState("easy")
   const { min, max } = range
 
   const history = useHistory()
+
+  useEffect(() => {
+    fetch("/api/me")
+      .then(r => r.json())
+      .then(data => {
+        if (data.error) {
+          setErrors(data.error)
+        }
+        else {
+          setUser(data)
+        }
+      })
+  }, [])
+
+  const logout = () => {
+    fetch('/api/logout', {
+      method: "DELETE"
+    })
+      .then(() => {
+        setSaveFile(false)
+        setUser(false)
+      })
+  }
+
   const checkedStyle = {
     background: "#ee07e2",
     boxShadow: "rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px"
-    }
-    
+  }
+
   const newPokemon = () => {
     let dexNo = Math.floor(Math.random() * (max - min) + min)
     if (!caught.includes(dexNo)) {
@@ -41,57 +70,65 @@ function PokeProvider({ children }) {
             types: data.types.map(t => t.type.name)
           })
         )
-        .catch(() => alert('Failed to fetch Pokémon. Refresh to try again.'))
-        if (dexNo > 905) {
-          const pkmn = PaldeaEntries.find(p => p.number === dexNo)
-          const entry = pkmn.entries[Math.floor(Math.random() * pkmn.entries.length)]
-          setEntry(entry)
-        }
-        else {
-          fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
-            .then(r => r.json())
-            .then(data => {
-              if (!data.flavor_text_entries[0]) {
-                setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
-              }
-              else {
-                const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
-                const randomEntry = entries[Math.floor(Math.random() * entries.length)]
-                setEntry(randomEntry.flavor_text)
-              }
-            })
-            .catch(() => alert('Failed to fetch Pokédex entry. Refresh to try again.'))
-        }
+        .catch(() => setErrors("Communication with PokeAPI failed. Refresh to try again."))
+      if (dexNo > 905) {
+        const pkmn = PaldeaEntries.find(p => p.number === dexNo)
+        const entry = pkmn.entries[Math.floor(Math.random() * pkmn.entries.length)]
+        setEntry(entry)
+      }
+      else {
+        fetch(`https://pokeapi.co/api/v2/pokemon-species/${dexNo}`)
+          .then(r => r.json())
+          .then(data => {
+            if (!data.flavor_text_entries[0]) {
+              setEntry('This Pokémon has no Pokédex entries yet! Use the hints below to guess.')
+            }
+            else {
+              const entries = data.flavor_text_entries.filter(e => e.language.name === 'en')
+              const randomEntry = entries[Math.floor(Math.random() * entries.length)]
+              setEntry(randomEntry.flavor_text)
+            }
+          })
+          .catch(() => setErrors("Communication with PokeAPI failed. Refresh to try again."))
+      }
     }
     else {
       newPokemon()
     }
   }
-  
+
   const rangeChange = (obj) => {
     setRange(obj)
     history.push('/play')
   }
 
-  const clearDex = () => {
-    fetch('http://localhost:4000/api/delete', {
-    method: 'DELETE'
+  const clearDex = async () => {
+    const r = await fetch(`/api/pokedex/${saveFile}/pokemon`, {
+      method: 'DELETE'
     })
-    .then(() => {
+    const response = await r.json()
+    if (response.error) {
+      setErrors(response.error)
+    } else {
+      setErrors(response.message)
       setPokedex([])
       setCaught([])
-    })
+    }
   }
 
   useEffect(() => {
-    fetch("http://localhost:4000/api/pokemon")
-    .then(r => r.json())
-    .then(data => {
-      setPokedex(data)
-      setCaught(data.map(d => d.number))
-    })
-    .catch(() => alert('Failed to fetch local Pokédex info. Make sure JSON Server is running.'))
-  }, [])
+    if (saveFile) {
+      fetch(`/api/pokedex/${saveFile}`)
+        .then(r => r.json())
+        .then(data => {
+          if (data.error) {
+            setErrors(data.error)
+          }
+          setPokedex(data.pokemon)
+          setCaught(data.pokemon.map(p => p.number))
+        })
+    }
+  }, [saveFile])
 
   useEffect(() => {
     const dexCompletion = caught.filter(num => num < range.max)
@@ -101,28 +138,35 @@ function PokeProvider({ children }) {
   }, [caught, range])
 
   return (
-  <PokeContext.Provider
-  value={{ 
-    pokedex,
-    setPokedex,
-    pokemon,
-    setPokemon,
-    entry,
-    setEntry,
-    caught,
-    setCaught,
-    range,
-    setRange,
-    rangeChange,
-    mode,
-    setMode,
-    newPokemon,
-    checkedStyle,
-    clearDex
-    }}>
-    {children}
-  </PokeContext.Provider>
+    <PokeContext.Provider
+      value={{
+        user,
+        setUser,
+        errors,
+        setErrors,
+        saveFile,
+        setSaveFile,
+        pokedex,
+        setPokedex,
+        pokemon,
+        setPokemon,
+        entry,
+        setEntry,
+        caught,
+        setCaught,
+        range,
+        setRange,
+        rangeChange,
+        mode,
+        setMode,
+        newPokemon,
+        checkedStyle,
+        clearDex,
+        logout
+      }}>
+      {children}
+    </PokeContext.Provider>
   )
 }
 
-export { PokeContext, PokeProvider}
+export { PokeContext, PokeProvider }

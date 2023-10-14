@@ -24,13 +24,16 @@ const pokedexSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'User'
     }
-},
+}/*,
     {
         toJSON: { virtuals: true }
-    })
+    }*/
+)
 
-pokedexSchema.virtual('completion').get(function () {
-    return (100 * this.pokemon.length) / 1017;
-})
+// pokedexSchema.virtual('completion').get(function () {
+//     return (100 * this.pokemon.length) / 1017;
+// })
+
+// ** NOTE: The virtual is fun, but doesn't persist to the DB and therefore is not returned when the session is queried **
 
 module.exports = mongoose.model('Pokedex', pokedexSchema)

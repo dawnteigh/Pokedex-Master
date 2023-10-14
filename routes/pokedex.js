@@ -22,14 +22,13 @@ router.patch('/pokedex/:id/pokemon', async (req, res) => {
         sprite: req.body.sprite,
         types: req.body.types
     }
-    try {
-        pokemon.push(newPokemon)
-        const updated = await pokedex.save();
-        res.status(200).json(newPokemon)
+    pokemon.push(newPokemon)
+    if (pokedex.save()) {
+        return res.status(200).json(newPokemon)
+    } else {
+        return res.status(400).json({ error: "Error when saving new Pokémon" })
     }
-    catch (ex) {
-        res.status(400).json({ error: ex.message })
-    }
+
 })
 // clear the pokedex's pokemon collection
 router.delete('/pokedex/:id/pokemon', async (req, res) => {
@@ -38,7 +37,7 @@ router.delete('/pokedex/:id/pokemon', async (req, res) => {
     if (numOfPokemon !== 0) {
         try {
             await pokedex.updateOne({ pokemon: [] });
-            res.json({ message: `You released ${numOfPokemon} Pokémon.` })
+            res.status(200).json({ message: `You released ${numOfPokemon} Pokémon.` })
         }
         catch (ex) {
             res.status(500).json({ error: ex.message })

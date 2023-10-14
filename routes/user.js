@@ -5,16 +5,18 @@ const User = require("../models/User");
 const Pokedex = require("../models/Pokedex");
 
 router.post('/register', async (req, res) => {
-  const { username, password } = req.body
+  const { username, password, confirm_password } = req.body
 
-  if (!username || !password)
-    return res.status(400).json({ error: 'Password and username are required' })
+  if (!username || !password || !confirm_password)
+    return res.status(400).json({ error: 'Please fill out all fields.' })
 
   if (password.length < 8) {
     return res
       .status(400)
       .json({ error: 'Password should be at least 8 characters long' })
   }
+  if (password !== confirm_password)
+    return res.status(400).json({ error: "The passwords you entered do not match." })
 
   const user = await User.findOne({ username })
   if (user) return res.status(400).json({ error: 'User already exists' })
@@ -38,7 +40,7 @@ router.post('/register', async (req, res) => {
       await p3.save()
       const userSession = { username: newUser.username, saves: [p1, p2, p3] }
       req.session.user = userSession
-      return res.status(200).json({ userSession })
+      return res.status(200).json(req.session.user)
     }
   })
 })
@@ -47,12 +49,12 @@ router.post(`/login`, async (req, res) => {
   const { username, password } = req.body
 
   if (!username || !password) {
-    res.status(400).json({ error: 'Something missing' })
+    return res.status(400).json({ error: 'Fields should not be left empty.' })
   }
 
   const user = await User.findOne({ username: username }) // finding user in db
   if (!user) {
-    return res.status(400).json({ error: 'User not found' })
+    return res.status(400).json({ error: 'Could not find any user by that name. Try signing up instead.' })
   }
 
   const matchPassword = await bcrypt.compare(password, user.password)
@@ -63,7 +65,7 @@ router.post(`/login`, async (req, res) => {
 
     return res
       .status(200)
-      .json({ userSession })
+      .json(req.session.user)
   } else {
     return res.status(400).json({ error: 'Invalid password.' })
   }
@@ -82,7 +84,7 @@ router.get('/me', async (req, res) => {
   if (req.session.user) {
     return res.json(req.session.user)
   } else {
-    return res.status(401).json('unauthorize')
+    return res.status(401).json({ error: "Please log in or sign up to continue" })
   }
 })
 

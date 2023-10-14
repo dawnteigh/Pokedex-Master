@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { PokeContext } from '../context/PokeContext'
 import PokemonCard from './PokemonCard'
-import { dexData } from '../DexData'
+import { dexData } from '../data/DexData'
 import DexCompletion from './DexCompletion'
 import Modal from 'react-bootstrap/Modal'
 

@@ -65,9 +65,9 @@ export const dexData = [
   {
     region: "Paldea",
     gen: "Gen IX",
-    range: { min: 1, max: 1011 },
+    range: { min: 1, max: 1018 },
     number: 105,
-    dexRange: { first: 906, last: 1010 }
+    dexRange: { first: 906, last: 1017 }
   }
 ];
 

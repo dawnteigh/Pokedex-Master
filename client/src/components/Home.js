@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import Login from './Login';
+import Signup from './Signup';
+import Saves from './Saves';
 import DexButton from './DexButton'
 import { dexData } from '../data/DexData'
+import { PokeContext } from '../context/PokeContext'
 
 const Home = () => {
+
+  const { user, saveFile } = useContext(PokeContext)
+
+  if (!user) {
+    return (
+      <div className='two-forms'>
+        <Login />
+        <Signup />
+      </div>
+    )
+  }
+
+  if (!saveFile) {
+    return <Saves />
+  }
 
   const renderButtons = dexData.map(obj => <DexButton key={obj.region} dexData={obj} />)
 

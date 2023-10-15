@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
 import { NavLink } from "react-router-dom";
-import PokedexMaster from '../PokedexMaster.png'
 
 const NavBar = () => {
 
@@ -13,14 +12,11 @@ const NavBar = () => {
   }
 
   return (
-    <div className="navBar">
-      <div className="header">
-        <img src={PokedexMaster} alt="Pokedex Master" className="headerImg" />
-      </div>
+    <div id="navbar">
       <NavLink
         to="/"
         exact
-        className="navTab"
+        className="nav-tab"
         activeStyle={active}
       >
         Home
@@ -28,7 +24,7 @@ const NavBar = () => {
       <NavLink
         to="/play"
         exact
-        className="navTab"
+        className="nav-tab"
         activeStyle={active}
       >
         Play
@@ -36,15 +32,14 @@ const NavBar = () => {
       <NavLink
         to="/pokedex"
         exact
-        className="navTab"
+        className="nav-tab"
         activeStyle={active}
       >
         Pokédex
       </NavLink>
       <div className="nav-btns">
-        <button onClick={() => setSaveFile(false)}>Switch Save</button>
-        |
-        <button onClick={() => logout()}>Logout</button>
+        <button className="button-2" onClick={() => setSaveFile(false)}>Switch Save</button>
+        <button className="button-2" onClick={() => logout()}>Logout</button>
       </div>
     </div>
   );

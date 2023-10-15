@@ -3,6 +3,7 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
   padding-top: 14%;
+  box-sizing: border-box;
   min-height: 100vh;
 }
 
@@ -20,13 +21,10 @@ footer {
   font-size: 12px;
 }
 
-.navBar {
+#header {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-.header {
   background-color: #b644fc;
   margin: 0;
   border-bottom: #ee07e2 solid 8px;
@@ -39,7 +37,11 @@ footer {
   width: 35%;
 }
 
-.navTab {
+#navbar {
+  margin-top: -2%;
+}
+
+.nav-tab {
   display: inline-block;
   font-size: 12px;
   width: 80px;
@@ -52,9 +54,40 @@ footer {
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
 }
 
-.navTab:hover {
+.nav-tab:hover {
   color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
+}
+
+.nav-btns {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  padding: 1%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10%
+}
+
+.button-2 {
+  background-color: #ee07e2;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: #b005a8 0 -6px 3px inset;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 2% 3%;
+}
+
+.button-2:hover {
+  color: #000;
+}
+
+.button-2:active {
+  background-color: #b005a8;
 }
 
 .button {
@@ -82,6 +115,103 @@ footer {
   color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
   transform: translateY(5px)
+}
+
+.two-forms {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5%;
+}
+
+.form {
+  width: 33%;
+  border: 2px solid #ee07e2;
+  box-shadow: 2px 2px 5px 3px #00000050;
+  border-top: none;
+  border-radius: 50px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 50px auto 2%;
+}
+
+.form h3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: #b644fc;
+  width: 100%;
+  border: 5px solid #b644fc;
+  border-radius: 50px 50px 0 0
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #ee07e2;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: sans-serif, Arial;
+  box-shadow: none;
+  border-radius: 4px;
+  padding: 0;
+}
+
+.form input {
+  border-radius: 50px;
+  font-size: 12px;
+  line-height: 2em;
+  border: 2px solid #c47df0;
+  margin-top: 0;
+}
+
+.form button {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#saves {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 5px;
+
+}
+
+.save {
+  min-width: 25%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2%;
+}
+
+.save:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
+}
+
+.file-1 {
+  background-color: rgba(165, 223, 165, 0.5);
+}
+
+.file-2 {
+  background-color: rgba(239, 67, 24, 0.5);
+}
+
+.file-3 {
+  background-color: rgba(119, 178, 250, 0.5);
 }
 
 .home {
@@ -176,20 +306,20 @@ input {
   text-align: center;
 }
 
-label {
-    display: inline-block;
-    background-color: #b644fc;
-    color: white;
-    font-family: sans-serif, Arial;
-    font-size: 12px;
-    box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
-    border-radius: 4px;
-    padding: 5px
+label:not(.form label) {
+  display: inline-block;
+  background-color: #b644fc;
+  color: white;
+  font-family: sans-serif, Arial;
+  font-size: 12px;
+  box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
+  border-radius: 4px;
+  padding: 5px
 }
 
-label:hover {
-    background-color:#ee07e2;
-    box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
+label:hover:not(.form label) {
+  background-color: #ee07e2;
+  box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
 }
 
 .compGrid {
@@ -252,4 +382,3 @@ label:hover {
   background-color: #b644fc;
   color: white;
 }
-

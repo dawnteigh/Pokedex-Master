@@ -80,6 +80,15 @@ router.delete(`/logout`, async (req, res) => {
   })
 })
 
+router.patch(`/me`, async (req, res) => {
+  if (req.session.user) {
+    req.session.user.save_file = req.body.id
+    return res.json(req.session.user.save_file)
+  } else {
+    return res.status(401).json({ error: "Please log in or sign up to continue" })
+  }
+})
+
 router.get('/me', async (req, res) => {
   if (req.session.user) {
     return res.json(req.session.user)

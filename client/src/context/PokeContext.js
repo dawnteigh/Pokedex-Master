@@ -37,7 +37,11 @@ function PokeProvider({ children }) {
           setErrors(data.error)
         }
         else {
+          console.log(data)
           setUser(data)
+          if (data.save_file) {
+            setSaveFile(data.save_file)
+          }
         }
       })
   }, [])

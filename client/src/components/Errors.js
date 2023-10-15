@@ -8,7 +8,7 @@ const Errors = () => {
   const { errors, setErrors } = useContext(PokeContext)
 
   return (
-    <ToastContainer position="middle-center" >
+    <ToastContainer position="middle-center" style={{ "zIndex": 999 }}>
       <Toast onClose={() => setErrors(false)} show={true}>
         <Toast.Header>
           <strong className="me-auto">Pokédex Master</strong>

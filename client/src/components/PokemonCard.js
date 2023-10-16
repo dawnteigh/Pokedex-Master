@@ -2,11 +2,11 @@ import React from 'react'
 
 const PokemonCard = ({ pokemon }) => {
 
-  const { id, name, sprite } = pokemon
+  const { number, name, sprite } = pokemon
 
   return (
     <div className="pkmCard">
-      #{id}
+      #{number}
       <br/>
       <img src={sprite} alt={name} />
       <br/>

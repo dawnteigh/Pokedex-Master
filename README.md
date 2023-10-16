@@ -5,39 +5,54 @@ Pokédex Master is a single page application that challenges users to 'catch' Po
 <br>[<b>Here's a video demonstration of how the app works!</b>](https://youtu.be/H_qdlnG3dpU)
 
 ## Requirements
-You need to be connected to the internet to use Pokédex Master.
-You will need to have [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) and [JSON Server](https://www.npmjs.com/package/json-server) installed.<br>
-<i>In your CLI (Command Line Interface), enter the following commands:</i>
-```terminal
-~$ npm install -g npm
-~$ npm install -g json-server
-```
+Because Pokédex Master uses data from [PokéAPI](https://pokeapi.co/), you need to be connected to the internet to enjoy the app.
+You will need to have [Node Package Manager](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) installed.<br>
+You will also need a MongoDB connection string. You can get started with [MongoDB Atlas](https://www.mongodb.com/atlas) for free.
 
 ## Installation
 In this application's GitHub repo, click the fork button to create a copy for yourself. Next, in your own fork, click the 'Code' button, make sure SSH is selected, and copy what's there.<br><br>
-<img src="public/forkclone.gif" alt="Fork and clone" height="auto" width="400" /><br><br>
+<img src="client/public/forkclone.gif" alt="Fork and clone" height="auto" width="400" /><br><br>
 Head into your CLI and navigate to the directory where Pokédex Master will live. Enter the following, pasting in the text you copied:<br><br>
-<img src="public/Animation.gif" alt="git clone git@github.com:your_username/Pokedex-Master.git" height="auto" width="400" /><br><br>
-Once it's done, navigate into the new directory and you're ready to begin using Pokédex Master!
+<img src="client/public/Animation.gif" alt="git clone git@github.com:your_username/Pokedex-Master.git" height="auto" width="400" /><br><br>
+Once it's done, navigate into the new directory:
 ```terminal
 ~$ cd Pokedex-Master
 ```
+... and then create a `.env` file:
+```terminal
+~/Pokedex-Master$ touch .env
+```
+Inside of that `.env` file, you will be pasting your MongoDB connection string and a session secret. The session secret can be whatever you want it to be, and it is recommended that you change it periodically for security reasons. Check out the `express-session` [docs](https://github.com/expressjs/session#secret) for more details on that.
 
+```
+// .env
+// be sure to use the exact variable names
+
+DATABASE_URL = mongodb+srv://this-is-an-example-string.mongodb.net/ // replace this with your own connection string
+
+SESSION_SECRET = ["gY0z@B3an$-La689njK#-5dX?g!2sE"] // can be a string or an array of strings; only the first value is used
+```
+After saving your changes, all that's left to do is install the dependencies:
+```terminal
+~/Pokedex-Master$ npm install
+~/Pokedex-Master$ npm install --prefix client
+```
+Once that's complete, you are ready to run the application!
 
 ## Usage
 To get started, make sure you are in the <b>Pokedex-Master</b> directory and type this in your terminal:
 ```terminal
-~/Pokedex-Master$ npm run server
+~/Pokedex-Master$ npm start
 ```
-This starts up a mock back-end server. Think of it as a PC box that you'll be sending your captured Pokémon to.<br>
-Next, you will need to open a <i>second</i> terminal. Navigate to the correct directory again, this time entering:
+This starts up the backend server and connects you to your database.<br>
+Next, you will need to open a <i>second</i> terminal for the frontend:
 ```terminal
-~/Pokedex-Master$ npm install && npm start
+~/Pokedex-Master$ npm start --prefix client
 ```
-A browser window will open, but don't panic. It's the game! If you entered the commands out of order, don't worry; just refresh the page after both servers are running and everything should work properly.<br>
-After that, it's pretty straightforward. Head into the browser window at http://localhost:3000/ and follow the in-app instructions. Enjoy!<br><br>
+A browser window will open, but don't panic. It's the game!
+Head into the browser window at http://localhost:3000/ and create an account. From there you can select a save file and start filling your Pokédex. Enjoy!<br><br>
 <i>* Pictured below is an older version; the latest version features Pokédex searching, modes, less strict answer formats, and all Pokémon through Gen 9!</i>
-![Pokedex-Master](public/pkdxmstr.gif)
+![Pokedex-Master](client/public/pkdxmstr.gif)
 
 
 ## Contributing
@@ -48,9 +63,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Pokémon and All Respective Names are Trademark & © of Nintendo 1996-2023
 - Pokemon data comes from the great [PokéAPI](https://pokeapi.co/).
 - Image on the 'Play' page is from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
-- Mock back end possible thanks to [JSON Server](https://www.npmjs.com/package/json-server).
 - Header graphic created with [Canva](https://www.canva.com/).
-- Toast messages from [React Bootstrap](https://react-bootstrap.github.io/).
+- Toasts and Modals from [React Bootstrap](https://react-bootstrap.github.io/).
 - Application created using [Create React App](https://create-react-app.dev/).
 
 

@@ -35,7 +35,6 @@ function PokeProvider({ children }) {
       .then(data => {
         if (data.error) {
           history.push("/")
-          setErrors(data.error)
         }
         else {
           setUser(data)

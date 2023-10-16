@@ -25,6 +25,9 @@ footer {
   position: fixed;
   top: 0;
   width: 100%;
+}
+
+.header-top {
   background-color: #b644fc;
   margin: 0;
   border-bottom: #ee07e2 solid 8px;
@@ -32,24 +35,26 @@ footer {
   box-shadow: #ee07e2 0 0 2px 2px;
 }
 
-.headerImg {
+.header-img {
   height: auto;
   width: 35%;
 }
 
 #navbar {
-  margin-top: -2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .nav-tab {
-  display: inline-block;
   font-size: 12px;
-  width: 80px;
+  width: 6%;
   padding: 12px;
-  margin: 0 6px 6px;
+  margin: -1px 6px 6px;
   background: #b644fc;
   text-decoration: none;
   color: white;
+  border-top: 2px solid #ee07e2;
   border-radius: 0% 0% 100% 100%;
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
 }

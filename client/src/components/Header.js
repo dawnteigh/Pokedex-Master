@@ -8,9 +8,9 @@ const Header = () => {
   const { saveFile } = useContext(PokeContext)
 
   return (
-    <div>
-      <div id="header">
-        <img src={PokedexMaster} alt="Pokedex Master" className="headerImg" />
+    <div id="header">
+      <div className="header-top">
+        <img src={PokedexMaster} alt="Pokedex Master" className="header-img" />
       </div>
       {saveFile ? <NavBar /> : null}
     </div>

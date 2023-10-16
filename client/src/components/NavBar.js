@@ -4,7 +4,11 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 
-  const { setSaveFile, logout } = useContext(PokeContext)
+  const { setSaveFile, logout, history } = useContext(PokeContext)
+  const handleClick = () => {
+    setSaveFile(false)
+    history.push("/")
+  }
 
   const active = {
     background: "#ee07e2",
@@ -38,7 +42,7 @@ const NavBar = () => {
         Pokédex
       </NavLink>
       <div className="nav-btns">
-        <button className="button-2" onClick={() => setSaveFile(false)}>Switch Save</button>
+        <button className="button-2" onClick={() => handleClick()}>Switch Save</button>
         <button className="button-2" onClick={() => logout()}>Logout</button>
       </div>
     </div>

@@ -34,10 +34,10 @@ function PokeProvider({ children }) {
       .then(r => r.json())
       .then(data => {
         if (data.error) {
+          history.push("/")
           setErrors(data.error)
         }
         else {
-          console.log(data)
           setUser(data)
           if (data.save_file) {
             setSaveFile(data.save_file)
@@ -53,6 +53,7 @@ function PokeProvider({ children }) {
       .then(() => {
         setSaveFile(false)
         setUser(false)
+        history.push("/")
       })
   }
 
@@ -166,7 +167,8 @@ function PokeProvider({ children }) {
         newPokemon,
         checkedStyle,
         clearDex,
-        logout
+        logout,
+        history
       }}>
       {children}
     </PokeContext.Provider>

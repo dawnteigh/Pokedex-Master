@@ -71,7 +71,7 @@ const Pokedex = () => {
           <button className='button right' onClick={() => setShow(false)}>Wait, no!</button>
         </Modal.Body>
       </Modal>
-      <div className="compGrid">
+      <div className="comp-grid">
         {completion}
       </div>
       <br />
@@ -116,7 +116,7 @@ const Pokedex = () => {
           <p>You haven't caught any Pokémon yet!</p> :
           <>
             <button className='button delete' onClick={() => setShow(true)}>Clear Pokédex</button>
-            <div className="pokedexGrid">
+            <div className="pokedex-grid">
               {displayPokedex}
             </div>
           </>

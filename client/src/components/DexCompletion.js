@@ -7,10 +7,10 @@ const DexCompletion = ({ dex, caught }) => {
   const percentage = Math.floor((100 * total.length) / number)
 
   return (
-    <div className="dexCard">
+    <div className="dex-card">
       <h4 className="region">{region}</h4>
       {total.length}/{number}
-      <br/>
+      <br />
       {percentage}%
     </div>
   )

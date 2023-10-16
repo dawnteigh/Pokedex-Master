@@ -224,11 +224,11 @@ footer {
   margin-right: 25%;
 }
 
-.homePara {
+.home-para {
   font-size: 14px;
 }
 
-.buttonGrid {
+.button-grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -239,7 +239,7 @@ footer {
   gap: 5%;
 }
 
-.dbCard {
+.db-card {
   border: #ee07e2 outset 2px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
@@ -327,7 +327,7 @@ label:hover:not(.form label) {
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
 }
 
-.compGrid {
+.comp-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px;
@@ -336,7 +336,7 @@ label:hover:not(.form label) {
   margin-right: 35%;
 }
 
-.pokedexGrid {
+.pokedex-grid {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 10px;
@@ -345,14 +345,14 @@ label:hover:not(.form label) {
   margin-right: 15%;
 }
 
-.pkmCard {
+.pkm-card {
   border: #b644fc outset 2px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 2px
 }
 
-.dexCard {
+.dex-card {
   background-color: #b644fc;
   border: #ee07e2 2px;
   border-style: hidden solid solid hidden;

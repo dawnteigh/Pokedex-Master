@@ -97,4 +97,17 @@ router.get('/me', async (req, res) => {
   }
 })
 
+// route to update the save files in session to match what's in the DB
+router.get("/saves", async (req, res) => {
+  if (req.session.user) {
+    const user = await User.findOne({ username: req.session.user.username })
+    const updatedSaves = await Pokedex.find({ "user_id": user._id }).exec();
+    req.session.user.saves = updatedSaves
+    req.session.user.save_file = false
+    return res.status(200).json(req.session.user)
+  } else {
+    return res.status(401).json({ error: "Please log in or sign up to continue" })
+  }
+})
+
 module.exports = router

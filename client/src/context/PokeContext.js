@@ -141,6 +141,12 @@ function PokeProvider({ children }) {
     }
   }, [caught, range])
 
+  const updateSaves = async () => {
+    const r = await fetch('/api/saves')
+    const updated = await r.json()
+    setUser(updated)
+  }
+
   return (
     <PokeContext.Provider
       value={{
@@ -167,6 +173,7 @@ function PokeProvider({ children }) {
         checkedStyle,
         clearDex,
         logout,
+        updateSaves,
         history
       }}>
       {children}

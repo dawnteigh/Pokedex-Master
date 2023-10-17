@@ -4,9 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
 
-  const { setSaveFile, logout, history } = useContext(PokeContext)
+  const { setSaveFile, updateSaves, logout, history } = useContext(PokeContext)
   const handleClick = () => {
     setSaveFile(false)
+    updateSaves()
     history.push("/")
   }
 

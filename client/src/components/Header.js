@@ -5,7 +5,13 @@ import { PokeContext } from '../context/PokeContext'
 
 const Header = () => {
 
-  const { saveFile } = useContext(PokeContext)
+  const { user, saveFile, setSaveFile, updateSaves, logout, history } = useContext(PokeContext)
+
+  const handleClick = () => {
+    setSaveFile(false)
+    updateSaves()
+    history.push("/")
+  }
 
   return (
     <div id="header">
@@ -13,6 +19,10 @@ const Header = () => {
         <img src={PokedexMaster} alt="Pokedex Master" className="header-img" />
       </div>
       {saveFile ? <NavBar /> : null}
+      <div className="header-btns">
+        {saveFile ? <button className="button-2" onClick={() => handleClick()}>Switch Save</button> : null}
+        {user ? <button className="button-2" onClick={() => logout()}>Logout</button> : null}
+      </div>
     </div>
   )
 }

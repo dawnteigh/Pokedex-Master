@@ -7,12 +7,12 @@ const DexButton = ({ dexData }) => {
   const { rangeChange } = useContext(PokeContext)
   return (
     <div className="db-card">
-      <p style={{ margin: 0 }}>
+      <p>
         <b>{region} Region</b>
         <br />
         <i>{range.max - 1} Pokémon</i>
       </p>
-      <button className="button" onClick={(e) => rangeChange(range)} >{gen}</button>
+      <button className="button-2" onClick={(e) => rangeChange(range)} >{gen}</button>
     </div>
   )
 }

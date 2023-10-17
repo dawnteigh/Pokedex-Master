@@ -74,7 +74,7 @@ const Play = () => {
       <img
         src={encounter}
         alt="A wild mystery Pokemon appeared!"
-        className="enlarge"
+        className="play-img"
       />
       <br />
       <b>{cleanEntry(entry)}</b>

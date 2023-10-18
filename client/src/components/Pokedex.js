@@ -66,7 +66,7 @@ const Pokedex = () => {
           <Modal.Title>Pokédex Master</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p>Are you sure you wish to empty the Pokédex? This would mean starting all over!</p>
+          <p>Are you sure you want to empty the Pokédex? This would mean starting all over!</p>
           <button float='left' className='button left' onClick={() => handleClear()}>I'm sure!</button>
           <button className='button right' onClick={() => setShow(false)}>Wait, no!</button>
         </Modal.Body>
@@ -113,7 +113,7 @@ const Pokedex = () => {
       {(filterPokedex.length === 0 && pokedex.length > 0) ? <p>You haven't caught any Pokémon that match your query!</p> : null}
       {
         (pokedex.length === 0) ?
-          <p>You haven't caught any Pokémon yet!</p> :
+          <span className='stylize'>You haven't caught any Pokémon yet!</span> :
           <>
             <button className='button delete' onClick={() => setShow(true)}>Clear Pokédex</button>
             <div className="pokedex-grid">

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import PokedexMaster from '../PokedexMaster.png'
+import PokedexMaster from '../assets/PokedexMaster.png'
 import NavBar from './NavBar'
 import { PokeContext } from '../context/PokeContext'
 

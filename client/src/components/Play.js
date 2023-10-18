@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
 import AnswerForm from './AnswerForm'
 import Congrats from './Congrats'
-import encounter from '../questionmark.png'
+import encounter from '../assets/questionmark.png'
 
 const Play = () => {
 
@@ -77,7 +77,7 @@ const Play = () => {
         className="play-img"
       />
       <br />
-      <b>{cleanEntry(entry)}</b>
+      <span className="entry">{cleanEntry(entry)}</span>
       <br />
       <AnswerForm handleCaught={handleCaught} pokeFormat={pokeFormat} />
       {dexCompletion.length}/{range.max - 1} Pokémon captured

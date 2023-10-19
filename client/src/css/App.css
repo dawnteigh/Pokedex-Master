@@ -240,7 +240,7 @@ p:not(.db-card p) {
 
 .save {
   min-width: 25%;
-  border: 1px solid #ccc;
+  border: 3px outset #ccc;
   border-radius: 5px;
   padding: 2%;
   position: relative;

@@ -49,7 +49,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
     else {
       setNewPkmn({
         message: 'Oh no, the Pokémon got away!',
-        img: mode === "easy" ? sprite : ""
+        img: mode === "easy" ? sprite : missingno
       })
       setShow(true)
       newPokemon()

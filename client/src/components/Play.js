@@ -26,6 +26,9 @@ const Play = () => {
         else if (str.toLowerCase().includes(pokemon.name.toLowerCase()) && str.includes(",")) {
           return "_____,"
         }
+        else if ((str.split("'").length > 1) && (pokeFormat(str.toLowerCase().split("'")[0]) === pokemon.name.toLowerCase())) {
+          return "_____'s"
+        }
         else if ((str.split("’").length > 1) && (pokeFormat(str.toLowerCase().split("’")[0]) === pokemon.name.toLowerCase())) {
           return "_____'s"
         }

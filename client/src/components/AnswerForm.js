@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react'
 import { PokeContext } from '../context/PokeContext'
 import { ToastContainer } from 'react-bootstrap'
 import Toast from 'react-bootstrap/Toast'
+import missingno from '../assets/missingno.png'
 
 const AnswerForm = ({ handleCaught, pokeFormat }) => {
 
@@ -39,7 +40,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
       else {
         setNewPkmn({
           message: `Successfully added ${data.name.charAt(0).toUpperCase() + data.name.slice(1)} to your Pokédex!`,
-          img: data.sprite
+          img: data.sprite || missingno
         })
         setShow(true)
         handleCaught(data.number)

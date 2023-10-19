@@ -29,7 +29,11 @@ const Saves = () => {
         <h3>{i + 1}</h3>
         <div className="save-info">
           <span>
-            <img src={lastPokemon ? lastPokemon.sprite : missingno} alt={lastPokemon ? lastPokemon.name : "missingno"} className="animate" />
+            <img
+              src={lastPokemon && lastPokemon.sprite ? lastPokemon.sprite : missingno}
+              alt={lastPokemon ? lastPokemon.name : "missingno"}
+              className="animate"
+            />
           </span>
           <span>Total Pokémon Caught: {s.pokemon.length}</span>
           <span>Pokédex Completion: <ProgressBar height={20} innerColor="#ee07e280" outerColor="#ccc" progress={percentage} /></span>

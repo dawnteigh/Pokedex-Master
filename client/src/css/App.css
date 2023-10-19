@@ -246,19 +246,6 @@ p:not(.db-card p) {
   position: relative;
 }
 
-.save h3 {
-  position: absolute;
-  top: 0;
-  left: 1;
-  font-family: 'Orbitron', monospace, sans-serif;
-  color: black;
-  font-size: 5em;
-}
-
-ul {
-  list-style-type: none;
-}
-
 .save:hover {
   transform: translate(-2px, -2px);
   box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.5);
@@ -269,16 +256,25 @@ ul {
   animation: .3s ease-in-out infinite hop;
 }
 
-.file-1 {
-  background-color: rgba(165, 223, 165, 0.5);
+.save h3 {
+  position: absolute;
+  top: 0;
+  left: 1;
+  font-family: 'Orbitron', monospace, sans-serif;
+  color: black;
+  font-size: 5em;
 }
 
-.file-2 {
-  background-color: rgba(239, 67, 24, 0.5);
+.save-info {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
 }
 
-.file-3 {
-  background-color: rgba(119, 178, 250, 0.5);
+.save-info span {
+  font-weight: bold;
+  font-family: monospace, sans-serif;
+  font-size: 1.1em;
 }
 
 .home {

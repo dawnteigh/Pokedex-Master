@@ -5,10 +5,10 @@ const ProgressBar = ({ outerColor, innerColor, progress, height }) => {
 
   const outer = {
     height: height,
-    width: '80%',
+    width: '100%',
     backgroundColor: outerColor,
     borderRadius: "0 50px 50px 0",
-    margin: "0 auto"
+    margin: "0 auto",
   }
 
   const inner = {
@@ -16,13 +16,15 @@ const ProgressBar = ({ outerColor, innerColor, progress, height }) => {
     width: `${progress}%`,
     backgroundColor: innerColor,
     borderRadius: "0 50px 50px 0",
-    textAlign: 'right'
+    textAlign: 'center'
   }
 
   const label = {
-    padding: 10,
+    padding: "5px",
     color: 'black',
-    fontWeight: 900
+    fontSize: ".8em",
+    fontWeight: "bold",
+    fontFamily: "'Orbitron', sans-serif"
   }
 
   return (

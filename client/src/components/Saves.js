@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { PokeContext } from '../context/PokeContext'
 import ProgressBar from './ProgressBar'
+import missingno from '../assets/missingno.png'
 
 const Saves = () => {
   const { user, setSaveFile } = useContext(PokeContext)
@@ -24,13 +25,15 @@ const Saves = () => {
     const percentage = Math.floor((100 * s.pokemon.length) / 1017)
     const lastPokemon = s.pokemon[s.pokemon.length - 1]
     return (
-      <div className={`save file-${i + 1}`} key={i} onClick={() => handleClick(s._id)}>
+      <div className={lastPokemon ? `save ${lastPokemon.types[0]}` : "save"} key={i} onClick={() => handleClick(s._id)}>
         <h3>{i + 1}</h3>
-        <ul>
-          {lastPokemon ? <li>Last Catch: <img src={lastPokemon.sprite} alt={lastPokemon.name} className="animate" /></li> : null}
-          <li>Total Pokémon Caught: {s.pokemon.length}</li>
-          <li>Pokédex Completion: <ProgressBar height="10%" innerColor="#ee07e2" outerColor="#ccc" progress={percentage} /></li>
-        </ul>
+        <div className="save-info">
+          <span>
+            <img src={lastPokemon ? lastPokemon.sprite : missingno} alt={lastPokemon ? lastPokemon.name : "missingno"} className="animate" />
+          </span>
+          <span>Total Pokémon Caught: {s.pokemon.length}</span>
+          <span>Pokédex Completion: <ProgressBar height={20} innerColor="#ee07e280" outerColor="#ccc" progress={percentage} /></span>
+        </div>
       </div>
     )
   })

@@ -1,4 +1,5 @@
-import '../App.css';
+import '../css/App.css';
+import '../css/Types.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useContext } from 'react'
 import { Route, Switch } from "react-router-dom";

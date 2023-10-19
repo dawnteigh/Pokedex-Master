@@ -19,7 +19,7 @@ const Play = () => {
 
   const cleanEntry = (entry) => {
     if (pokeFormat(entry).toLowerCase().includes(pokemon.name.toLowerCase())) {
-      const blankedEntry = entry.replaceAll('\n', ' ').split(" ").map(str => {
+      const blankedEntry = entry.replaceAll(/[-*\n]/g, ' ').split(" ").map(str => {
         if (pokemon.name.toLowerCase().split('-').includes(pokeFormat(str).toLowerCase())) {
           return "_____"
         }

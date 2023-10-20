@@ -1,12 +1,13 @@
 import React, { useState, useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
+import ToggleSwitch from "./ToggleSwitch";
 import AnswerForm from './AnswerForm'
 import Congrats from './Congrats'
 import encounter from '../assets/questionmark.png'
 
 const Play = () => {
 
-  const { caught, setCaught, pokemon, entry, range, mode, setMode, checkedStyle, pokedex, setPokedex } = useContext(PokeContext)
+  const { caught, setCaught, pokemon, entry, range, pokedex, setPokedex } = useContext(PokeContext)
 
   const [showHints, setShowHints] = useState(false)
 
@@ -56,24 +57,7 @@ const Play = () => {
       <p>
         Read the Pokédex entry below and guess the Pokémon being described to capture it. Spelling counts, but correct answers are not case-sensitive, and punctuation is optional. For example, "Mr. Mime" is the same as "mR MiMe". Nidoran♂ and Nidoran♀ can alternatively be entered as "Nidoran-m" and "Nidoran-f", respectively. You can also select a mode below; 'Easy' shows you an image of the escaping Pokémon after an incorrect guess, 'Hard' does not.
       </p>
-      <form>
-        <label style={(mode === "easy" ? checkedStyle : null)} >
-          <input
-            type="radio"
-            checked={mode === "easy"}
-            onChange={() => setMode("easy")}
-          />
-          Easy Mode
-        </label>
-        <label style={(mode === "hard" ? checkedStyle : null)} >
-          <input
-            type="radio"
-            checked={mode === "hard"}
-            onChange={() => setMode("hard")}
-          />
-          Hard Mode
-        </label>
-      </form>
+      <ToggleSwitch />
       <img
         src={encounter}
         alt="A wild mystery Pokemon appeared!"

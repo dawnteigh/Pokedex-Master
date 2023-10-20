@@ -317,6 +317,43 @@ p:not(.db-card p) {
   margin: -1% auto 0;
 }
 
+.switch-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 1%;
+  align-items: center;
+}
+
+.switch-wrapper span {
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+}
+
+.switch {
+  background-color: #c47df080;
+  border: 1px inset #b644fc;
+  border-radius: 50px;
+  height: 25px;
+  width: 50px;
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  height: 100%;
+  display: block;
+  transition: all .5s ease-in-out
+}
+
+.slider {
+  left: 0;
+}
+
+.slider-action {
+  transform: translateX(100%)
+}
+
 .play-img {
   width: 35%;
   height: auto;
@@ -502,7 +539,6 @@ label:hover:not(.form label) {
   .form form {
     width: 60%;
   }
-
 
 
   .home {

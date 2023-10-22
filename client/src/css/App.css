@@ -55,6 +55,7 @@ p:not(.db-card p) {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 998;
 }
 
 .header-top {
@@ -78,8 +79,9 @@ p:not(.db-card p) {
 
 .nav-tab {
   font-size: 12px;
+  font-family: "Orbitron";
   width: 6%;
-  padding: 12px;
+  padding: 12px 0;
   margin: -1px 6px 6px;
   background: #b644fc;
   text-decoration: none;
@@ -104,25 +106,6 @@ p:not(.db-card p) {
   flex-direction: row;
   justify-content: center;
   gap: 10%
-}
-
-.button-2 {
-  background-color: #ee07e2;
-  border-radius: 50px;
-  border-style: none;
-  box-shadow: #b005a8 0 -6px 3px inset;
-  color: white;
-  cursor: pointer;
-  margin: 0;
-  padding: 2% 3%;
-}
-
-.button-2:hover {
-  color: #000;
-}
-
-.button-2:active {
-  background-color: #b005a8;
 }
 
 .button {
@@ -150,6 +133,25 @@ p:not(.db-card p) {
   color: #ee07e2;
   box-shadow: rgba(238, 7, 226, 0.35) 0 -25px 18px -14px inset, rgba(238, 7, 226, 0.35) 0 1px 2px, rgba(238, 7, 226, 0.35) 0 2px 4px, rgba(238, 7, 226, 0.35) 0 4px 8px, rgba(238, 7, 226, 0.35) 0 8px 16px, rgba(238, 7, 226, 0.35) 0 16px 32px;
   transform: translateY(5px)
+}
+
+.button-2 {
+  background-color: #ee07e2;
+  border-radius: 50px;
+  border-style: none;
+  box-shadow: #b005a8 0 -6px 3px inset;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+  padding: 2% 3%;
+}
+
+.button-2:hover {
+  color: #000;
+}
+
+.button-2:active {
+  background-color: #b005a8;
 }
 
 .two-forms {
@@ -317,7 +319,40 @@ p:not(.db-card p) {
   margin: -1% auto 0;
 }
 
+/* Scraps from toggling play instructions */
+
+/* .play {
+  height: auto;
+  transition: .5s ease-in-out;
+}
+
+.play-shift {
+  transform: translateY(-18%);
+}
+
+.play-text {
+  margin: 5% auto 0;
+  position: relative;
+  transition: .5s all ease-in-out;
+}
+
+.hide-text {
+  scale: 1 0;
+}
+
+.hide-btn {
+  background-color: #ee07e2;
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), #b005a8 0 -6px 3px inset;
+  color: white;
+  cursor: pointer;
+  padding: 3px;
+  z-index: 999;
+} */
+
 .switch-wrapper {
+  margin-top: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -333,10 +368,12 @@ p:not(.db-card p) {
 .switch {
   background-color: #c47df080;
   border: 1px inset #b644fc;
+  box-shadow: 1px 1px 2px 1px inset #b644fc50;
   border-radius: 50px;
   height: 25px;
   width: 50px;
   position: relative;
+  cursor: pointer;
 }
 
 .slider {
@@ -351,7 +388,7 @@ p:not(.db-card p) {
 }
 
 .slider-action {
-  transform: translateX(100%)
+  transform: translateX(109%)
 }
 
 .play-img {
@@ -516,7 +553,7 @@ label:hover:not(.form label) {
 
   .nav-tab {
     width: 8%;
-    padding: 8px;
+    padding: 8px 0;
   }
 
   .header-top {
@@ -524,7 +561,7 @@ label:hover:not(.form label) {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
 
   .two-forms {
     flex-direction: column;
@@ -562,6 +599,7 @@ label:hover:not(.form label) {
   .nav-tab {
     width: 10%;
     margin-top: -2px;
+    font-size: .8em;
   }
 
   .header-top {

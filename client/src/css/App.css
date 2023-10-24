@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&family=Orbitron&family=PT+Sans+Narrow&display=swap');
 
 * {
   box-sizing: border-box;
@@ -493,11 +493,36 @@ label:hover:not(.form label) {
 }
 
 .pkm-card {
-  border: #b644fc outset 2px;
+  border: #b644fc inset 5px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 2px;
   margin: 5px;
+  position: relative;
+}
+
+.dex-number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 2px;
+  font-family: 'Orbitron', monospace, sans-serif;
+  font-weight: 600;
+}
+
+.type-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.type-tag {
+  border-radius: 5px 0 0 5px;
+  font-size: .5rem;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .region {

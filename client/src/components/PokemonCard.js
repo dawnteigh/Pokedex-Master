@@ -1,23 +1,27 @@
 import React from 'react'
+import Type from './Type'
 import missingno from '../assets/missingno.png'
 
 const PokemonCard = ({ pokemon }) => {
 
   const { number, name, sprite, types } = pokemon
   const borderStyles = {
-    borderTopColor: `rgb(var(--${types[0]}))`,
-    borderRightColor: `rgb(var(--${types[0]}))`,
-    borderLeftColor: `rgb(var(--${types.length > 1 ? types[1] : types[0]}))`,
-    borderBottomColor: `rgb(var(--${types.length > 1 ? types[1] : types[0]}))`
+    borderTopColor: `rgba(var(--${types[0]}), .5)`,
+    borderRightColor: `rgba(var(--${types[0]}), .5)`,
+    borderLeftColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .5)`,
+    borderBottomColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .5)`
   }
+
+  const renderTypes = types.map((t, i) => <Type type={t} key={i} />)
 
   return (
     <div className="pkm-card" style={borderStyles}>
-      #{number}
+      <span className="dex-number">#{number}</span>
+      <div className='type-container'>{renderTypes}</div>
       <br />
       <img src={sprite || missingno} alt={name} />
       <br />
-      {name.charAt(0).toUpperCase() + name.slice(1)}
+      <b>{name.charAt(0).toUpperCase() + name.slice(1)}</b>
     </div>
   )
 }

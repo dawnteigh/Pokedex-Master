@@ -3,10 +3,16 @@ import missingno from '../assets/missingno.png'
 
 const PokemonCard = ({ pokemon }) => {
 
-  const { number, name, sprite } = pokemon
+  const { number, name, sprite, types } = pokemon
+  const borderStyles = {
+    borderTopColor: `rgb(var(--${types[0]}))`,
+    borderRightColor: `rgb(var(--${types[0]}))`,
+    borderLeftColor: `rgb(var(--${types.length > 1 ? types[1] : types[0]}))`,
+    borderBottomColor: `rgb(var(--${types.length > 1 ? types[1] : types[0]}))`
+  }
 
   return (
-    <div className="pkm-card">
+    <div className="pkm-card" style={borderStyles}>
       #{number}
       <br />
       <img src={sprite || missingno} alt={name} />

@@ -1,90 +1,111 @@
+:root {
+  --bug: 182, 247, 107;
+  --dark: 0, 0, 0;
+  --dragon: 6, 16, 159;
+  --electric: 243, 216, 38;
+  --fairy: 249, 135, 251;
+  --fighting: 226, 111, 17;
+  --fire: 236, 68, 26;
+  --flying: 57, 172, 238;
+  --ghost: 63, 15, 118;
+  --grass: 19, 156, 10;
+  --ground: 193, 145, 78;
+  --ice: 140, 229, 243;
+  --normal: 235, 235, 235;
+  --poison: 165, 20, 218;
+  --psychic: 224, 4, 169;
+  --rock: 141, 126, 102;
+  --steel: 170, 170, 170;
+  --water: 28, 94, 247;
+}
+
 .bug {
-  background-color: rgba(182, 247, 107, 0.5);
-  border-color: rgb(182, 247, 107);
+  background-color: rgba(var(--bug), 0.5);
+  border-color: rgb(var(--bug));
 }
 
 .dark {
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(var(--dark), 0.65);
   color: white;
-  border-color: rgb(0, 0, 0);
+  border-color: rgb(var(--dark));
 }
 
 .dragon {
-  background-color: rgba(6, 16, 159, 0.5);
-  border-color: rgb(6, 16, 159);
+  background-color: rgba(var(--dragon), 0.5);
+  border-color: rgb(var(--dragon));
 }
 
 .electric {
-  background-color: rgba(243, 216, 38, 0.5);
-  border-color: rgb(243, 216, 38);
+  background-color: rgba(var(--electric), 0.5);
+  border-color: rgb(var(--electric));
 }
 
 .fairy {
-  background-color: rgba(249, 135, 251, 0.5);
-  border-color: rgb(249, 135, 251);
+  background-color: rgba(var(--fairy), 0.5);
+  border-color: rgb(var(--fairy))
 }
 
 .fighting {
-  background-color: rgba(226, 111, 17, 0.5);
-  border-color: rgb(226, 111, 17);
+  background-color: rgba(var(--fighting), 0.5);
+  border-color: rgb(var(--fighting));
 }
 
 .fire {
-  background-color: rgba(236, 68, 26, 0.5);
-  border-color: rgb(236, 68, 26);
+  background-color: rgba(var(--fire) 0.5);
+  border-color: rgb(var(--fire));
 }
 
 .flying {
-  background-color: rgba(57, 172, 238, 0.5);
-  border-color: rgb(57, 172, 238);
+  background-color: rgba(var(--flying), 0.5);
+  border-color: rgb(var(--flying));
 }
 
 .ghost {
-  background-color: rgba(63, 15, 118, 0.5);
-  border-color: rgb(63, 15, 118);
+  background-color: rgba(var(--ghost), 0.5);
+  border-color: rgb(var(--ghost));
 }
 
 .grass {
-  background-color: rgba(19, 156, 10, 0.5);
-  border-color: rgb(19, 156, 10);
+  background-color: rgba(var(--grass), 0.5);
+  border-color: rgb(var(--grass));
 }
 
 .ground {
-  background-color: rgba(193, 145, 78, 0.5);
-  border-color: rgb(193, 145, 78);
+  background-color: rgba(var(--ground), 0.5);
+  border-color: rgb(var(--ground));
 }
 
 .ice {
-  background-color: rgba(140, 229, 243, 0.5);
-  border-color: rgb(140, 229, 243);
+  background-color: rgba(var(--ice), 0.5);
+  border-color: rgb(var(--ice));
 }
 
 .normal {
-  background-color: rgba(235, 235, 235, 0.5);
-  border-color: rgb(235, 235, 235);
+  background-color: rgba(var(--normal), 0.5);
+  border-color: rgb(var(--normal));
 }
 
 .poison {
-  background-color: rgba(165, 20, 218, 0.5);
-  border-color: rgb(165, 20, 218);
+  background-color: rgba(var(--poison), 0.5);
+  border-color: rgb(var(--poison));
 }
 
 .psychic {
-  background-color: rgba(224, 4, 169, 0.5);
-  border-color: rgb(224, 4, 169);
+  background-color: rgba(var(--psychic), 0.5);
+  border-color: rgb(var(--psychic));
 }
 
 .rock {
-  background-color: rgba(141, 126, 102, 0.5);
-  border-color: rgb(141, 126, 102);
+  background-color: rgba(var(--rock), 0.5);
+  border-color: rgb(var(--rock));
 }
 
 .steel {
-  background-color: rgba(170, 170, 170, 0.5);
-  border-color: rgb(170, 170, 170);
+  background-color: rgba(var(--steel), 0.5);
+  border-color: rgb(var(--steel));
 }
 
 .water {
-  background-color: rgba(28, 94, 247, 0.5);
-  border-color: rgb(28, 94, 247);
+  background-color: rgba(var(--water), 0.5);
+  border-color: rgb(var(--water));
 }

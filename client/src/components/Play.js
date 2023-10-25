@@ -63,7 +63,6 @@ const Play = () => {
         />
       </div>
       <span className="entry">{cleanEntry(entry)}</span>
-      <br />
       <AnswerForm handleCaught={handleCaught} pokeFormat={pokeFormat} />
       {dexCompletion.length}/{range.max - 1} Pokémon captured
       <br />

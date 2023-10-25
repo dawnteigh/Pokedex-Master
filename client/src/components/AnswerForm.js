@@ -59,7 +59,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
 
   return (
     <div className="answer">
-      <ToastContainer position="middle-center" >
+      <ToastContainer style={{ position: "absolute", top: "30%", left: "50%", transform: "translateX(-50%)" }}>
         <Toast onClose={() => setShow(false)} show={show} delay={5000} autohide>
           <Toast.Header>
             <strong className="me-auto">Pokédex Master</strong>

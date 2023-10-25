@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { PokeContext } from "../context/PokeContext";
 import AnswerForm from './AnswerForm'
-import ToggleSwitch from "./ToggleSwitch";
-import Hints from "./Hints";
+import Toolbar from "./Toolbar";
 import Congrats from './Congrats'
 import encounter from '../assets/questionmark.png'
 
@@ -68,8 +67,7 @@ const Play = () => {
       <AnswerForm handleCaught={handleCaught} pokeFormat={pokeFormat} />
       {dexCompletion.length}/{range.max - 1} Pokémon captured
       <br />
-      <ToggleSwitch />
-      <Hints pokemon={pokemon} />
+      <Toolbar pokemon={pokemon} />
     </div>
   )
 }

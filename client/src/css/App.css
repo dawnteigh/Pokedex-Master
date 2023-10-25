@@ -353,18 +353,86 @@ footer {
   border-radius: 5px;
 }
 
+.entry {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.toolbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 40%;
+  height: 75px;
+  margin: 5px auto;
+  background-color: #b644fc80;
+  border: 2px outset #ee07e2;
+  border-radius: 50px;
+  transition: height 500ms ease-in-out;
+}
+
+.shrink-wrap {
+  height: 32px;
+}
+
+.toolbar {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5%;
+}
+
+.toolbar span {
+  font-family: monospace, sans-serif;
+  font-weight: bold;
+}
+
+.toolbar span:not(.switch-wrapper span) {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 5%;
+}
+
+.hints-button {
+  background-color: #B927FF;
+  min-height: 25px;
+  min-width: 25px;
+  border-style: none;
+  border-radius: 50%;
+  box-shadow: #8800D8 0 -6px 3px inset;
+  font-size: 10px;
+  color: white;
+  cursor: pointer;
+  margin: 1px;
+}
+
+.hints {
+  height: 100%;
+  width: 100%;
+  font-weight: 600;
+  border-radius: 0 0 37px 37px;
+  background-color: #ee07e250;
+  overflow: hidden;
+  text-wrap: nowrap;
+  transition: all 500ms ease-in-out, opacity 1s ease-in;
+}
+
+.hide-hints {
+  height: 0%;
+  opacity: 0;
+  width: 80%;
+}
+
 .switch-wrapper {
-  margin-top: 1%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 1%;
   align-items: center;
-}
-
-.switch-wrapper span {
-  font-family: monospace, sans-serif;
-  font-weight: bold;
+  gap: 5%;
 }
 
 .switch {
@@ -373,7 +441,7 @@ footer {
   box-shadow: 1px 1px 2px 1px inset #b644fc50;
   border-radius: 50px;
   height: 25px;
-  width: 50px;
+  min-width: 50px;
   position: relative;
   cursor: pointer;
 }
@@ -390,33 +458,7 @@ footer {
 }
 
 .slider-action {
-  transform: translateX(109%)
-}
-
-.play .button {
-  max-width: 6rem;
-  margin: 1% auto;
-}
-
-.entry {
-  font-size: 1.1em;
-  font-weight: bold;
-}
-
-.hints {
-  height: fit-content;
-  padding: .5rem;
-  font-weight: 600;
-  border: 2px outset #ee07e2;
-  border-radius: 5px;
-  background-color: #c47df080;
-  overflow: hidden;
-  transition: all .5s ease-in-out;
-}
-
-.hide-hints {
-  transform:
-    scaleX(0);
+  transform: translateX(108%)
 }
 
 .congrats {
@@ -651,6 +693,10 @@ label:hover:not(.form label) {
     width: 60%;
   }
 
+  .toolbar-wrapper {
+    width: 60%;
+  }
+
   .comp-grid {
     width: 50%;
     margin-top: 4%;
@@ -705,6 +751,10 @@ label:hover:not(.form label) {
 
   .play-img {
     width: 60%;
+  }
+
+  .toolbar-wrapper {
+    width: 100%;
   }
 
   .comp-grid {

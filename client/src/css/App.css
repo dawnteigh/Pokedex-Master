@@ -48,7 +48,7 @@ footer {
   animation: 1.25s linear infinite spinning;
 }
 
-p:not(.db-card p) {
+.home p:not(.db-card p) {
   border: #ee07e2 outset 2px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -291,10 +291,6 @@ p:not(.db-card p) {
   margin: 0 auto;
 }
 
-.home-para {
-  font-size: 14px;
-}
-
 .button-grid {
   display: flex;
   flex-flow: row wrap;
@@ -322,41 +318,40 @@ p:not(.db-card p) {
 }
 
 .play {
-  width: 60%;
-  margin: -1% auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 70%;
 }
 
-/* Scraps from toggling play instructions */
-
-/* .play {
-  height: auto;
-  transition: .5s ease-in-out;
-}
-
-.play-shift {
-  transform: translateY(-18%);
-}
-
-.play-text {
-  margin: 5% auto 0;
-  position: relative;
-  transition: .5s all ease-in-out;
-}
-
-.hide-text {
-  scale: 1 0;
-}
-
-.hide-btn {
-  background-color: #ee07e2;
+.play-top {
+  margin: 0 auto 2%;
+  padding: .5em;
+  width: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  border: #ee07e2 outset 2px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  border-style: none;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5), #b005a8 0 -6px 3px inset;
-  color: white;
-  cursor: pointer;
-  padding: 3px;
-  z-index: 999;
-} */
+  background-color: #c47df080;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.play-top p {
+  width: 45ch;
+}
+
+.play-img {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+}
 
 .switch-wrapper {
   margin-top: 1%;
@@ -398,19 +393,30 @@ p:not(.db-card p) {
   transform: translateX(109%)
 }
 
-.play-img {
-  width: 35%;
-  height: auto;
-  margin-bottom: 1%;
-}
-
 .play .button {
-  margin: 5px;
+  max-width: 6rem;
+  margin: 1% auto;
 }
 
 .entry {
   font-size: 1.1em;
   font-weight: bold;
+}
+
+.hints {
+  height: fit-content;
+  padding: .5rem;
+  font-weight: 600;
+  border: 2px outset #ee07e2;
+  border-radius: 5px;
+  background-color: #c47df080;
+  overflow: hidden;
+  transition: all .5s ease-in-out;
+}
+
+.hide-hints {
+  transform:
+    scaleX(0);
 }
 
 .congrats {
@@ -527,9 +533,18 @@ label:hover:not(.form label) {
 }
 
 .type-tag {
-  border-radius: 5px 0 0 5px;
   font-size: .5rem;
   font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.tt-dex {
+  border-radius: 5px 0 0 5px;
+}
+
+.tt-hint {
+  display: inline-block;
+  width: 2.5rem;
+  font-size: .6rem;
 }
 
 .region {
@@ -561,6 +576,10 @@ label:hover:not(.form label) {
 }
 
 @media only screen and (max-width: 1156px) {
+
+  .App {
+    margin-top: 4%;
+  }
 
   .form {
     width: 40%;
@@ -595,6 +614,10 @@ label:hover:not(.form label) {
 
 @media only screen and (max-width: 768px) {
 
+  .App {
+    margin-top: 6%;
+  }
+
   .two-forms {
     flex-direction: column;
     align-items: center;
@@ -619,6 +642,11 @@ label:hover:not(.form label) {
     margin-top: 0;
   }
 
+  .play-top {
+    flex-direction: column;
+    font-size: .8rem;
+  }
+
   .play-img {
     width: 60%;
   }
@@ -640,6 +668,11 @@ label:hover:not(.form label) {
 }
 
 @media only screen and (max-width: 480px) {
+
+  .App {
+    margin-top: 10%;
+  }
+
   .form {
     width: 75%;
   }
@@ -659,8 +692,15 @@ label:hover:not(.form label) {
 
   .play {
     width: 90%;
-    font-size: 1em;
-    margin-top: 5%;
+  }
+
+  .play-top {
+    font-size: .75rem;
+  }
+
+  .play-top p {
+    width: auto;
+    margin: 0;
   }
 
   .play-img {

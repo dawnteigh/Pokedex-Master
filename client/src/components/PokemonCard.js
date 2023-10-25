@@ -12,7 +12,7 @@ const PokemonCard = ({ pokemon }) => {
     borderBottomColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .5)`
   }
 
-  const renderTypes = types.map((t, i) => <Type type={t} key={i} />)
+  const renderTypes = types.map((t, i) => <Type type={t} key={i} variant="tt-dex" />)
 
   return (
     <div className="pkm-card" style={borderStyles}>

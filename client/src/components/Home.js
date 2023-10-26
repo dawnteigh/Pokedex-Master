@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import Login from './Login';
-import Signup from './Signup';
 import Saves from './Saves';
 import DexButton from './DexButton'
 import { dexData } from '../data/DexData'
 import { PokeContext } from '../context/PokeContext'
+import FrontPage from './FrontPage';
 
 const Home = () => {
 
@@ -12,10 +11,7 @@ const Home = () => {
 
   if (!user) {
     return (
-      <div className='two-forms'>
-        <Login />
-        <Signup />
-      </div>
+      <FrontPage />
     )
   }
 

@@ -39,7 +39,7 @@ const Login = () => {
 
   return (
     <div className="form">
-      <h3>Log In</h3>
+      <h3 className='screen-header'>Log In</h3>
       <form onSubmit={handleSubmit} >
         <label>
           Username:

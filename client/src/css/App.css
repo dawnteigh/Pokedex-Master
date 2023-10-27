@@ -48,7 +48,7 @@ footer {
   animation: 1.25s linear infinite spinning;
 }
 
-.home p:not(.db-card p) {
+.text-container {
   border: #ee07e2 outset 2px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
@@ -300,6 +300,61 @@ footer {
   top: 25%;
 }
 
+.screen-header {
+  color: #ee07e2;
+  font-family: 'DotGothic16', monospace, sans-serif;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome p {
+  max-width: 45ch;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.welcome a {
+  color: #B927FF;
+  text-decoration: none;
+}
+
+.welcome a:hover {
+  color: #ee07e2;
+}
+
+.blink {
+  color: #520081;
+  font-size: 1rem;
+  font-family: 'Orbitron', monospace, sans-serif;
+  animation: 1000ms infinite blinking;
+}
+
+#version {
+  overflow: auto;
+  margin: 0 auto;
+}
+
+h6 {
+  font-family: 'Orbitron', monospace, sans-serif;
+  color: #520081;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: outside url('../assets/master-ball-tiny.png');
+  margin: 0 auto;
+  text-align: left;
+}
+
+li {
+  padding-inline: 1rem;
+}
+
 .display-img {
   width: 100%;
   position: absolute;
@@ -320,11 +375,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-}
-
-.form h3 {
-  color: #ee07e2;
-  font-family: 'DotGothic16', monospace, sans-serif;
 }
 
 .form label {
@@ -856,6 +906,14 @@ label:hover:not(.form label) {
     width: 95%;
   }
 
+  .welcome p {
+    font-size: .7rem;
+  }
+
+  .blink {
+    font-size: .8rem;
+  }
+
   .master-ball {
     display: none;
   }
@@ -922,12 +980,24 @@ label:hover:not(.form label) {
 }
 
 @media only screen and (max-width: 360px) {
+  .screen-header {
+    font-size: 1rem;
+  }
+
+  .welcome p {
+    font-size: .65rem;
+  }
+
+  .blink {
+    font-size: .65rem;
+  }
 
   .db-card {
     font-size: .9em;
     width: 18%;
     margin: 1%;
   }
+
 
   .play-img {
     width: 70%;
@@ -982,5 +1052,19 @@ label:hover:not(.form label) {
 
   to {
     translate: 0 0;
+  }
+}
+
+@keyframes blinking {
+  from {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1
   }
 }

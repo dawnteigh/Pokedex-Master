@@ -5,11 +5,11 @@
 }
 
 body {
-  overflow: overlay;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
   padding-top: 14%;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 footer {
@@ -412,11 +412,13 @@ li {
   font-weight: bold;
 }
 
-.save-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  gap: 5px;
+.rolling-ball {
+  position: fixed;
+  width: 25%;
+  bottom: 0;
+  left: -100%;
+  z-index: -1;
+  animation: 15s linear infinite rolling;
 }
 
 #saves p {
@@ -427,12 +429,22 @@ li {
   margin: 0 auto 2%;
 }
 
+.save-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 5px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
 .save {
   min-width: 25%;
   border: 3px outset #ccc;
-  border-radius: 5px;
+  border-radius: 50px 50px 15px 15px;
   padding: 2%;
   position: relative;
+  transition: all 250ms ease-in-out;
 }
 
 .save:hover {
@@ -1067,4 +1079,17 @@ label:hover:not(.form label) {
   to {
     opacity: 1
   }
+}
+
+@keyframes rolling {
+  from {
+    transform: rotate(0);
+    translate: 0 0
+  }
+
+  to {
+    transform: rotate(3600deg);
+    translate: 1500% 0
+  }
+
 }

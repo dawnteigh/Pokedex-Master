@@ -5,7 +5,7 @@ const ProgressBar = ({ outerColor, innerColor, progress, height }) => {
 
   const outer = {
     height: height,
-    width: '100%',
+    width: '90%',
     backgroundColor: outerColor,
     boxShadow: "2px 2px 3px 0 inset #000",
     borderRadius: "0 50px 50px 0",

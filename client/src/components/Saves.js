@@ -2,6 +2,10 @@ import React, { useContext } from 'react'
 import { PokeContext } from '../context/PokeContext'
 import ProgressBar from './ProgressBar'
 import missingno from '../assets/missingno.png'
+import masterball from '../assets/masterball.png'
+
+// FUTURE: Since they are save *files*, I like the idea of them looking like the tabs on file folders
+// I want to do more to grow that aesthetic
 
 const Saves = () => {
   const { user, setSaveFile } = useContext(PokeContext)
@@ -36,7 +40,7 @@ const Saves = () => {
             />
           </span>
           <span>Total Pokémon Caught: {s.pokemon.length}</span>
-          <span>Pokédex Completion: <ProgressBar height={20} innerColor="#ee07e280" outerColor="#ccc" progress={percentage} /></span>
+          <span>Pokédex Completion: <ProgressBar height={20} innerColor="#ee07e280" outerColor="#ccacdf" progress={percentage} /></span>
         </div>
       </div>
     )
@@ -47,6 +51,7 @@ const Saves = () => {
       <div className="save-container">
         {displaySaves}
       </div>
+      <img src={masterball} alt="Rolling Master Ball" className="rolling-ball" />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Login from './Login';
 import Signup from './Signup';
+import Version from './Version';
 import { BiSolidDownArrow, BiSolidUpArrow, BiSolidLeftArrow, BiSolidRightArrow } from 'react-icons/bi'
 import QuestionMark from '../assets/questionmark.png'
 import Me from '../assets/me.jpg'
@@ -12,12 +13,22 @@ const FrontPage = () => {
   const [screen, setScreen] = useState("")
 
   const display = (str) => {
-    if (str === "") return <h1>Hello World!</h1>
+    if (str === "") {
+      return (
+        <div className="welcome">
+          <h3 className='screen-header'>Hello, Trainer!</h3>
+          <p>
+            You've captured Pokémon to register them in the Pokédex, but did you ever actually read the entries? Prove it! Powered by data from <a href="https://pokeapi.co/" target="_blank" rel="noreferrer">PokéAPI</a>, Pokédex Master puts your knowledge to the test by showing you a Pokédex entry and prompting you to guess which Pokémon it belongs to. Guessing correctly will add the Pokémon to your collection; answer wrong and it escapes! Can you complete your Pokédex?
+          </p>
+          <span className="blink">LOG IN OR SIGN UP TO PLAY</span>
+        </div>
+      )
+    }
     if (str === "login") return <Login />
     if (str === "signup") return <Signup />
     if (str === "encounter") return <img src={QuestionMark} alt="Wild Pokémon encounter." className="display-img" />
     if (str === "me") return <img src={Me} alt="Donte, creator of Pokédex Master" className="display-img" />
-    if (str === "version") return <h1>Hello World!</h1>
+    if (str === "version") return <Version />
     else return <h1>Oops...</h1>
   }
 

@@ -43,7 +43,7 @@ const Saves = () => {
   })
   return (
     <div id="saves">
-      <p>Hello, <span className="stylize">{user.username.charAt(0).toUpperCase() + user.username.slice(1)}</span>! Below are your three personal save files. Select one to start playing!</p>
+      <p className='text-container'>Hello, <span className="stylize">{user.username.charAt(0).toUpperCase() + user.username.slice(1)}</span>! Below are your three personal save files. Select one to start playing!</p>
       <div className="save-container">
         {displaySaves}
       </div>

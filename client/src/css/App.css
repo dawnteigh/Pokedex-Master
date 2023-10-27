@@ -519,7 +519,7 @@ li {
 }
 
 .play-top {
-  margin: 0 auto 2%;
+  margin: 0 auto;
   padding: .5em;
   width: fit-content;
   display: flex;
@@ -546,8 +546,52 @@ li {
 }
 
 .entry {
-  font-size: 1.1em;
+  font-size: 1rem;
   font-weight: bold;
+  margin: 1% auto;
+  max-width: 50ch;
+  background-color: #ee07e250;
+  padding: 1%;
+  border-radius: 15px;
+  border-left: 5px groove #ee07e2;
+  border-right: 5px ridge #ee07e2;
+}
+
+.answer {
+  width: 100%
+}
+
+.answer-form {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.answer-input {
+  border-radius: 50px 0 0 50px;
+  height: 2rem;
+  width: clamp(30ch, 40%, 90%);
+  border: 2px inset #B927FF;
+  outline: none;
+  padding-left: 5%;
+}
+
+.answer-btn {
+  background-color: #B927FF;
+  height: 2rem;
+  min-width: 5%;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, sans-serif;
+  border-style: none;
+  border-radius: 0 50px 50px 0;
+  box-shadow: #8800D8 0 -6px 3px inset;
+  color: white;
+  cursor: pointer;
+}
+
+.answer-btn:hover {
+  animation: 2s infinite ease-in-out linkfade;
 }
 
 .toolbar-wrapper {
@@ -674,11 +718,6 @@ li {
   border-radius: 5px;
   max-width: 100%;
   max-height: auto;
-}
-
-.answer input {
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 
 .pokedex {
@@ -1091,5 +1130,18 @@ label:hover:not(.form label) {
     transform: rotate(3600deg);
     translate: 1500% 0
   }
+}
 
+@keyframes linkfade {
+  from {
+    color: white
+  }
+
+  50% {
+    color: #ee07e2
+  }
+
+  to {
+    color: white
+  }
 }

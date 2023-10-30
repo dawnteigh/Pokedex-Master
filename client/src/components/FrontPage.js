@@ -27,8 +27,12 @@ const FrontPage = () => {
     if (str === "login") return <Login />
     if (str === "signup") return <Signup />
     if (str === "encounter") return <img src={QuestionMark} alt="Wild Pokémon encounter." className="display-img" />
-    if (str === "me") return <img src={Me} alt="Donte, creator of Pokédex Master" className="display-img" />
     if (str === "version") return <Version />
+    if (str === "me") {
+      return <a href="https://dawnteigh.github.io/" target="_blank" rel="noreferrer">
+        <img src={Me} alt="Donte, creator of Pokédex Master" className="display-img" />
+      </a>
+    }
     else return <h1>Oops...</h1>
   }
 

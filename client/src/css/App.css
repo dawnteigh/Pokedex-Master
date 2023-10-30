@@ -1064,7 +1064,12 @@ label:hover:not(.form label) {
   }
 
   .master-ball {
-    display: none;
+    right: 60%;
+    bottom: 55%;
+    transition: translate 500ms ease;
+    animation: spinning 2500ms linear infinite,
+      toss 20s linear infinite;
+    z-index: -1;
   }
 
   .home {
@@ -1134,16 +1139,24 @@ label:hover:not(.form label) {
 }
 
 @media only screen and (max-width: 360px) {
-  .screen-header {
-    font-size: 1rem;
+  :root {
+    font-size: 14px;
+  }
+
+  .display-top {
+    border-width: 25px;
   }
 
   .welcome p {
-    font-size: .65rem;
+    font-size: .75rem;
   }
 
   .blink {
-    font-size: .65rem;
+    font-size: .75rem;
+  }
+
+  .gb-li {
+    right: 25%;
   }
 
   .db-card {
@@ -1213,6 +1226,30 @@ label:hover:not(.form label) {
 
   to {
     translate: 0 0;
+  }
+}
+
+@keyframes toss {
+
+  0%,
+  50% {
+    translate: 0 0;
+  }
+
+  10% {
+    translate: 50% -200%;
+  }
+
+  20% {
+    translate: 100% -400%;
+  }
+
+  30% {
+    translate: 150% -200%;
+  }
+
+  40% {
+    translate: 200% 0;
   }
 }
 

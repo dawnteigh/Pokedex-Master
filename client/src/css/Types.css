@@ -51,7 +51,7 @@
 }
 
 .fire {
-  background-color: rgba(var(--fire) 0.5);
+  background-color: rgba(var(--fire), 0.5);
   border-color: rgb(var(--fire));
 }
 

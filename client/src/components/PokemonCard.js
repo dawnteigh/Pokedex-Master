@@ -6,10 +6,10 @@ const PokemonCard = ({ pokemon }) => {
 
   const { number, name, sprite, types } = pokemon
   const borderStyles = {
-    borderTopColor: `rgba(var(--${types[0]}), .5)`,
-    borderRightColor: `rgba(var(--${types[0]}), .5)`,
-    borderLeftColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .5)`,
-    borderBottomColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .5)`
+    borderTopColor: `rgba(var(--${types[0]}), .75)`,
+    borderLeftColor: `rgba(var(--${types[0]}), .75)`,
+    borderRightColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .75)`,
+    borderBottomColor: `rgba(var(--${types.length > 1 ? types[1] : types[0]}), .75)`
   }
 
   const renderTypes = types.map((t, i) => <Type type={t} key={i} variant="tt-dex" />)

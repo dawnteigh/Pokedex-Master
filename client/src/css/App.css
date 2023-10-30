@@ -779,9 +779,10 @@ label:hover:not(.form label) {
 }
 
 .pkm-card {
-  border: #b644fc inset 5px;
+  border: #b644fc solid 3px;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   padding: 2px;
   margin: 5px;
   position: relative;

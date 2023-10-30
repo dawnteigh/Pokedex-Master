@@ -28,6 +28,7 @@ const Saves = () => {
   const displaySaves = user.saves.map((s, i) => {
     const percentage = Math.floor((100 * s.pokemon.length) / 1017)
     const lastPokemon = s.pokemon[s.pokemon.length - 1]
+
     return (
       <div className={lastPokemon ? `save ${lastPokemon.types[0]}` : "save"} key={i} onClick={() => handleClick(s._id)}>
         <h3>{i + 1}</h3>

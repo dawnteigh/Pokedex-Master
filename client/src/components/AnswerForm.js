@@ -73,7 +73,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
         </Toast>
       </ToastContainer>
       <form onSubmit={handleSubmit} className='answer-form'>
-        <input type="text" placeholder="Enter Pokémon name here!" className="answer-input" onChange={(e) => setAnswer(e.target.value)} />
+        <input type="text" placeholder="Enter Pokémon name here!" className="answer-input" onChange={(e) => setAnswer(e.target.value)} autoFocus />
         <input type="submit" value="Go!" className='answer-btn' />
       </form>
     </div>

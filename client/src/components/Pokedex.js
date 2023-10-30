@@ -3,7 +3,7 @@ import { PokeContext } from '../context/PokeContext'
 import PokemonCard from './PokemonCard'
 import { dexData } from '../data/DexData'
 import DexCompletion from './DexCompletion'
-import Modal from 'react-bootstrap/Modal'
+import DexClear from './DexClear'
 
 
 const Pokedex = () => {
@@ -11,7 +11,6 @@ const Pokedex = () => {
   const [sort, setSort] = useState("num")
   const [filter, setFilter] = useState("")
   const [sortedDex, setSortedDex] = useState([])
-  const [show, setShow] = useState(false)
 
   const numDex = pokedex.slice().sort((a, b) => a.number - b.number)
   const alphaDex = pokedex.slice().sort((a, b) => {
@@ -54,72 +53,55 @@ const Pokedex = () => {
     setSort(e.target.id)
   }
 
-  const handleClear = () => {
-    clearDex()
-    setShow(false)
-  }
-
   return (
     <div className="pokedex">
-      <Modal style={{ textAlign: "center" }} show={show} onHide={() => setShow(false)} centered>
-        <Modal.Header className="msg-header" closeButton>
-          <Modal.Title>Pokédex Master</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <p>Are you sure you want to empty the Pokédex? This would mean starting all over!</p>
-          <button float='left' className='button left' onClick={() => handleClear()}>I'm sure!</button>
-          <button className='button right' onClick={() => setShow(false)}>Wait, no!</button>
-        </Modal.Body>
-      </Modal>
-      <div className="comp-grid">
-        {completion}
+      <div className="dex-tools" >
+        <div className="comp-grid">
+          {completion}
+        </div>
+        {pokedex.length !== 0 && <DexClear clearDex={clearDex} />}
+        <br />
+        <form>
+          <label style={(sort === "num" ? checkedStyle : null)} >
+            <input
+              type="radio"
+              id="num"
+              name="sort"
+              checked={sort === "num"}
+              onChange={handleSort}
+            />
+            Dex Number
+          </label>
+          <label style={(sort === "alpha" ? checkedStyle : null)} >
+            <input
+              type="radio"
+              id="alpha"
+              name="sort"
+              checked={sort === "alpha"}
+              onChange={handleSort}
+            />
+            Alphabetical
+          </label>
+          <label style={(sort === "recent" ? checkedStyle : null)} >
+            <input
+              type="radio"
+              id="recent"
+              name="sort"
+              checked={sort === "recent"}
+              onChange={handleSort}
+            />
+            Most Recent
+          </label>
+        </form>
+        <input onChange={(e) => setFilter(e.target.value)} type="text" size="45" placeholder="Search Pokémon" className="dex-search" />
       </div>
-      <br />
-      <form>
-        <label style={(sort === "num" ? checkedStyle : null)} >
-          <input
-            type="radio"
-            id="num"
-            name="sort"
-            checked={sort === "num"}
-            onChange={handleSort}
-          />
-          Dex Number
-        </label>
-        <label style={(sort === "alpha" ? checkedStyle : null)} >
-          <input
-            type="radio"
-            id="alpha"
-            name="sort"
-            checked={sort === "alpha"}
-            onChange={handleSort}
-          />
-          Alphabetical
-        </label>
-        <label style={(sort === "recent" ? checkedStyle : null)} >
-          <input
-            type="radio"
-            id="recent"
-            name="sort"
-            checked={sort === "recent"}
-            onChange={handleSort}
-          />
-          Most Recent
-        </label>
-      </form>
-      <br />
-      <input onChange={(e) => setFilter(e.target.value)} type="text" size="45" placeholder="Search Pokémon" />
-      <br />
-      {(filterPokedex.length === 0 && pokedex.length > 0) ? <p>You haven't caught any Pokémon that match your query!</p> : null}
+      {(filterPokedex.length === 0 && pokedex.length > 0) ? <span className="stylize">You haven't caught any Pokémon that match your query!</span> : null}
       {
         (pokedex.length === 0) ?
           <span className='stylize'>You haven't caught any Pokémon yet!</span> :
-          <>
-            <button className='button delete' onClick={() => setShow(true)}>Clear Pokédex</button>
-            <div className="pokedex-grid">
-              {displayPokedex}
-            </div>
-          </>
+          <div className="pokedex-grid">
+            {displayPokedex}
+          </div>
       }
     </div>
   )

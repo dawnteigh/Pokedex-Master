@@ -395,6 +395,7 @@ li {
   line-height: 1rem;
   border: 2px solid #c47df0;
   outline: none;
+  text-align: center;
 }
 
 .form input:focus {
@@ -440,7 +441,8 @@ li {
 
 .save {
   min-width: 25%;
-  border: 3px outset #ccc;
+  background-color: #8800D850;
+  border: 3px outset #ee07e2;
   border-radius: 50px 50px 15px 15px;
   padding: 2%;
   position: relative;
@@ -575,6 +577,7 @@ li {
   border: 2px inset #B927FF;
   outline: none;
   padding-left: 5%;
+  text-align: center;
 }
 
 .answer-btn {
@@ -605,6 +608,7 @@ li {
   background-color: #b644fc80;
   border: 2px outset #ee07e2;
   border-radius: 50px;
+  overflow: hidden;
   transition: height 500ms ease-in-out;
 }
 
@@ -660,7 +664,6 @@ li {
 .hide-hints {
   height: 0%;
   opacity: 0;
-  width: 80%;
 }
 
 .switch-wrapper {
@@ -724,14 +727,31 @@ li {
   margin: 2% auto;
 }
 
+.pokedex::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 100%;
+  background-color: #b644fc80;
+  border: 2px outset #ee07e2;
+  border-radius: 50px;
+  z-index: -1;
+}
+
+.dex-tools {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 input[type="radio"] {
   opacity: 0;
   position: fixed;
   width: 0;
-}
-
-input {
-  text-align: center;
 }
 
 label:not(.form label) {
@@ -741,7 +761,7 @@ label:not(.form label) {
   font-family: sans-serif, Arial;
   font-size: 12px;
   box-shadow: rgba(134, 44, 187, 0.2) 0 -25px 18px -14px inset, rgba(134, 44, 187, 0.2) 0 1px 2px, rgba(134, 44, 187, 0.2) 0 2px 4px, rgba(134, 44, 187, 0.2) 0 4px 8px, rgba(134, 44, 187, 0.2) 0 8px 16px, rgba(134, 44, 187, 0.2) 0 16px 32px;
-  border-radius: 4px;
+  border-radius: 5px 5px 0 0;
   padding: 5px
 }
 
@@ -760,14 +780,23 @@ label:hover:not(.form label) {
 }
 
 .dex-card {
-  background-color: #c47df0;
-  border: #ee07e2 2px outset;
+  background-color: #ee07e280;
+  border: #B927FF 2px outset;
   width: 18%;
   max-width: 80px;
   border-radius: 5px;
   color: white;
   font-family: monospace;
   margin: 1%;
+}
+
+.dex-search {
+  border-radius: 50px;
+  height: 2rem;
+  width: clamp(45ch, 30%, 90%);
+  text-align: center;
+  border: 2px solid #B927FF;
+  outline: none;
 }
 
 .pokedex-grid {
@@ -828,10 +857,56 @@ label:hover:not(.form label) {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.delete {
-  font-size: .75em;
-  padding: 4px 10px;
-  margin-top: 2px;
+.delete-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #ff000080;
+  border: 2px outset #ff0000;
+  border-radius: 50px;
+  height: 25px;
+  width: 73ch;
+  transition: width 1000ms ease;
+  overflow: hidden;
+}
+
+.delete-shrink-wrap {
+  width: 8ch;
+}
+
+.delete-btn {
+  background-color: red;
+  border-style: none;
+  border-radius: 50px;
+  font-size: 1em;
+  width: clamp(2rem, 8ch, 5rem);
+  min-height: 21px;
+  font-weight: 600;
+  text-wrap: nowrap;
+  box-shadow: #990000 0 -6px 3px inset;
+  color: white;
+  cursor: pointer;
+  transition: width 1000ms ease;
+}
+
+.delete-show {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: .2rem;
+  font-weight: 600;
+  text-wrap: nowrap;
+  max-width: 60ch;
+  margin-inline: .2rem;
+  transition: all 1000ms ease;
+}
+
+.delete-hidden {
+  max-width: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: -1;
 }
 
 .left {
@@ -869,6 +944,10 @@ label:hover:not(.form label) {
 
   .play-img {
     width: 50%;
+  }
+
+  .pokedex::before {
+    width: 90%;
   }
 
   .comp-grid {
@@ -935,6 +1014,24 @@ label:hover:not(.form label) {
   .comp-grid {
     width: 50%;
     margin-top: 4%;
+  }
+
+  .delete-wrapper {
+    font-size: .5rem;
+    width: 72ch;
+  }
+
+  .delete-shrink-wrap {
+    width: 8ch;
+  }
+
+  .delete-show {
+    text-wrap: wrap;
+    transition: all 1000ms ease, opacity 1000ms 500ms ease;
+  }
+
+  .delete-hidden {
+    text-wrap: nowrap;
   }
 
   .nav-tab {
@@ -1004,6 +1101,11 @@ label:hover:not(.form label) {
     width: 100%;
   }
 
+  .pokedex::before {
+    width: 100%;
+    border: none;
+  }
+
   .comp-grid {
     width: 80%;
     margin-top: 8%;
@@ -1050,7 +1152,6 @@ label:hover:not(.form label) {
     margin: 1%;
   }
 
-
   .play-img {
     width: 70%;
   }
@@ -1058,6 +1159,14 @@ label:hover:not(.form label) {
   .comp-grid {
     width: 90%;
     margin-top: 10%;
+  }
+
+  .delete-wrapper {
+    width: 60ch;
+  }
+
+  .delete-shrink-wrap {
+    width: 8ch;
   }
 
   .nav-tab {

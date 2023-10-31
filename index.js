@@ -15,10 +15,6 @@ database.on('error', (error) => {
     console.log(error)
 });
 
-database.once('connected', () => {
-    console.log('Database Connected');
-});
-
 const mongoDBstore = new MongoDBStore({
     uri: mongoString,
     collection: "mySessions"
@@ -40,4 +36,7 @@ app.use(
 app.use('/api', userRouter);
 app.use('/api', pokedexRouter);
 
-app.listen(4000, () => console.log(`Server started at ${4000}`));
+database.once('connected', () => {
+    console.log('Database Connected');
+    app.listen(4000, () => console.log(`Server started at ${4000}`));
+});

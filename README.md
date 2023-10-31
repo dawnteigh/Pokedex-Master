@@ -64,7 +64,9 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 - Pokemon data comes from the great [PokéAPI](https://pokeapi.co/).
 - Image on the 'Play' page is from [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Main_Page).
 - Header graphic created with [Canva](https://www.canva.com/).
-- Toasts and Modals from [React Bootstrap](https://react-bootstrap.github.io/).
+- Master Ball graphic created using [Pixlr](https://pixlr.com/).
+- Footer graphic on front page created using [Haikei](https://haikei.app/).
+- Toasts (for the error and Pokémon messages) from [React Bootstrap](https://react-bootstrap.github.io/).
 - Application created using [Create React App](https://create-react-app.dev/).
 
 

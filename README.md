@@ -42,9 +42,9 @@ Once that's complete, you are ready to run the application!
 ## Usage
 To get started, make sure you are in the <b>Pokedex-Master</b> directory and type this in your terminal:
 ```terminal
-~/Pokedex-Master$ npm start
+~/Pokedex-Master$ npm run dev
 ```
-This starts up the backend server and connects you to your database.<br>
+This starts up the backend server in development mode and connects you to your database.<br>
 Next, you will need to open a <i>second</i> terminal for the frontend:
 ```terminal
 ~/Pokedex-Master$ npm start --prefix client

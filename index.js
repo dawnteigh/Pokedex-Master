@@ -34,11 +34,12 @@ app.use(
         store: mongoDBstore
     })
 );
-app.use(express.static(path.join('client', 'build')));
+console.log(__dirname)
+app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/api', userRouter);
 app.use('/api', pokedexRouter);
 app.get('/*', function (req, res) {
-    res.sendFile(path.join('client', 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, 'client/build/index.html'));
 });
 
 database.once('connected', () => {

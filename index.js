@@ -1,5 +1,6 @@
 require('dotenv').config();
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 const userRouter = require('./routes/user')
 const pokedexRouter = require('./routes/pokedex')
@@ -33,10 +34,11 @@ app.use(
         store: mongoDBstore
     })
 );
+app.use(express.static(path.join('client', 'build')));
 app.use('/api', userRouter);
 app.use('/api', pokedexRouter);
 app.get('/*', function (req, res) {
-    res.sendFile(path.join("client", 'build', 'index.html'));
+    res.sendFile(path.join('client', 'build', 'index.html'));
 });
 
 database.once('connected', () => {

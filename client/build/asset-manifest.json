@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.045e6827.css",
+    "main.js": "/static/js/main.5383feca.js",
+    "static/media/me.jpg": "/static/media/me.3348256f723b9f708717.jpg",
+    "static/media/PokedexMaster.png": "/static/media/PokedexMaster.594923d584c78804a6b6.png",
+    "static/media/masterball.png": "/static/media/masterball.b68c5b1b01eea7802576.png",
+    "static/media/pink-pixels.svg": "/static/media/pink-pixels.a34549aaa203e6d8795f8d999c6a30b5.svg",
+    "index.html": "/index.html",
+    "main.045e6827.css.map": "/static/css/main.045e6827.css.map",
+    "main.5383feca.js.map": "/static/js/main.5383feca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.045e6827.css",
+    "static/js/main.5383feca.js"
+  ]
+}

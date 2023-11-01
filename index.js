@@ -35,6 +35,9 @@ app.use(
 );
 app.use('/api', userRouter);
 app.use('/api', pokedexRouter);
+app.get('/*', function (req, res) {
+    res.sendFile(path.join("client", 'build', 'index.html'));
+});
 
 database.once('connected', () => {
     console.log('Database Connected');

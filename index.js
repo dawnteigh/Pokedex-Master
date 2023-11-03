@@ -34,7 +34,7 @@ app.use(
         store: mongoDBstore
     })
 );
-console.log(__dirname)
+
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.use('/api', userRouter);
 app.use('/api', pokedexRouter);

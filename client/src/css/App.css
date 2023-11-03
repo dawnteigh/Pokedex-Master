@@ -573,7 +573,7 @@ li {
 .answer-input {
   border-radius: 50px 0 0 50px;
   height: 2rem;
-  width: clamp(30ch, 40%, 90%);
+  width: min(45ch, 90%);
   border: 2px inset #B927FF;
   outline: none;
   padding-left: 5%;
@@ -602,7 +602,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 40%;
+  width: max(40%, 45ch);
   height: 75px;
   margin: 5px auto;
   background-color: #b644fc80;
@@ -793,7 +793,7 @@ label:hover:not(.form label) {
 .dex-search {
   border-radius: 50px;
   height: 2rem;
-  width: clamp(45ch, 30%, 90%);
+  width: min(45ch, 90%);
   text-align: center;
   border: 2px solid #B927FF;
   outline: none;
@@ -1045,7 +1045,99 @@ label:hover:not(.form label) {
   }
 }
 
+/* Handling landscape orientation on mobile devices */
+@media only screen and (max-height: 480px) {
+  body {
+    padding-top: 5%;
+  }
+
+  .App {
+    margin-top: 5%;
+  }
+
+  .header-img {
+    width: 20%;
+  }
+
+  .display-wrapper {
+    flex-direction: row;
+    width: 75%;
+    height: 80%;
+  }
+
+  .display-top {
+    height: 100%;
+    border-radius: 15px 0 0 0;
+    border-width: 25px;
+  }
+
+  .display-bottom {
+    height: 100%;
+    width: 40%;
+    border-radius: 0 15px 0 0;
+  }
+
+  .gb-li {
+    top: 20%;
+    right: 60%;
+  }
+
+  .gb-su {
+    right: 20%;
+  }
+
+  .gb-down {
+    top: 70%;
+    left: 22%;
+  }
+
+  .gb-up {
+    top: 50%;
+    left: 22%;
+  }
+
+  .gb-right {
+    top: 60%;
+    left: 39%;
+  }
+
+  .gb-left {
+    top: 60%;
+    left: 5%;
+  }
+
+  .master-ball {
+    width: 25%;
+    right: -7.5%;
+    bottom: -10%;
+  }
+
+  .form {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form .screen-header {
+    margin-left: 10%;
+    animation: 1000ms infinite blinking;
+  }
+
+  .home {
+    width: 80%;
+  }
+
+  .db-card {
+    width: 18%;
+    margin: 1%;
+  }
+
+}
+
 @media only screen and (max-width: 480px) {
+
+  input[type="text"] {
+    font-size: 16px !important;
+  }
 
   .App {
     margin-top: 10%;
@@ -1055,12 +1147,20 @@ label:hover:not(.form label) {
     width: 95%;
   }
 
+  .display-top {
+    border-width: 25px;
+  }
+
   .welcome p {
     font-size: .7rem;
   }
 
   .blink {
     font-size: .8rem;
+  }
+
+  .gb-li {
+    right: 25%;
   }
 
   .master-ball {
@@ -1079,6 +1179,8 @@ label:hover:not(.form label) {
 
   .db-card {
     font-size: .9em;
+    width: 18%;
+    margin: 1%;
   }
 
   .db-card .button-2 {
@@ -1143,26 +1245,12 @@ label:hover:not(.form label) {
     font-size: 14px;
   }
 
-  .display-top {
-    border-width: 25px;
-  }
-
   .welcome p {
     font-size: .75rem;
   }
 
   .blink {
     font-size: .75rem;
-  }
-
-  .gb-li {
-    right: 25%;
-  }
-
-  .db-card {
-    font-size: .9em;
-    width: 18%;
-    margin: 1%;
   }
 
   .play-img {

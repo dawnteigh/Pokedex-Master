@@ -46,6 +46,7 @@ const Signup = () => {
         <label>
           Username:
           <input
+            type="text"
             placeholder="Username"
             name="username"
             value={form.username}

@@ -1051,6 +1051,11 @@ label:hover:not(.form label) {
     padding-top: 5%;
   }
 
+  input[type="text"],
+  input[type="password"] {
+    font-size: 16px !important;
+  }
+
   .App {
     margin-top: 5%;
   }
@@ -1135,7 +1140,8 @@ label:hover:not(.form label) {
 
 @media only screen and (max-width: 480px) {
 
-  input[type="text"] {
+  input[type="text"],
+  input[type="password"] {
     font-size: 16px !important;
   }
 

@@ -31,7 +31,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    if (pokeFormat(answer).toLowerCase().trim() === name.toLowerCase()) {
+    if (pokeFormat(answer).toLowerCase() === name.toLowerCase()) {
       const r = await fetch(`/api/pokedex/${saveFile}/pokemon`, configObj)
       const data = await r.json()
       if (data.error) {

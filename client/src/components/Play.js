@@ -14,7 +14,7 @@ const Play = () => {
     setPokedex([...pokedex, pokemon])
   }
 
-  const pokeFormat = (pok) => pok.split(" ").join("-").replaceAll(/[.:’']/g, "").replaceAll('\n', '-').replace('♂', '-m').replace('♀', '-f').replaceAll('é', 'e').trim()
+  const pokeFormat = (pok) => pok.split(" ").join("-").replaceAll(/[.:’']/g, "").replaceAll('\n', '-').replace('♂', '-m').replace('♀', '-f').replaceAll('é', 'e')
 
   const cleanEntry = (entry) => {
     if (pokeFormat(entry).toLowerCase().includes(pokemon.name.toLowerCase())) {

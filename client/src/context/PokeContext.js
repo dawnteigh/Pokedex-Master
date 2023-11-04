@@ -8,6 +8,7 @@ function PokeProvider({ children }) {
 
   const [user, setUser] = useState(false)
   const [errors, setErrors] = useState(false)
+  const [loading, setLoading] = useState(false)
   const [saveFile, setSaveFile] = useState(false)
 
   const [pokedex, setPokedex] = useState([])
@@ -154,6 +155,8 @@ function PokeProvider({ children }) {
         setUser,
         errors,
         setErrors,
+        loading,
+        setLoading,
         saveFile,
         setSaveFile,
         pokedex,

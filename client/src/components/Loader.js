@@ -8,6 +8,7 @@ const Loader = () => {
       {createPortal(
         <div id="loader">
           <img src={masterBall} alt="Master Ball loader" className="loading" />
+          <h2 className='screen-header'>Loading</h2>
         </div>, document.body)}
     </>
 

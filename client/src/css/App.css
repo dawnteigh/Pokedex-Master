@@ -44,8 +44,14 @@ footer {
 
 .loading {
   width: 15%;
-  height: auto;
-  animation: 1.25s linear infinite spinning;
+  animation: load 2500ms linear infinite;
+  position: relative;
+}
+
+#loader h2::after {
+  display: inline-block;
+  animation: dots steps(1, end) 2000ms infinite;
+  content: '';
 }
 
 .text-container {
@@ -1384,5 +1390,47 @@ label:hover:not(.form label) {
 
   to {
     color: white
+  }
+}
+
+@keyframes dots {
+  0% {
+    content: '';
+  }
+
+  25% {
+    content: '.';
+  }
+
+  50% {
+    content: '..';
+  }
+
+  75% {
+    content: '...';
+  }
+}
+
+@keyframes load {
+
+  10% {
+    transform: rotate(-54deg);
+    translate: -15% 0;
+  }
+
+  20%,
+  50% {
+    transform: none;
+    translate: 0 0;
+  }
+
+  60% {
+    transform: rotate(54deg);
+    translate: 15% 0;
+  }
+
+  70% {
+    transform: none;
+    translate: 0 0;
   }
 }

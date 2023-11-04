@@ -17,7 +17,7 @@ const App = () => {
   return (
     <div className="App">
       <Header />
-      {errors ? <Errors /> : null}
+      {errors && <Errors />}
       <Switch>
         <Route exact path="/play" render={(props) => <Play {...props} />} />
         <Route exact path="/pokedex" render={(props) => <Pokedex {...props} />} />

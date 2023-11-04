@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  text-align: center;
 }
 
 body {
@@ -22,7 +23,6 @@ footer {
 }
 
 .App {
-  text-align: center;
   font-size: 12px;
   margin: 2% auto;
 }
@@ -258,7 +258,11 @@ footer {
   width: 2.5rem;
   height: 2.5rem;
   color: #b005a8;
-  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
 }
 
 .game-btn:active {

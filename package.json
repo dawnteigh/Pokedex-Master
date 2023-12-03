@@ -7,7 +7,7 @@
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm install --prefix client",
-    "start": "node index.js && npm start --prefix client"
+    "start": "concurrently \"node index.js\" \"npm start --prefix client\""
   },
   "engines": {
     "node": "18.16.1"
@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
     "connect-mongodb-session": "^3.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",

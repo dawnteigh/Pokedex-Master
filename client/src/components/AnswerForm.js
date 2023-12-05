@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react'
 import { PokeContext } from '../context/PokeContext'
 import { ToastContainer } from 'react-bootstrap'
+import Dropdown from './Dropdown'
 import Toast from 'react-bootstrap/Toast'
 import missingno from '../assets/missingno.png'
 
@@ -54,7 +55,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
       setShow(true)
       newPokemon()
     }
-    e.target.reset()
+    setAnswer("")
   }
 
   return (
@@ -73,9 +74,10 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
         </Toast>
       </ToastContainer>
       <form onSubmit={handleSubmit} className='answer-form'>
-        <input type="text" placeholder="Enter Pokémon name here!" className="answer-input" onChange={(e) => setAnswer(e.target.value)} autoFocus />
+        <input type="text" placeholder="Enter Pokémon name here!" className="answer-input" value={answer} onChange={(e) => setAnswer(e.target.value)} autoFocus />
         <input type="submit" value="Go!" className='answer-btn' />
       </form>
+      <Dropdown answer={answer} setAnswer={setAnswer} />
     </div>
   )
 }

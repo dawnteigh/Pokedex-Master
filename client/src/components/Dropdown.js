@@ -9,7 +9,7 @@ const Dropdown = ({ answer, setAnswer }) => {
   return (
     <div>
       <ul>
-        {answer.length > 0 && filterNames[0].toLowerCase() != answer.toLowerCase() && displayNames}
+        {answer.length > 0 && filterNames[0]?.toLowerCase() !== answer.toLowerCase() && displayNames}
       </ul>
     </div>
   )

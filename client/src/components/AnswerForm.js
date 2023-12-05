@@ -77,7 +77,7 @@ const AnswerForm = ({ handleCaught, pokeFormat }) => {
         <input type="text" placeholder="Enter Pokémon name here!" className="answer-input" value={answer} onChange={(e) => setAnswer(e.target.value)} autoFocus />
         <input type="submit" value="Go!" className='answer-btn' />
       </form>
-      <Dropdown answer={answer} setAnswer={setAnswer} />
+      {mode === "easy" && <Dropdown answer={answer} setAnswer={setAnswer} />}
     </div>
   )
 }

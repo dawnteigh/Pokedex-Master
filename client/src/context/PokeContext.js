@@ -52,7 +52,7 @@ function PokeProvider({ children }) {
   useEffect(() => {
     async function getPokemonNames() {
       const response = await PokeAPI.getPokemonSpeciesList()
-      const pokemonNames = response.results.map(p => p.name)
+      const pokemonNames = response.results.map(p => p.name.charAt(0).toUpperCase() + p.name.slice(1))
       setPokemonList(pokemonNames)
     }
     if (user) {

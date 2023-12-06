@@ -10,7 +10,7 @@ const Dropdown = ({ answer, setAnswer }) => {
   return (
     <div className='names-wrapper' style={{ display: !show && "none" }}>
       <ul className='names-list'>
-        {displayNames}
+        {!filterNames[0] ? <li onClick={() => setAnswer("")}>No Pokémon could be found to match your guess</li> : displayNames}
       </ul>
     </div>
   )

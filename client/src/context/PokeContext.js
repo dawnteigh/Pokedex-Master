@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
 import { PaldeaEntries } from "../data/PaldeaEntries";
+import Pokedex from 'pokedex-promise-v2';
 
 const PokeContext = React.createContext();
 
@@ -18,7 +19,6 @@ function PokeProvider({ children }) {
     sprite: "",
     types: []
   });
-
   const [entry, setEntry] = useState("")
   const [caught, setCaught] = useState([])
   const [range, setRange] = useState({
@@ -26,7 +26,10 @@ function PokeProvider({ children }) {
     max: 1018
   })
   const [mode, setMode] = useState("easy")
+  const [pokemonList, setPokemonList] = useState([])
   const { min, max } = range
+
+  const PokeAPI = new Pokedex();
 
   const history = useHistory()
 
@@ -45,6 +48,18 @@ function PokeProvider({ children }) {
         }
       })
   }, [])
+
+  useEffect(() => {
+    async function getPokemonNames() {
+      const response = await PokeAPI.getPokemonSpeciesList()
+      const pokemonNames = response.results.map(p => p.name.charAt(0).toUpperCase() + p.name.slice(1))
+      setPokemonList(pokemonNames)
+    }
+    if (user) {
+      getPokemonNames();
+    }
+
+  }, [user])
 
   const logout = () => {
     fetch('/api/logout', {
@@ -177,7 +192,8 @@ function PokeProvider({ children }) {
         clearDex,
         logout,
         updateSaves,
-        history
+        history,
+        pokemonList
       }}>
       {children}
     </PokeContext.Provider>

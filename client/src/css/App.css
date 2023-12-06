@@ -349,20 +349,20 @@ footer {
   margin: 0 auto;
 }
 
-h6 {
-  font-family: 'Orbitron', monospace, sans-serif;
-  color: #520081;
-  font-size: 1rem;
-}
-
-ul {
+#version ul {
   list-style: outside url('../assets/master-ball-tiny.png');
   margin: 0 auto;
   text-align: left;
 }
 
-li {
+#version li {
   padding-inline: 1rem;
+}
+
+h6 {
+  font-family: 'Orbitron', monospace, sans-serif;
+  color: #520081;
+  font-size: 1rem;
 }
 
 .display-img {
@@ -605,6 +605,39 @@ li {
 
 .answer-btn:hover {
   animation: 2s infinite ease-in-out linkfade;
+}
+
+.names-wrapper {
+  position: absolute;
+  border: 2px inset #B927FF;
+  border-top: none;
+  border-radius: 0 0 15px 15px;
+  width: min(40ch, 80%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  max-height: 10%;
+  overflow: auto;
+}
+
+.names-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.names-list li {
+  background-color: #c47df0;
+  cursor: pointer;
+}
+
+.names-list li:nth-child(2n) {
+  background-color: #c888ef;
+}
+
+.names-list li:hover {
+  background-color: #B927FF;
 }
 
 .toolbar-wrapper {

@@ -54,7 +54,7 @@ const Play = () => {
     <div className="play">
       <div className="play-top">
         <p>
-          Read the Pokédex entry below and guess the Pokémon being described to capture it. Spelling counts, but correct answers are not case-sensitive, and punctuation is optional. For example, "Mr. Mime" is the same as "mR MiMe". Nidoran♂ and Nidoran♀ can alternatively be entered as "Nidoran-m" and "Nidoran-f", respectively. You can also select a mode below; 'Easy' shows you an image of the escaping Pokémon after an incorrect guess, 'Hard' does not.
+          Read the Pokédex entry below and guess the Pokémon being described to capture it. Spelling counts, but correct answers are not case-sensitive, and punctuation is optional. For example, "Mr. Mime" is the same as "mR MiMe". Nidoran♂ and Nidoran♀ can alternatively be entered as "Nidoran-m" and "Nidoran-f", respectively. If you prefer more of a challenge, switching to <b>Hard</b> mode will disable answer suggestions and prevent any escaping Pokémon from being revealed.
         </p>
         <img
           src={encounter}

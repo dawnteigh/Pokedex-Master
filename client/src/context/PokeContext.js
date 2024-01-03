@@ -23,7 +23,7 @@ function PokeProvider({ children }) {
   const [caught, setCaught] = useState([])
   const [range, setRange] = useState({
     min: 1,
-    max: 1018
+    max: 1026
   })
   const [mode, setMode] = useState("easy")
   const [pokemonList, setPokemonList] = useState([])

@@ -26,7 +26,7 @@ const Saves = () => {
   }
 
   const displaySaves = user.saves.map((s, i) => {
-    const percentage = Math.floor((100 * s.pokemon.length) / 1017)
+    const percentage = Math.floor((100 * s.pokemon.length) / 1025)
     const lastPokemon = s.pokemon[s.pokemon.length - 1]
 
     return (

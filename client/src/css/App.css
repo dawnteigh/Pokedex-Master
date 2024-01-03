@@ -930,6 +930,7 @@ label:hover:not(.form label) {
   color: white;
   cursor: pointer;
   transition: width 1000ms ease;
+  z-index: 1;
 }
 
 .delete-show {

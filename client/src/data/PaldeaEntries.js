@@ -413,11 +413,11 @@ export const PaldeaEntries = [
   },
   {
     number: 1009,
-    entries: ["It has a large, hexagonal, cerulean blue crest on its forehead and two long, white tails with seven small spikes each.", "There is no official data on this Pokémon, but it appears to be an ancient relative of Suicune."]
+    entries: ["This ferocious creature is shrouded in mystery. It's named after an aquatic monster mentioned in an old expedition journal.", "It resembles an illustration published in a paranormal magazine, said to be a depiction of a super-ancient Suicune."]
   },
   {
     number: 1010,
-    entries: ["There is no official data on this Pokémon, but it appears to be a futuristic relative of Virizion.", "It has a smooth, glossy body that has a metallic texture, and the glowing parts on its forehead and neck can transform into ethereal longswords."]
+    entries: ["Many of its physical characteristics match those of a Virizion from the future that was covered in a paranormal magazine.", "According to the few eyewitness accounts that exist, it used its shining blades to julienne large trees and boulders."]
   },
   {
     number: 1011,

@@ -447,4 +447,36 @@ export const PaldeaEntries = [
     number: 1017,
     entries: ["This Pokémon's type changes based on which mask it's wearing. It confounds its enemies with nimble movements and kicks.", "This mischief-loving Pokémon is full of curiosity. It battles by drawing out the type-based energy contained within its masks.", "In this form, it draws on the power of water. It attacks unrelentingly with kicks and ivy strikes.", "This form is the most aggressive, bombarding enemies with the intensity of flames blazing within a hearth.", "In this form, it draws on the power of fire. It spears its enemies with thorn-covered ivy.", "This form has excellent defenses, absorbing impacts solidly like the cornerstones that support houses.", "In this form, it draws on the power of stone. Its body is rock-solid, protecting it from all manner of attacks.", "This form excels in both attack and defense. It ceaselessly unleashes moves like a spring gushes water."]
   },
+  {
+    number: 1018,
+    entries: ["It gathers static electricity from its surroundings. The beams it launches when down on all fours are tremendously powerful.", "It digs holes on mountains, searching for food. It's so durable that being caught in a cave-in won't faze it."]
+  },
+  {
+    number: 1019,
+    entries: ["Seven syrpents live inside an apple made of syrup. The syrpent in the center is the commander.", "These capricious syrpents have banded together. On the rare occasion that their moods align, their true power is unleashed."]
+  },
+  {
+    number: 1020,
+    entries: ["There are scant few reports of this creature being sighted. One short video shows it rampaging and spouting pillars of flame.", "It resembles an eerie Pokémon once shown in a paranormal magazine. That Pokémon was said to be an Entei regenerated from a fossil."]
+  },
+  {
+    number: 1021,
+    entries: ["It's said to incinerate everything around it with lightning launched from its fur. Very little is known about this creature.", "It bears resemblance to a Pokémon that became a hot topic for a short while after a paranormal magazine touted it as Raikou's ancestor."]
+  },
+  {
+    number: 1022,
+    entries: ["It resembles a Pokémon described in a dubious magazine as a Terrakion that had been modified by an evil organization.", "It was named after a mysterious object recorded in an old book. Its body seems to be metallic."]
+  },
+  {
+    number: 1023,
+    entries: ["It resembles a mysterious object introduced in a paranormal magazine as a cutting-edge weapon shaped like a Cobalion.", "There was supposedly an incident in which it launched shining blades to cut everything around it to pieces. Little else is known about it."]
+  },
+  {
+    number: 1024,
+    entries: ["Terapagos protects itself using its power to transform energy into hard crystals. This Pokémon is the source of the Terastal phenomenon.", "It's thought that this Pokémon lived in ancient Paldea until it got caught in seismic shifts and went extinct.", "Upon sensing danger, it prepares itself for battle by creating a sturdy shell of crystallized Terastal energy.", "The shell is made of crystallized Terastal energy. When struck by a move, this shell absorbs the move's energy and transfers it to Terapagos.", "In this form, Terapagos resembles the world as the ancients saw it, and its Terastal energy is abnormally amplified.", "An old expedition journal describes the sight of this Pokémon buried in the depths of the earth as resembling a planet floating in space."]
+  },
+  {
+    number: 1025,
+    entries: ["It feeds others toxic mochi that draw out desires and capabilities. Those who eat the mochi fall under Pecharunt's control, chained to its will.", "Its peach-shaped shell serves as storage for a potent poison. It makes poisonous mochi and serves them to people and Pokémon."]
+  },
 ]

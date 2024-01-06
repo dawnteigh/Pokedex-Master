@@ -50,9 +50,9 @@ Next, you will need to open a <i>second</i> terminal for the frontend:
 ~/Pokedex-Master$ npm start --prefix client
 ```
 A browser window will open, but don't panic. It's the game!
-Head into the browser window at http://localhost:3000/ and create an account. From there you can select a save file and start filling your Pokédex. Enjoy!<br><br>
-<i>* Pictured below is an older version; the latest version features Pokédex searching, modes, less strict answer formats, and all Pokémon through Gen 9!</i>
-![Pokedex-Master](client/public/pkdxmstr.gif)
+Head into the browser window at http://localhost:3000/ and create an account. From there you can select a save file and start filling your Pokédex. Enjoy!<br>
+
+<img src="client/public/pkdxmstr.gif" alt="Pokédex Master 2.0" height="auto" width="800" />
 
 
 ## Contributing

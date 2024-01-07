@@ -20,6 +20,7 @@ const Version = () => {
       <br />
       <h6>Coming Soon</h6>
       <ul>
+        <li>Accessibility Updates</li>
         <li>Loading spinner</li>
         <li>Improved Pokédex filters</li>
         <li>Milestones and Medals</li>
